@@ -1,0 +1,16 @@
+{
+	"sidemenu_style_background_color": "#565553",
+	"sidemenu_header_bg": "#565553",
+	"header_sidemenu": true,
+	"sidemenu_icons": false,
+	"header_bottom_text": "",
+	"sidemenu_style_border_color": "#565553",
+	"sidemenu_width": "280px",
+	"sidemenu_col_width": "88px",
+	"side_padding_left": "100px",
+	"side_padding_right": "40px",
+	"logo_padding_left": "50px",
+	"default_style_border_color": "",
+	"sidemenu_font_size": "14px",
+	"header_status": false
+}
