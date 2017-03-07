@@ -1,0 +1,44 @@
+.collapse-heading {
+	margin:           0;
+	position:         relative;
+	background-color: @white;
+	text-align:       center;
+	a {
+		padding:         13px;
+		display:         block;
+		text-decoration: none;
+		background:      @thim_body_primary_color;
+		color:           @white;
+		&.collapsed {
+			color:      @thim_font_h6_color;
+			background: @white;
+			&:after {
+				content:    "\f107";
+				font:       normal normal normal 16px/1 FontAwesome;
+				position:   absolute;
+				right:      15px;
+				margin-top: 2px;
+				color:      @thim_body_primary_color;
+			}
+		}
+	}
+	h4 {
+		margin:      0;
+		font-size:   @thim_font_h6_font_size;
+		line-height: @thim_font_h6_line_height;
+		font-weight: bold;
+	}
+}
+
+.collapse-body {
+	padding:    1.5em 2em;
+	font-style: italic;
+}
+
+.thim-widget-collapse {
+	.accordion-section {
+		background:    @white;
+		border:        1px solid @border-color;
+		margin-bottom: 10px;
+	}
+}

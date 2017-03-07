@@ -1,0 +1,13 @@
+/*
+Theme Name: Eduma
+Theme URI: http://educationwp.thimpress.com/
+Author: ThimPress
+Author URI: http://thimpress.com
+Description: Premium WordPress LMS theme.
+Version: 2.8.6
+License: Split License
+License URI: https://help.market.envato.com/hc/en-us/articles/202501064-What-is-Split-Licensing-and-the-GPL-
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: eduma
+Domain Path: /languages/
+*/

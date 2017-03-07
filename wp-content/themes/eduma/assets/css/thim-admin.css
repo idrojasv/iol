@@ -1,0 +1,170 @@
+.thim-demo-browser .themes{
+	overflow: hidden;
+	position: relative;
+}
+.thim-demo-browser.overlay .themes{
+	cursor: no-drop;
+}
+.thim-demo-browser.loading .themes{
+	cursor: progress;
+}
+.thim-demo-browser.overlay .themes,
+.thim-demo-browser.loading .themes{
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.thim-demo-browser.overlay .themes:before,
+.thim-demo-browser.loading .themes:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.5);
+	z-index: 99;
+}
+.thim-choose-page-builder{
+	position: relative;
+}
+.thim-choose-page-builder select{
+	margin-left: 30px;
+}
+.thim-choose-page-builder:after{
+	color: #f56e28;
+	content: "\f463";
+	display: inline-block;
+	font: 400 20px/1 dashicons;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 15px;
+	position: absolute;
+	left: 0;
+	bottom: 15px;
+}
+.thim-demo-browser.loading .thim-choose-page-builder:after{
+	-webkit-animation: rotation 2s infinite linear;
+	animation: rotation 2s infinite linear;
+}
+.thim-choose-page-builder{
+	clear: both;
+	margin-bottom: 25px;
+	overflow: hidden;
+	border-left: 4px solid #46b450;
+	background: #fff;
+	width: auto;
+	padding: 0px 15px 15px;
+}
+.thim-choose-page-builder select,
+.thim-choose-page-builder select:focus{
+	outline: none;
+	box-shadow: none;
+	border-color: #ddd;
+}
+
+/** add style for event admin **/
+body #accordion-panel-support .accordion-section-title,
+body #accordion-section-support_documentation .accordion-section-title{
+	border-left: 0;
+	color: #fff;
+	background: #00b200;
+}
+body #customize-controls #accordion-panel-support .accordion-section-title:hover,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:hover,
+body #customize-controls #accordion-panel-support .accordion-section-title:focus,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:focus{
+	color: #fff;
+	background: #04a704;
+}
+body #customize-controls #accordion-panel-support .accordion-section-title:focus:after,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:focus:after,
+body #customize-controls #accordion-panel-support .accordion-section-title:hover:after,
+body #customize-controls #accordion-section-support_documentation .accordion-section-title:hover:after{
+	color: #fff;
+}
+body #accordion-panel-support .accordion-section-title:after,
+body #accordion-section-support_documentation .accordion-section-title:after{
+	color: #fff;
+}
+#thim_event_members {
+	min-height: 200px;
+}
+#customize-control-thim_my_text_option{
+	display: none !important;
+}
+.support-documentation{
+	padding-top: 15px;
+}
+.support-documentation a{
+	text-decoration: none;
+}
+.support-documentation a:focus{
+	outline: none;
+}
+.support-documentation b,
+.support-documentation>a{
+	font-weight: 600;
+}
+.support-documentation b{
+	color: #333;
+}
+.support-documentation>a{
+	display: block;
+	margin: 0 0 10px;
+}
+.support-documentation .description{
+	margin-top: 15px;
+}
+.ratings-social{
+	clear: both;
+	display: block;
+	margin-top: 15px;
+}
+.ratings-social a{
+	clear: both;
+	float: left;
+	margin: 5px 0;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 30px;
+	height: 32px;
+	padding: 0 10px 1px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #555;
+	background: #f7f7f7;
+	-webkit-box-shadow: 0 1px 0 #ccc;
+	box-shadow: 0 1px 0 #ccc;
+	vertical-align: top;
+	min-width: 135px;
+	text-align: center;
+}
+.ratings-social a:hover{
+	background: #fafafa;
+	border-color: #999;
+	color: #23282d;
+}
+.customize-control-kirki-radio-image .image>label {
+	width: 32%;
+}
+td .simplePanelImagePreview{
+	max-width: 500px;
+	display: block;
+	overflow: hidden;
+}
+td .simplePanelImagePreview img{
+	max-width: 100%;
+}
