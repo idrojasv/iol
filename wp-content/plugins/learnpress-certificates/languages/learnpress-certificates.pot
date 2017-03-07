@@ -1,0 +1,461 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-28 08:52+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: learnpress-certificates.php:107 learnpress-certificates.php:198
+#: learnpress-certificates.php:202 incs/_bak/class-lpr-certificate.php:62
+#: incs/_bak/class-lpr-certificate.php:66 incs/_bak/_load.php:113
+#: incs/_bak/_load.php:117
+msgid "Certificates"
+msgstr ""
+
+#: learnpress-certificates.php:129
+#: incs/fields/class-lpr-certificate-field-full-name.php:34
+msgid "Display"
+msgstr ""
+
+#: learnpress-certificates.php:132
+msgid "Login name"
+msgstr ""
+
+#: learnpress-certificates.php:133
+msgid "Display name"
+msgstr ""
+
+#: learnpress-certificates.php:143
+msgid "Text"
+msgstr ""
+
+#: learnpress-certificates.php:156
+#: incs/_bak/_class-lpr-certificate-template.php:250
+msgid "Format"
+msgstr ""
+
+#: learnpress-certificates.php:167
+msgid "Error!"
+msgstr ""
+
+#: learnpress-certificates.php:170
+msgid "Invalid field type!"
+msgstr ""
+
+#: learnpress-certificates.php:197 learnpress-certificates.php:199
+#: learnpress-certificates.php:297 learnpress-certificates.php:494
+#: incs/_bak/class-lpr-certificate.php:61
+#: incs/_bak/class-lpr-certificate.php:63 incs/_bak/_load.php:112
+#: incs/_bak/_load.php:114
+msgid "Certificate"
+msgstr ""
+
+#: learnpress-certificates.php:200 incs/_bak/class-lpr-certificate.php:64
+#: incs/_bak/_load.php:115
+msgid "Add New Certificate"
+msgstr ""
+
+#: learnpress-certificates.php:201 incs/_bak/class-lpr-certificate.php:65
+#: incs/_bak/_load.php:116
+msgid "Edit Certificate"
+msgstr ""
+
+#: learnpress-certificates.php:288 incs/_bak/class-lpr-certificate.php:110
+msgid "Certificate Design"
+msgstr ""
+
+#: learnpress-certificates.php:512
+msgid "-"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:25
+#: incs/_bak/class-lpr-certificate-helper.php:56
+msgid "Font"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:32
+#: incs/_bak/class-lpr-certificate-helper.php:63
+#: incs/_bak/_class-lpr-certificate-template.php:214
+msgid "Font size"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:40
+msgid "Font style"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:43
+#: incs/class-lp-certificate-field.php:54
+#: incs/class-lp-certificate-field.php:64
+msgid "Normal"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:44
+msgid "Italic"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:45
+msgid "Oblique"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:51
+msgid "Font weight"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:55
+msgid "Bold"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:61
+msgid "Text decoration"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:65
+msgid "Underline"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:66
+msgid "Overline"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:67
+msgid "Line-through"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:73
+#: incs/_bak/class-lpr-certificate-helper.php:71
+#: incs/_bak/_class-lpr-certificate-template.php:222
+msgid "Color"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:79
+#: incs/_bak/class-lpr-certificate-helper.php:77
+#: incs/_bak/_class-lpr-certificate-template.php:230
+msgid "Text align"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:85
+#: incs/_bak/class-lpr-certificate-helper.php:83
+msgid "Text vertical align"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:91
+#: incs/_bak/class-lpr-certificate-helper.php:89
+msgid "Angle"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:99
+#: incs/_bak/class-lpr-certificate-helper.php:97
+msgid "Scale X"
+msgstr ""
+
+#: incs/class-lp-certificate-field.php:108
+#: incs/_bak/class-lpr-certificate-helper.php:106
+msgid "Scale Y"
+msgstr ""
+
+#: incs/js-template.php:7
+msgid "Select template"
+msgstr ""
+
+#: incs/js-template.php:34
+msgid "Layer Options"
+msgstr ""
+
+#: incs/js-template.php:43
+msgid "Update"
+msgstr ""
+
+#: incs/js-template.php:54 incs/_bak/_class-lpr-certificate-template.php:305
+msgid "Select Certificate Template"
+msgstr ""
+
+#: incs/js-template.php:55
+msgid "Cancel"
+msgstr ""
+
+#: incs/js-template.php:56
+#: incs/_bak/class-lpr-certificate-meta-box-field.php:48
+#: incs/_bak/class-rwmb-certificate-field.php:50
+msgid "Select"
+msgstr ""
+
+#: incs/lp-certificate-functions.php:29
+msgid "certificates"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-current-date.php:18
+#: incs/fields/class-lpr-certificate-field-end-date.php:34
+#: incs/fields/class-lpr-certificate-field-start-date.php:17
+msgid "Date format"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-current-time.php:18
+msgid "Time format"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-custom.php:13
+msgid "Custom text"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-full-name.php:37
+msgid "User login"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-full-name.php:38
+msgid "User nice name"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-full-name.php:39
+msgid "Nickname"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-full-name.php:40
+msgid "First name"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-full-name.php:41
+msgid "Last name"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-full-name.php:42
+msgid "First name + Last name"
+msgstr ""
+
+#: incs/fields/class-lpr-certificate-field-full-name.php:43
+msgid "Last name + First name"
+msgstr ""
+
+#: incs/html/cert-design.php:10
+msgid "No template selected."
+msgstr ""
+
+#: incs/html/cert-design.php:11
+msgid "Select Template"
+msgstr ""
+
+#: incs/html/cert-design.php:12
+msgid "to starts design your favorite certificate now"
+msgstr ""
+
+#: incs/html/cert-design.php:21
+msgid "Student name"
+msgstr ""
+
+#: incs/html/cert-design.php:25
+msgid "Course name"
+msgstr ""
+
+#: incs/html/cert-design.php:29
+msgid "Course start date"
+msgstr ""
+
+#: incs/html/cert-design.php:33
+msgid "Course end date"
+msgstr ""
+
+#: incs/html/cert-design.php:37
+msgid "Current date"
+msgstr ""
+
+#: incs/html/cert-design.php:41
+msgid "Current time"
+msgstr ""
+
+#: incs/html/cert-design.php:45
+msgid "Custom"
+msgstr ""
+
+#: incs/html/cert-design.php:49
+msgid "Change template"
+msgstr ""
+
+#: incs/html/cert-design.php:61
+#: incs/_bak/class-lpr-certificate-frontend.php:181
+#: incs/_bak/class-lpr-certificate-frontend.php:235 incs/_bak/_load.php:252
+#: templates/popup-cert.php:4
+msgid "Close"
+msgstr ""
+
+#: incs/html/cert-design.php:62
+msgid "Delete"
+msgstr ""
+
+#: incs/html/course-certs.php:17
+msgid "Edit"
+msgstr ""
+
+#: incs/html/fields/font.php:17
+msgid "System fonts"
+msgstr ""
+
+#: incs/html/fields/font.php:27
+msgid "Google fonts"
+msgstr ""
+
+#: incs/html/fields/text-align.php:3
+#: incs/_bak/_class-lpr-certificate-template.php:233
+msgid "Left"
+msgstr ""
+
+#: incs/html/fields/text-align.php:4
+#: incs/_bak/_class-lpr-certificate-template.php:233
+msgid "Center"
+msgstr ""
+
+#: incs/html/fields/text-align.php:5
+#: incs/_bak/_class-lpr-certificate-template.php:233
+msgid "Right"
+msgstr ""
+
+#: incs/html/fields/vertical-align.php:3
+msgid "Top"
+msgstr ""
+
+#: incs/html/fields/vertical-align.php:4
+msgid "Middle"
+msgstr ""
+
+#: incs/html/fields/vertical-align.php:5
+msgid "Bottom"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate-field.php:116
+#, php-format
+msgid "File %s for class does not exists"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate-field.php:122
+#, php-format
+msgid "Class %s does not exists"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate-frontend.php:172
+#: incs/_bak/class-lpr-certificate-frontend.php:226 incs/_bak/_load.php:246
+msgid ""
+"Congratulations! You have passed this course and get a certificate from us."
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate-frontend.php:177
+#: incs/_bak/class-lpr-certificate-frontend.php:231
+#: incs/_bak/_class-lpr-certificate-template.php:63 incs/_bak/_load.php:249
+msgid "Download certificate as: "
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate-frontend.php:261
+msgid "Your Certificate"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate-meta-box-field.php:67
+#: incs/_bak/class-rwmb-certificate-field.php:69
+msgid "No certificate"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate.php:30
+#: incs/_bak/class-lpr-certificate.php:97 incs/_bak/_load.php:60
+msgid "Select Certificate"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate.php:190
+#: incs/_bak/_class-lpr-certificate-template.php:332
+msgid "The full name of an user"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate.php:198
+#: incs/_bak/class-lpr-certificate.php:205
+#: incs/_bak/class-lpr-certificate.php:212
+#: incs/_bak/class-lpr-certificate.php:219
+#: incs/_bak/class-lpr-certificate.php:226
+#: incs/_bak/class-lpr-certificate.php:233
+#: incs/_bak/_class-lpr-certificate-template.php:339
+#: incs/_bak/_class-lpr-certificate-template.php:346
+#: incs/_bak/_class-lpr-certificate-template.php:353
+#: incs/_bak/_class-lpr-certificate-template.php:360
+#: incs/_bak/_class-lpr-certificate-template.php:367
+#: incs/_bak/_class-lpr-certificate-template.php:374
+#: incs/_bak/_class-lpr-certificate-template.php:381
+msgid "The birth of date of an user"
+msgstr ""
+
+#: incs/_bak/class-lpr-certificate.php:357
+msgid "Default Template"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:170
+msgid "Full screen"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:171
+msgid "Select new template"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:177
+msgid "Your text here"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:202
+msgid "Font family"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:226
+msgid "Content"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:277
+msgid "Certificate Template"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:456
+msgid "Certificate is not available"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:462
+msgid "Course is empty"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:466
+msgid "Certificate is empty"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:506
+msgid "Image type doesn't support"
+msgstr ""
+
+#: incs/_bak/_class-lpr-certificate-template.php:585
+msgid "Image type "
+msgstr ""
+
+#: templates/cert-preview.php:6 templates/popup-cert.php:6
+msgid "View Certificate"
+msgstr ""
+
+#: templates/cert-preview.php:27 templates/popup-cert.php:17
+msgid "Download as:"
+msgstr ""
+
+#: templates/cert-preview.php:28 templates/popup-cert.php:18
+msgid "PNG"
+msgstr ""
+
+#: templates/cert-preview.php:30 templates/popup-cert.php:20
+msgid "JPG"
+msgstr ""
+
+#: templates/course-certificates.php:11
+msgid "You have not received any certificates yet!"
+msgstr ""
+
+#: templates/popup-cert.php:10
+msgid "Congrats! You have taken a certificate for this course"
+msgstr ""

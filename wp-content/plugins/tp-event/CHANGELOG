@@ -1,0 +1,20 @@
+=== 2.0 ===
+- Included TP Event Auth add-on
+- Rebuild Core
+- Add event note
+- Add booking note
+- Add map location for event
+- Add setting for set up Google map API key
+- Add event category taxonomy
+- Update booking detail page
+- Update event countdown widget
+
+=== 1.4.2 ===
+- Rebuild Core
+- Update database
+- Setting update
+- Update Register, Login
+- Remove shortcodes Lost Password, Reset Password
+- Update Capability
+- Update UI Register Event
+- Event metabox UI

@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-02 10:41+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tp-portfolio.php:221
+msgctxt "General Name"
+msgid "Projects"
+msgstr ""
+
+#: tp-portfolio.php:222
+msgctxt "Singular Name"
+msgid "Project"
+msgstr ""
+
+#: tp-portfolio.php:223
+msgid "Portfolio"
+msgstr ""
+
+#: tp-portfolio.php:224
+msgid "Parent Portfolio:"
+msgstr ""
+
+#: tp-portfolio.php:225
+msgid "All Projects"
+msgstr ""
+
+#: tp-portfolio.php:226
+msgid "View Project"
+msgstr ""
+
+#: tp-portfolio.php:227
+msgid "Add New Project"
+msgstr ""
+
+#: tp-portfolio.php:228
+msgid "New Project"
+msgstr ""
+
+#: tp-portfolio.php:229
+msgid "Edit Project"
+msgstr ""
+
+#: tp-portfolio.php:230
+msgid "Update Portfolio"
+msgstr ""
+
+#: tp-portfolio.php:231
+msgid "Search Projects"
+msgstr ""
+
+#: tp-portfolio.php:232
+msgid "No Projects found"
+msgstr ""
+
+#: tp-portfolio.php:233
+msgid "No Projects found in Trash"
+msgstr ""
+
+#: tp-portfolio.php:255
+msgctxt "Taxonomy General Name"
+msgid "Project Types"
+msgstr ""
+
+#: tp-portfolio.php:256
+msgctxt "Taxonomy Singular Name"
+msgid "Project Type"
+msgstr ""
+
+#: tp-portfolio.php:257
+msgid "Project Types"
+msgstr ""
+
+#: tp-portfolio.php:258
+msgid "All Project Types"
+msgstr ""
+
+#: tp-portfolio.php:259
+msgid "Parent Project Type"
+msgstr ""
+
+#: tp-portfolio.php:260
+msgid "Parent Project Type:"
+msgstr ""
+
+#: tp-portfolio.php:261
+msgid "New Project Type Name"
+msgstr ""
+
+#: tp-portfolio.php:262
+msgid "Add New Project Type"
+msgstr ""
+
+#: tp-portfolio.php:263
+msgid "Edit Project Type"
+msgstr ""
+
+#: tp-portfolio.php:264
+msgid "Update Project Type"
+msgstr ""
+
+#: tp-portfolio.php:265
+msgid "Separate Project Types with commas"
+msgstr ""
+
+#: tp-portfolio.php:266
+msgid "Search Project Types"
+msgstr ""
+
+#: tp-portfolio.php:267
+msgid "Add or remove Project Types"
+msgstr ""
+
+#: tp-portfolio.php:268
+msgid "Choose from the most used Project Types"
+msgstr ""
+
+#: tp-portfolio.php:294
+#, php-format
+msgid "Portfolio updated. <a href=\"%s\">View Portfolio</a>"
+msgstr ""
+
+#: tp-portfolio.php:295
+msgid "Custom field updated."
+msgstr ""
+
+#: tp-portfolio.php:296
+msgid "Custom field deleted."
+msgstr ""
+
+#: tp-portfolio.php:297
+msgid "Portfolio updated."
+msgstr ""
+
+#: tp-portfolio.php:298
+#, php-format
+msgid "Portfolio restored to revision from %s"
+msgstr ""
+
+#: tp-portfolio.php:299
+#, php-format
+msgid "Portfolio published. <a href=\"%s\">View Portfolio</a>"
+msgstr ""
+
+#: tp-portfolio.php:300
+msgid "Portfolio saved."
+msgstr ""
+
+#: tp-portfolio.php:301
+#, php-format
+msgid ""
+"Portfolio submitted. <a target=\"_blank\" href=\"%s\">Preview Portfolio</a>"
+msgstr ""
+
+#: tp-portfolio.php:302
+#, php-format
+msgid ""
+"Portfolio scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview Portfolio</a>"
+msgstr ""
+
+#: tp-portfolio.php:302
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: tp-portfolio.php:303
+#, php-format
+msgid ""
+"Portfolio draft updated. <a target=\"_blank\" href=\"%s\">Preview Portfolio</"
+"a>"
+msgstr ""
+
+#: tp-portfolio.php:322
+msgid "General Settings"
+msgstr ""
+
+#: tp-portfolio.php:325
+msgid "Hide Breadcrumbs?"
+msgstr ""
+
+#: tp-portfolio.php:328
+msgid "Check this box to hide/show Breadcrumbs"
+msgstr ""
+
+#: tp-portfolio.php:332
+msgid "Hide Title"
+msgstr ""
+
+#: tp-portfolio.php:335
+msgid "Check this box to hide/unhide title"
+msgstr ""
+
+#: tp-portfolio.php:340
+msgid "Top Image"
+msgstr ""
+
+#: tp-portfolio.php:347
+msgid "Background Heading Color"
+msgstr ""
+
+#: tp-portfolio.php:354
+msgid "Text Color Heading"
+msgstr ""
+
+#: tp-portfolio.php:362
+msgid "Dimensions"
+msgstr ""
+
+#: tp-portfolio.php:375
+msgid "Archive Settings"
+msgstr ""
+
+#: tp-portfolio.php:378 tp-portfolio.php:464
+msgid "Select a Layout"
+msgstr ""
+
+#: tp-portfolio.php:390
+msgid "Column"
+msgstr ""
+
+#: tp-portfolio.php:402
+msgid "Enable gutter for Items"
+msgstr ""
+
+#: tp-portfolio.php:407
+msgid "Items Size"
+msgstr ""
+
+#: tp-portfolio.php:418
+msgid "Items Style"
+msgstr ""
+
+#: tp-portfolio.php:430
+msgid "Images Hover Effects"
+msgstr ""
+
+#: tp-portfolio.php:441
+msgid "Pagination Styles"
+msgstr ""
+
+#: tp-portfolio.php:461
+msgid "Single Page Settings"
+msgstr ""
+
+#: tp-portfolio.php:490
+msgid "Portfolio Settings"
+msgstr ""
+
+#: tp-portfolio.php:494
+msgid "Multigrid Size"
+msgstr ""
+
+#: tp-portfolio.php:497
+msgid "This config will working for portfolio layout style."
+msgstr ""
+
+#: tp-portfolio.php:508
+msgid "Portfolio Type"
+msgstr ""
+
+#: tp-portfolio.php:512
+msgid "Image"
+msgstr ""
+
+#: tp-portfolio.php:513
+msgid "Slider"
+msgstr ""
+
+#: tp-portfolio.php:514 tp-portfolio.php:529
+msgid "Video"
+msgstr ""
+
+#: tp-portfolio.php:515
+msgid "Left Floating Sidebar"
+msgstr ""
+
+#: tp-portfolio.php:516
+msgid "Right Floating Sidebar"
+msgstr ""
+
+#: tp-portfolio.php:517
+msgid "Gallery"
+msgstr ""
+
+#: tp-portfolio.php:518
+msgid "Sidebar Slider"
+msgstr ""
+
+#: tp-portfolio.php:519
+msgid "Vertical Stacked"
+msgstr ""
+
+#: tp-portfolio.php:520
+msgid "Page Builder"
+msgstr ""
+
+#: tp-portfolio.php:541
+msgid "Video URL or own Embedd Code<br />(Audio Embedd Code is possible, too)"
+msgstr ""
+
+#: tp-portfolio.php:543
+msgid ""
+"Just paste the ID of the video (E.g. http://www.youtube.com/watch?"
+"v=<strong>GUEZCxBcM78</strong>) you want to show, or insert own Embed Code. "
+"<br />This will show the Video <strong>INSTEAD</strong> of the Image Slider."
+"<br /><strong>Of course you can also insert your Audio Embedd Code!</"
+"strong><br /><br /><strong>Notice:</strong> The Preview Image will be the "
+"Image set as Featured Image.."
+msgstr ""
+
+#: tp-portfolio.php:552 tp-portfolio.php:561
+msgid "Upload Image"
+msgstr ""
+
+#: tp-portfolio.php:553 tp-portfolio.php:562
+msgid ""
+"Upload up images for a slideshow - or only one to display a single image. "
+"<br /><br /><strong>Notice:</strong> The Preview Image will be the Image set "
+"as Featured Image."
+msgstr ""
+
+#: lib/thim-functions.php:39
+msgid "VIEW OTHER RELATED ITEMS"
+msgstr ""
+
+#: lib/meta-boxes/thim-meta-box.php:434 lib/meta-boxes/thim-meta-box.php:531
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: templates/archive-portfolio.php:173
+msgid "All"
+msgstr ""
+
+#: templates/single-portfolio.php:85
+#: templates/type/right-floating-sidebar.php:43
+#: templates/type/sidebar-slider.php:42
+msgid "Project description"
+msgstr ""
+
+#: templates/type/content-portfolio.php:51 templates/type/gallery.php:41
+#: templates/type/left-floating-sidebar.php:41
+#: templates/type/right-floating-sidebar.php:72
+#: templates/type/sidebar-slider.php:71 templates/type/vertical-stacked.php:13
+msgid "Pages:"
+msgstr ""
+
+#: templates/type/left-floating-sidebar.php:35
+msgid "Project URL"
+msgstr ""

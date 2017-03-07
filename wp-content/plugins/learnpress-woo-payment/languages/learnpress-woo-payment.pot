@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-23 15:49+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: incs/class-lp-woo-gateways.php:17
+msgid "WooCommerce Payment"
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:18
+#: incs/class-lp-woocommerce-payment-gateways.php:64
+msgid "Make a payment with WooCommerce payment methods."
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:40
+msgid "Thank you! Your order has been completed!"
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:67
+msgid "Payment to be made upon delivery."
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:94
+#: incs/class-lp-woocommerce-payment-gateways.php:489
+msgid "Enable"
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:100
+msgid "Title"
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:107
+msgid "Description"
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:114
+msgid "Instructions"
+msgstr ""
+
+#: incs/class-lp-woo-gateways.php:120
+msgid ""
+"Some instructions to user, e.g: What need to do next in order to complete "
+"the order."
+msgstr ""
+
+#: incs/class-lp-woocommerce-payment-gateways.php:63
+msgid "WooCommerce"
+msgstr ""
+
+#: incs/class-lp-woocommerce-payment-gateways.php:275
+msgid "Pay with WooCommerce payment system"
+msgstr ""
+
+#: incs/class-lp-woocommerce-payment-gateways.php:316
+#: incs/class-lp-woocommerce-payment-gateways.php:374
+msgid "WooCommerce checkout page is not setting up!"
+msgstr ""
+
+#: incs/class-lp-woocommerce-payment-gateways.php:495
+msgid "WooCommerce Payments"
+msgstr ""
+
+#: incs/class-lp-woocommerce-payment-gateways.php:499
+msgid "Click on a payment method to go to WooCommerce Payment settings"
+msgstr ""

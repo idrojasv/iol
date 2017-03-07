@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-22 14:51+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: learnpress-collections.php:148
+msgctxt "Post Type General Name"
+msgid "Collections"
+msgstr ""
+
+#: learnpress-collections.php:149
+msgctxt "Post Type Singular Name"
+msgid "Collection"
+msgstr ""
+
+#: learnpress-collections.php:150 learnpress-collections.php:152
+#: learnpress-collections.php:189 inc/widget.php:61
+msgid "Collections"
+msgstr ""
+
+#: learnpress-collections.php:151
+msgid "Parent Item:"
+msgstr ""
+
+#: learnpress-collections.php:153
+msgid "View Collection"
+msgstr ""
+
+#: learnpress-collections.php:154
+msgid "Add New Collection"
+msgstr ""
+
+#: learnpress-collections.php:155
+msgid "Add New"
+msgstr ""
+
+#: learnpress-collections.php:156
+msgid "Edit Collection"
+msgstr ""
+
+#: learnpress-collections.php:157
+msgid "Update Collection"
+msgstr ""
+
+#: learnpress-collections.php:158
+msgid "Search Collection"
+msgstr ""
+
+#: learnpress-collections.php:159
+msgid "No collection found"
+msgstr ""
+
+#: learnpress-collections.php:160
+msgid "No collection found in Trash"
+msgstr ""
+
+#: learnpress-collections.php:219
+msgid "Get courses"
+msgstr ""
+
+#: learnpress-collections.php:226
+msgid "Select courses"
+msgstr ""
+
+#: learnpress-collections.php:251
+msgid "Get collections"
+msgstr ""
+
+#: learnpress-collections.php:258
+msgid "Select collections"
+msgstr ""
+
+#: inc/widget.php:14
+msgid "Courses Collections"
+msgstr ""
+
+#: inc/widget.php:15
+msgid "Display course collections"
+msgstr ""
+
+#: inc/widget.php:65
+msgid "Title:"
+msgstr ""
+
+#: inc/widget.php:69
+msgid "Number of collections to show:"
+msgstr ""
+
+#: templates/archive-collection.php:25
+msgid "No course found!"
+msgstr ""

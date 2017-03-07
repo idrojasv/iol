@@ -1,0 +1,164 @@
+.thim-demo-browser {
+	margin-top: 20px;
+}
+
+.theme-browser .theme {
+	cursor: default !important;
+}
+
+.theme-browser .theme:hover {
+	cursor: default !important;
+}
+
+.theme-browser.rendered .theme:focus .theme-screenshot img,
+.theme-browser.rendered .theme:hover .theme-screenshot img {
+	opacity: 1 !important;
+}
+
+.thim-demo-browser {
+
+}
+
+.button-primary.tp-btn-import[data-disabled=true] {
+	position: static;
+	color: #66c6e4 !important;
+	background: #008ec2 !important;
+	border-color: #007cb2 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .1) !important;
+	cursor: default;
+}
+
+.tp_notification {
+	display: block;
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+	padding-right: 40px;
+}
+
+.tp-goto-import-page .tp_import_ignore:hover {
+	cursor: pointer;
+}
+
+.tp_notification > p {
+	line-height: 2;
+}
+
+.tp_progress_import {
+	margin-bottom: 30px;
+}
+
+.tp-popup {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000044;
+	display: none;
+}
+
+.open-popup {
+	overflow: hidden;
+}
+
+.open-popup .tp-popup {
+	display: block;
+}
+
+.tp-popup .container {
+	width: 50%;
+	margin: 100px auto;
+	background-color: #fff;
+	padding: 40px;
+	position: relative;
+	overflow: auto;
+	max-width: 700px;
+	max-height: 600px;
+}
+
+.tp_process_bar {
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.tp-close-import-popup {
+	display: none;
+}
+
+.tp-complete {
+	display: none;
+}
+
+.tp-complete .button {
+	margin-right: 3px;
+}
+
+.tp-popup .row .col {
+	float: left;
+	width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	.tp-popup .container {
+		width: 80%;
+	}
+
+	.tp-popup .row .col {
+		width: 100%;
+	}
+}
+
+.tp_progress_error_message {
+	display: none;
+}
+
+.tp_progress_error_message .log {
+	margin-bottom: 20px;
+	display: none;
+}
+
+.tp_progress_error_message .log .content {
+	font-size: smaller;
+	overflow: auto;
+	max-height: 200px;
+}
+
+.tp_progress_error_message .error {
+	margin: 0;
+}
+
+.tp_progress_error_message .error-content {
+	margin-bottom: 50px;
+}
+
+.tp_progress_error_message .tp-error {
+	margin: 5px 0 15px;
+	background: #fff;
+	border-left: 4px solid #dc3232;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+	padding: 1px 12px;
+}
+
+.tp-popup .wrapper-content h1 {
+	margin-bottom: 40px;
+}
+
+.meter {
+	overflow: hidden;
+}
+
+.meter .stop.success {
+	width: 100% !important;
+}
+
+.wp-pointer {
+	display: none;
+}
+
+.wp-pointer-buttons {
+	display: none;
+}
