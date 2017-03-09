@@ -112,9 +112,9 @@ class MailsterManage {
 			}
 		} elseif ( isset( $_POST['data'] ) ) {
 
-				$return['success'] = false;
+			$return['success'] = false;
 
-				$this->ajax_nonce( json_encode( $return ) );
+			$this->ajax_nonce( json_encode( $return ) );
 
 			if ( ! current_user_can( 'mailster_import_subscribers' ) ) {
 
@@ -123,8 +123,8 @@ class MailsterManage {
 				exit;
 			}
 
-				$raw_data = esc_attr( stripslashes( $_POST['data'] ) );
-				$return['success'] = true;
+			$raw_data = esc_attr( stripslashes( $_POST['data'] ) );
+			$return['success'] = true;
 
 		} elseif ( isset( $_POST['wordpressusers'] ) ) {
 
@@ -478,7 +478,7 @@ class MailsterManage {
 		parse_str( $bulkdata['order'] );
 		parse_str( $bulkdata['lists'] );
 
-		$list_ids = array();
+		$option_list_ids = array();
 
 		foreach ( (array) $lists as $list ) {
 
@@ -491,28 +491,31 @@ class MailsterManage {
 				}
 			}
 
-			$list_ids[] = $list_id;
+			$option_list_ids[] = $list_id;
 		}
 
 		$parts_at_once = $bulkdata['performance'] ? 2 : 8;
+		$list_cache = array();
 
 		$bulkdata['current'] = intval( $_POST['id'] );
 
 		$sql = "SELECT data FROM {$wpdb->prefix}mailster_temp_import WHERE identifier = %s ORDER BY ID ASC LIMIT %d, $parts_at_once";
 
-		$lists = $wpdb->get_col( $wpdb->prepare( $sql, $bulkdata['identifier'], $bulkdata['current'] * $parts_at_once ) );
+		$raw_list_data = $wpdb->get_col( $wpdb->prepare( $sql, $bulkdata['identifier'], $bulkdata['current'] * $parts_at_once ) );
 
 		$return['sql'] = $wpdb->prepare( $sql, $bulkdata['identifier'], $bulkdata['current'] * $parts_at_once );
 
-		if ( $lists ) {
+		if ( $raw_list_data ) {
 
-			foreach ( $lists as $list ) {
+			foreach ( $raw_list_data as $raw_list ) {
 
-				$list = unserialize( base64_decode( $list ) );
+				$raw_list = unserialize( base64_decode( $raw_list ) );
 
-				foreach ( $list as $line ) {
+				// each entry
+				foreach ( $raw_list as $line ) {
 
 					$list_array = array();
+					$list_ids = $option_list_ids;
 
 					if ( ! trim( $line ) ) {
 						$bulkdata['lines']--;
@@ -522,8 +525,7 @@ class MailsterManage {
 					@set_time_limit( 10 );
 
 					$data = explode( $bulkdata['separator'], $line );
-
-					$userlists = $lists;
+					$line_count = count( $data );
 
 					$insert = array(
 						'signup' => 0,
@@ -536,13 +538,14 @@ class MailsterManage {
 
 					$insert = array();
 
-					for ( $i = 0; $i < count( $data ); $i++ ) {
+					// each column
+					for ( $col = 0; $col < $line_count; $col++ ) {
 
-						$d = trim( $data[ $i ] );
-						switch ( $order[ $i ] ) {
+						$d = trim( $data[ $col ] );
+						switch ( $order[ $col ] ) {
 
 							case 'email':
-								$insert[ $order[ $i ] ] = strtolower( $d );
+								$insert[ $order[ $col ] ] = strtolower( $d );
 							break;
 							case '_signup':
 							case '_confirm':
@@ -555,7 +558,7 @@ class MailsterManage {
 							case '_ip_confirm':
 							case '_lang':
 							case '_status':
-								$insert[ substr( $order[ $i ], 1 ) ] = $d;
+								$insert[ substr( $order[ $col ], 1 ) ] = $d;
 							break;
 							case '_lists':
 
@@ -591,7 +594,7 @@ class MailsterManage {
 							case '-1':
 							break;
 							default:
-								$insert[ $order[ $i ] ] = $d;
+								$insert[ $order[ $col ] ] = $d;
 						}
 					}
 
@@ -641,16 +644,22 @@ class MailsterManage {
 
 						foreach ( $list_array as $list ) {
 
-							if ( empty( $list ) ) { continue;
+							if ( empty( $list ) ) {
+								continue;
 							}
 
-							$list_id = mailster( 'lists' )->get_by_name( $list, 'ID' );
+							if ( isset( $list_cache[ $list ] ) ) {
+								$list_id = $list_cache[ $list ];
+							} else {
+								$list_id = mailster( 'lists' )->get_by_name( $list, 'ID' );
+							}
 
 							if ( ! $list_id ) {
 								$list_id = mailster( 'lists' )->add( $list );
 								if ( is_wp_error( $list_id ) ) {
 									continue;
 								}
+								$list_cache[ $list ] = $list_id;
 							}
 
 							$list_ids[] = $list_id;
@@ -880,6 +889,9 @@ class MailsterManage {
 					case 'updated':
 						$val = __( 'Updated', 'mailster' );
 					break;
+					case 'rating':
+						$val = __( 'Rating', 'mailster' );
+					break;
 					default:
 						$val = ( isset( $custom_fields[ $col ] ) ) ? $custom_fields[ $col ]['name'] : '';
 				}
@@ -903,7 +915,7 @@ class MailsterManage {
 
 		$offset = $offset * $limit;
 
-		$field_names = array( 'hash', 'email', 'status', 'added', 'signup', 'confirm', 'updated', 'ip_signup', 'ip_confirm', 'lang' );
+		$field_names = array( 'hash', 'email', 'status', 'added', 'signup', 'confirm', 'updated', 'ip_signup', 'ip_confirm', 'lang', 'rating' );
 		$fields = array_keys( array_intersect_key( array_flip( $field_names ), array_flip( $d['column'] ) ) );
 
 		if ( isset( $d['nolists'] ) ) {
@@ -986,6 +998,9 @@ class MailsterManage {
 					case 'signup':
 					case 'confirm':
 						$val = ! empty( $user->{$col} ) ? ( $dateformat ? date( $dateformat, $user->{$col} ) : $user->{$col} ) : '';
+					break;
+					case 'rating':
+						$val = $user->rating;
 					break;
 					default:
 						$val = isset( $user->{$col} ) ? $user->{$col} : '';

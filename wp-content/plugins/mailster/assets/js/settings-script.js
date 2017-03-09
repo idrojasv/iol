@@ -147,7 +147,7 @@ jQuery(document).ready(function ($) {
 				_selected = _this.find(":selected"),
 				_url = _selected.data('url');
 
-			_this.next('.social-service-url-field').html('<label><span class="description">' + _url.replace('%s', '<input type="text" name="mailster_options[services][' + _this.val() + ']" value="" class="regular-text" placeholder="username">') + '</span></label>').find('input').focus();
+			_this.next('.social-service-url-field').html('<label><span class="description">' + _url.replace('%s', '<input type="text" name="mailster_options[services][' + _this.val() + ']" value="" class="regular-text">') + '</span></label>').find('input').focus();
 
 		})
 		.on('click', '.social-service-remove', function () {

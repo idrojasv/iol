@@ -1,5 +1,12 @@
 <?php
 
+
+// deprecated stuff
+if ( ! defined( 'MYMAIL_VERSION' ) ) {
+	define( 'MYMAIL_VERSION', MAILSTER_VERSION );
+}
+
+
 add_action( 'mymail_form_header', 'mymail_check_deprecated_forms' );
 function mymail_check_deprecated_forms() {
 

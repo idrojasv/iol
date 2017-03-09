@@ -83,7 +83,7 @@ class MailsterRegister {
 				<input type="text" class="widefat username" placeholder="<?php _e( 'Username', 'mailster' ); ?>" name="username" value="<?php echo esc_attr( $username ) ?>">
 				<input type="email" class="widefat email" placeholder="Email" name="email" value="<?php echo esc_attr( $useremail ) ?>">
 				<input type="submit" class="button button-hero button-primary" value="<?php esc_attr_e( 'Complete Registration', 'mailster' ) ?>">
-				<div class="howto"><label><input type="checkbox" name="newsletter"><?php esc_html_e( 'Send me the latest updates and exclusive promotions related to Mailster.', 'mailster' ); ?></label></div>
+				<div class="howto"><label>* <?php esc_html_e( 'By completing this registration you\'ll receive an invitation to join our exclusive email list which provides you with updates related to Mailster.', 'mailster' ); ?></label></div>
 			</form>
 			<form class="registration_complete">
 				<div class="registration_complete_check"></div>

@@ -481,7 +481,6 @@ if ( $old_version ) {
 		case '2.1.31':
 		case '2.1.32':
 		case '2.1.33':
-		case '2.1.xx':
 
 			$mailster_options['tags']['address'] = '';
 			$mailster_options['high_dpi'] = true;
@@ -493,6 +492,8 @@ if ( $old_version ) {
 			mailster_update_option( 'welcome', true );
 			$mailster_options['_flush_rewrite_rules'] = true;
 			update_option( 'mailster_license', $mailster_options['purchasecode'] );
+
+		case '2.2':
 
 		default:
 

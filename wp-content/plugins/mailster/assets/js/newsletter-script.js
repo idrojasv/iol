@@ -23,7 +23,6 @@ jQuery(document).ready(function ($) {
 		_currentundo = 0,
 		_clickbadgestats = $('#clickmap-stats'),
 		_mailsterdata = $('[name^="mailster_data"]'),
-		_colorpickers = $('.mailster-color'),
 		wpnonce = $('#mailster_nonce').val(),
 		iframeloaded = false,
 		timeout, refreshtimout, modules, optionbar, charts, editbar, animateDOM = $.browser.webkit ? _body : $('html'),
@@ -719,12 +718,18 @@ jQuery(document).ready(function ($) {
 					});
 
 				})
+				.on('change', 'select.condition-operator', function () {
+					$(this).prev('select.condition-field').trigger('change');
+				})
 				.on('change.datefields', 'select.condition-field', function () {
-					var _this = $(this);
+					var _this = $(this),
+						operator = $(this).next('select.condition-operator');
 					if (typeof jQuery.datepicker != 'object') return;
 
 					if (_this.parent().find('input').data("datepicker"))
 						_this.parent().find('input').datepicker('destroy');
+
+					if (/pattern/.test(operator.val())) return;
 
 					if ($.inArray(_this.val(), mailsterdata.datefields) !== -1) {
 
@@ -2436,16 +2441,15 @@ jQuery(document).ready(function ($) {
 
 					}
 
-					if (currenttext[contenttype] && current.elements.bodies.length) {
+					if (current.elements.bodies.length) {
 						var contentcount = current.elements.bodies.length,
-							content = currenttext[contenttype],
+							content = currenttext[contenttype] ? currenttext[contenttype] : '',
 							contentlength = content.length,
-							partlength = (insertmethod == 'static') ? Math.ceil(contentlength / contentcount) : contentlength;
+							partlength = ('static' == insertmethod) ? Math.ceil(contentlength / contentcount) : contentlength;
 
 						for (var i = 0; i < contentcount; i++) {
 							current.elements.bodies.eq(i).html(content.substring(i * partlength, i * partlength + partlength));
 						}
-
 					}
 
 					if (currenttext.image && current.elements.images.length) {
@@ -2700,6 +2704,7 @@ jQuery(document).ready(function ($) {
 								name: response.image.name
 							} : false
 						};
+
 						base.find('.editbarinfo').html(mailsterL10n.curr_selected + ': <span>' + currenttext.title + '</span>');
 
 					}

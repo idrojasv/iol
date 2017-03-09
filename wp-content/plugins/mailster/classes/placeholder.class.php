@@ -628,6 +628,9 @@ class MailsterPlaceholder {
 						}
 					}
 					if ( $this->apply_the_excerpt_filters ) {
+						if ( $length = apply_filters( 'mailster_excerpt_length', false ) ) {
+							$post->post_excerpt = wp_trim_words( $post->post_excerpt, $length );
+						}
 						$post->post_excerpt = apply_filters( 'the_excerpt', $post->post_excerpt );
 					}
 				} else {

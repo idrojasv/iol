@@ -140,7 +140,7 @@ if ( $editable ) :
 							} ?>
 							</optgroup>
 						</select>
-						<select name="mailster_data[list][conditions][<?php echo $i; ?>][operator]">
+						<select name="mailster_data[list][conditions][<?php echo $i; ?>][operator]" class="condition-operator">
 						<?php
 						foreach ( $operators as $value => $name ) {
 							echo '<option value="' . $value . '"' . selected( $condition['operator'], $value, false ) . '>' . $name . '</option>';

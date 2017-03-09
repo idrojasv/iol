@@ -37,7 +37,9 @@
 }
 
 .register_form_wrap .howto{
-	margin: 0.3em 0;
+	width: 66%;
+	margin: 0.3em auto;
+	line-height: 1.4em;
 }
 .register_form_wrap .registration_complete{
 	top: 20%;
@@ -93,9 +95,8 @@
 	opacity: 1;
 }
 
-
 .register_form_wrap form.register_form_2{
-	top:-10px;
+	top:-14px;
 }
 .register_form_wrap form.has-error input[type="text"], .register_form_wrap form.has-error input[type="email"]{
 	border-color:#F26B6B;

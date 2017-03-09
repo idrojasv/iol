@@ -94,14 +94,14 @@ if ( $found ) : ?>
 
 	<?php else : ?>
 
-			<div class="not-verified"><p><?php printf( __( 'Domain %s', 'mailster' ), '<strong>' . $dkim_domain . '</strong>' ) . ': ' . __( 'not verified', 'mailster' ); ?></p>
-				<p><?php printf( __( 'No or wrong record found for %s. Please adjust the name space records and add this line:', 'mailster' ), '<strong>' . $dkim_domain . '</strong>' ); ?>
-				</p>
-				<dl>
-					<dt><strong><?php echo $dkim_selector . '._domainkey.' . $dkim_domain  ?></strong> IN TXT</dt>
-						<dd><textarea class="widefat" rows="4" readonly><?php echo esc_textarea( $record ) ?><?php echo $record ?></textarea></dd>
-				</dl>
-			</div>
+		<div class="not-verified"><p><?php printf( __( 'Domain %s', 'mailster' ), '<strong>' . $dkim_domain . '</strong>' ) . ': ' . __( 'not verified', 'mailster' ); ?></p>
+			<p><?php printf( __( 'No or wrong record found for %s. Please adjust the name space records and add this line:', 'mailster' ), '<strong>' . $dkim_domain . '</strong>' ); ?>
+			</p>
+			<dl>
+				<dt><strong><?php echo $dkim_selector . '._domainkey.' . $dkim_domain  ?></strong> IN TXT</dt>
+					<dd><textarea class="widefat" rows="4" readonly><?php echo esc_textarea( $record ) ?></textarea></dd>
+			</dl>
+		</div>
 
 	<?php endif; ?>
 		</td>

@@ -1,0 +1,1592 @@
+# Translation of Stable (latest release) in Romanian
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-06-10 22:49:27+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#: captcha.php:1395
+msgid "twenty one"
+msgstr "douăzeci și unu"
+
+#: captcha.php:1396
+msgid "twenty two"
+msgstr "douăzeci și doi"
+
+#: captcha.php:1397
+msgid "twenty three"
+msgstr "douăzeci și trei"
+
+#: captcha.php:1398
+msgid "twenty four"
+msgstr "douăzeci și patru"
+
+#: captcha.php:1399
+msgid "twenty five"
+msgstr "douăzeci și cinci"
+
+#: captcha.php:1400
+msgid "twenty six"
+msgstr "douăzeci și șase"
+
+#: captcha.php:1401
+msgid "twenty seven"
+msgstr "douăzeci și șapte"
+
+#: captcha.php:1402
+msgid "twenty eight"
+msgstr "douăzeci și opt"
+
+#: captcha.php:1403
+msgid "twenty nine"
+msgstr "douăzeci și nouă"
+
+#: captcha.php:1406
+msgid "thirty one"
+msgstr "treizeci și unu"
+
+#: captcha.php:1407
+msgid "thirty two"
+msgstr "treizeci și doi"
+
+#: captcha.php:1408
+msgid "thirty three"
+msgstr "treizeci și trei"
+
+#: captcha.php:1409
+msgid "thirty four"
+msgstr "treizeci și patru"
+
+#: captcha.php:1410
+msgid "thirty five"
+msgstr "treizeci și cinci"
+
+#: captcha.php:1411
+msgid "thirty six"
+msgstr "treizeci și șase"
+
+#: captcha.php:1412
+msgid "thirty seven"
+msgstr "treizeci și șapte"
+
+#: captcha.php:1413
+msgid "thirty eight"
+msgstr "treizeci și opt"
+
+#: captcha.php:1414
+msgid "thirty nine"
+msgstr "treizeci și nouă"
+
+#: captcha.php:1417
+msgid "forty one"
+msgstr "patruzeci și unu"
+
+#: captcha.php:1418
+msgid "forty two"
+msgstr "patruzeci și doi"
+
+#: captcha.php:1419
+msgid "forty three"
+msgstr "patruzeci și trei"
+
+#: captcha.php:1420
+msgid "forty four"
+msgstr "patruzeci și patru"
+
+#: captcha.php:1421
+msgid "forty five"
+msgstr "patruzeci și cinci"
+
+#: captcha.php:1422
+msgid "forty six"
+msgstr "patruzeci și șase"
+
+#: captcha.php:1423
+msgid "forty seven"
+msgstr "patruzeci și șapte"
+
+#: captcha.php:1424
+msgid "forty eight"
+msgstr "patruzeci și opt"
+
+#: captcha.php:1425
+msgid "forty nine"
+msgstr "patruzeci și nouă"
+
+#: captcha.php:1428
+msgid "fifty one"
+msgstr "cincizeci și unu"
+
+#: captcha.php:1429
+msgid "fifty two"
+msgstr "cincizeci și doi"
+
+#: captcha.php:1430
+msgid "fifty three"
+msgstr "cincizeci și trei"
+
+#: captcha.php:1431
+msgid "fifty four"
+msgstr "cincizeci și patru"
+
+#: captcha.php:1432
+msgid "fifty five"
+msgstr "cincizeci și cinci"
+
+#: captcha.php:1433
+msgid "fifty six"
+msgstr "cincizeci și șase"
+
+#: captcha.php:1434
+msgid "fifty seven"
+msgstr "cincizeci și șapte"
+
+#: captcha.php:1435
+msgid "fifty eight"
+msgstr "cincizeci și opt"
+
+#: captcha.php:1436
+msgid "fifty nine"
+msgstr "cincizeci și nouă"
+
+#: captcha.php:1439
+msgid "sixty one"
+msgstr "șaizeci și unu"
+
+#: captcha.php:1440
+msgid "sixty two"
+msgstr "șaizeci și doi"
+
+#: captcha.php:1441
+msgid "sixty three"
+msgstr "șaizeci și trei"
+
+#: captcha.php:1442
+msgid "sixty four"
+msgstr "șaizeci și patru"
+
+#: captcha.php:1443
+msgid "sixty five"
+msgstr "șaizeci și cinci"
+
+#: captcha.php:1444
+msgid "sixty six"
+msgstr "șaizeci și șase"
+
+#: captcha.php:1445
+msgid "sixty seven"
+msgstr "șaizeci și șapte"
+
+#: captcha.php:1446
+msgid "sixty eight"
+msgstr "șaizeci și opt"
+
+#: captcha.php:1447
+msgid "sixty nine"
+msgstr "șaizeci și nouă"
+
+#: captcha.php:1450
+msgid "seventy one"
+msgstr "șaptezeci și unu"
+
+#: captcha.php:1451
+msgid "seventy two"
+msgstr "șaptezeci și doi"
+
+#: captcha.php:1452
+msgid "seventy three"
+msgstr "șaptezeci și trei"
+
+#: captcha.php:1453
+msgid "seventy four"
+msgstr "șaptezeci și patru"
+
+#: captcha.php:1454
+msgid "seventy five"
+msgstr "șaptezeci și cinci"
+
+#: captcha.php:1455
+msgid "seventy six"
+msgstr "șaptezeci și șase"
+
+#: captcha.php:1456
+msgid "seventy seven"
+msgstr "șaptezeci și șapte"
+
+#: captcha.php:1457
+msgid "seventy eight"
+msgstr "șaptezeci și opt"
+
+#: captcha.php:1458
+msgid "seventy nine"
+msgstr "șaptezeci și nouă"
+
+#: captcha.php:1461
+msgid "eighty one"
+msgstr "optzeci și unu"
+
+#: captcha.php:1462
+msgid "eighty two"
+msgstr "optzeci și doi"
+
+#: captcha.php:1463
+msgid "eighty three"
+msgstr "optzeci și trei"
+
+#: captcha.php:1464
+msgid "eighty four"
+msgstr "optzeci și patru"
+
+#: captcha.php:1465
+msgid "eighty five"
+msgstr "optzeci și cinci"
+
+#: captcha.php:1466
+msgid "eighty six"
+msgstr "optzeci și șase"
+
+#: captcha.php:1467
+msgid "eighty seven"
+msgstr "optzeci și șapte"
+
+#: captcha.php:1468
+msgid "eighty eight"
+msgstr "optzeci și opt"
+
+#: captcha.php:1469
+msgid "eighty nine"
+msgstr "optzeci și nouă"
+
+#: captcha.php:1472
+msgid "ninety one"
+msgstr "nouăzeci și unu"
+
+#: captcha.php:1473
+msgid "ninety two"
+msgstr "nouăzeci și doi"
+
+#: captcha.php:1474
+msgid "ninety three"
+msgstr "nouăzeci și trei"
+
+#: captcha.php:1475
+msgid "ninety four"
+msgstr "nouăzeci și patru"
+
+#: captcha.php:1476
+msgid "ninety five"
+msgstr "nouăzeci și cinci"
+
+#: captcha.php:1477
+msgid "ninety six"
+msgstr "nouăzeci și șase"
+
+#: captcha.php:1478
+msgid "ninety seven"
+msgstr "nouăzeci și șapte"
+
+#: captcha.php:1479
+msgid "ninety eight"
+msgstr "nouăzeci și opt"
+
+#: captcha.php:1480
+msgid "ninety nine"
+msgstr "nouăzeci și nouă"
+
+#: includes/pro_banners.php:42
+msgid "Buddypress Registration form"
+msgstr "Formular de înregistrare Buddypress"
+
+#: includes/pro_banners.php:43
+msgid "Buddypress Comments form"
+msgstr "Formular de comentarii Buddypress"
+
+#: includes/pro_banners.php:44
+msgid "Buddypress \"Create a Group\" form"
+msgstr "Formular „Crează un grup” Buddypress"
+
+#: includes/pro_banners.php:78
+msgid "Allowed formats"
+msgstr "Formate permise"
+
+#: includes/whitelist.php:328
+msgid "%s IP was deleted successfully"
+msgid_plural "%s IPs were deleted successfully"
+msgstr[0] "%s IP a fost șters cu succes"
+msgstr[1] "%s IP-uri au fost șterse cu succes"
+msgstr[2] "%s de IP-uri au fost șterse cu succes"
+
+#: bws_menu/bws_functions.php:1210
+msgid "Not enough permissions to create or update the file"
+msgstr "Nu sunt drepturi suficiente pentru a crea sau actualiza fișierul"
+
+#: bws_menu/bws_functions.php:1232
+msgid "These styles will be added to the header on all pages of your site."
+msgstr "Aceste stiluri vor fi adăugate la antetul pe toate paginile sitului tău."
+
+#: bws_menu/bws_functions.php:1235
+msgid "Editing"
+msgstr "Editez"
+
+#: bws_menu/bws_functions.php:1237
+msgid "Browsing"
+msgstr "Răsfoiesc"
+
+#: bws_menu/bws_functions.php:1245
+msgid "Learn more about CSS"
+msgstr "Află mai multe despre CSS"
+
+#: bws_menu/bws_functions.php:1253
+msgid "You need to make this file writable before you can save your changes. See %s the Codex %s for more information."
+msgstr "E nevoie să faci acest fișier editabil înainte de a-ți putea salva modificările. Vezi %s Codexul %s pentru mai multe informații."
+
+#: captcha.php:464
+msgid "Custom code"
+msgstr "Cod personalizat"
+
+#: bws_menu/bws_functions.php:1165
+msgid "You do not have sufficient permissions to edit plugins for this site."
+msgstr "Nu ai drepturi suficiente pentru a edita module pe acest sit."
+
+#: bws_menu/bws_functions.php:1208
+msgid "File edited successfully."
+msgstr "Fișier editat cu succes."
+
+#: bws_menu/bws_functions.php:750
+msgid "Thank you for choosing"
+msgstr "Mulțumesc pentru alegere"
+
+#: bws_menu/bws_functions.php:751
+msgid "If you have a feature, suggestion or idea you'd like to see in the plugin, we'd love to hear about it!"
+msgstr "Dacă ai o funcționalitate, o sugestie sau o idee pe care vrei s-o vezi în modul, ne-ar plăcea să aflăm despre ea!"
+
+#: bws_menu/bws_functions.php:752
+msgid "Suggest a Feature"
+msgstr "Sugerează o funcționalitate"
+
+#: includes/whitelist.php:310
+msgid "IP added to the whitelist successfully"
+msgstr "IP adăugat în lista albă cu succes"
+
+#: includes/whitelist.php:314
+msgid "IP is already in the whitelist"
+msgstr "IP-ul este deja în lista albă"
+
+#: includes/whitelist.php:368
+msgid "IP-address(es) successfully copied to the whitelist"
+msgstr "Adresa/adresele IP copiate cu succes în lista albă"
+
+#: includes/whitelist.php:393
+msgid "use"
+msgstr "folosește"
+
+#: includes/whitelist.php:393
+msgid "whitelist of"
+msgstr "lista albă a"
+
+#: includes/whitelist.php:401 includes/whitelist.php:409
+msgid "use whitelist of %s"
+msgstr "folosește lista albă a %s"
+
+#: includes/whitelist.php:402
+msgid "you should %s to use this functionality"
+msgstr "ți-ar trebui %s pentru a folosi această funcționalitate"
+
+#: includes/whitelist.php:410
+msgid "you should instal %s to use this functionality"
+msgstr "ar trebui să instalezi %s pentru a folosi această funcționalitate"
+
+#: captcha.php:631
+msgid "Notification messages"
+msgstr "Mesaje de notificare"
+
+#: captcha.php:636
+msgid "If time limit is exhausted"
+msgstr "Dacă limita de timp este epuizată"
+
+#: captcha.php:637
+msgid "Info"
+msgstr "Info"
+
+#: captcha.php:638
+msgid "If the user IP is added to the whitelist (this message will be displayed instead of CAPTCHA)."
+msgstr "Dacă IP-ul utilizatorului este adăugat în lista albă (acest mesaj va fi afișat în locul CAPTCHA)."
+
+#: captcha.php:1971
+msgid "Try New %s: with Pictures Now!"
+msgstr "Încearcă noi %s: cu Pictures Now!"
+
+#: includes/package_loader.php:33 includes/package_loader.php:145
+msgid "Can not load images in to the \"uploads\" folder. Please, check your permissions."
+msgstr "Nu se pot încărca imagini în dosarul \"încărcări\". Te rog verifică-ți permisiunile."
+
+#: includes/package_loader.php:45
+msgid "File packages.txt not found. Package not saved."
+msgstr "Fișierul packages.text negăsit. Pachet nesalvat."
+
+#: includes/package_loader.php:51
+msgid "Can not read data from packages.txt. Packages not saved."
+msgstr "Nu se pot citi date din packages.txt. Pachete nesalvate."
+
+#: includes/package_loader.php:173
+msgid "Package successfully loaded."
+msgstr "Pachet încărcat cu succes."
+
+#: includes/pro_banners.php:17
+msgid "This options is available in Pro version of plugin"
+msgstr "Această opțiune este disponibilă în versiunea Pro a modulului"
+
+#: includes/pro_banners.php:62
+msgid "Use several packages at the same time"
+msgstr "Folosește mai multe pachete simultan"
+
+#: includes/pro_banners.php:65
+msgid "If this option is enabled, CAPTCHA will be use pictures from different packages at the same time"
+msgstr "Dacă această opțiune este activată, CAPTCHA va folosi imagini din pachete diferite simultan"
+
+#: includes/whitelist.php:82
+msgid "With this option, CAPTCHA will not be displayed for IP-addresses from the whitelist of %s"
+msgstr "Cu această opțiune, CAPTCHA nu va afișa adresele IP din lista albă a %s"
+
+#: includes/whitelist.php:96
+msgid "Load IP to whitelist"
+msgstr "Încarcă IP în lista albă"
+
+#: includes/whitelist.php:99
+msgid "By click on this button, all IP-addresses from the whitelist of %s will be loaded to the whitelist of %s"
+msgstr "Dând clic pe acest buton, toate adresele IP din lista albă a %s vor fi încărcate în lista albă a %s"
+
+#: includes/whitelist.php:108
+msgid "Save changes"
+msgstr "Salvează modificările"
+
+#: captcha.php:558
+msgid "Show \"Reload\" button"
+msgstr "Arată butonul „Reîncărcare”"
+
+#: captcha.php:564
+msgid "Arithmetic actions"
+msgstr "Operații aritmetice"
+
+#: captcha.php:579 captcha.php:581
+msgid "Complexity"
+msgstr "Complexitate"
+
+#: captcha.php:596
+msgid "Enable image packages"
+msgstr "Activează pachete de imagine"
+
+#: captcha.php:606
+msgid "Enlarge images on mouseover"
+msgstr "Mărește imaginile la trecerea cu mausul"
+
+#: captcha.php:616
+msgid "Enable time limit"
+msgstr "Activează limită de timp"
+
+#: captcha.php:622
+msgid "Set time limit"
+msgstr "Setează limită de timp"
+
+#: captcha.php:625
+msgid "seconds"
+msgstr "secunde"
+
+#: captcha.php:548
+msgid "Title"
+msgstr "Titlu"
+
+#: captcha.php:485
+msgid "WordPress default"
+msgstr "WordPress implicit"
+
+#: captcha.php:491
+msgid "This option is available only for main blog"
+msgstr "Această opțiune este disponibilă numai pentru blogul principal"
+
+#: captcha.php:513 captcha.php:519
+msgid "You should"
+msgstr "Ar trebui"
+
+#: captcha.php:513 includes/whitelist.php:402
+msgid "activate"
+msgstr "activare"
+
+#: captcha.php:513
+msgid "for network"
+msgstr "pentru rețea"
+
+#: captcha.php:513 captcha.php:521
+msgid "to use this functionality"
+msgstr "pentru a folosi această funcționalitate"
+
+#: captcha.php:400
+msgid "Please select one item in the block Enable image packages"
+msgstr "Te rog selectează un element în blocul Activează pachete de imagine"
+
+#: captcha.php:461
+msgid "Basic"
+msgstr "De bază"
+
+#: captcha.php:462
+msgid "Advanced"
+msgstr "Avansat"
+
+#: bws_menu/bws_functions.php:1153
+msgid "Video Instructions"
+msgstr "Instrucțiuni video"
+
+#: bws_menu/bws_functions.php:1154
+msgid "Submit a Request"
+msgstr "Trimite o solicitare"
+
+#: captcha.php:186
+msgid "Time limit is exhausted. Please enter CAPTCHA value again."
+msgstr "Limita de timp este epuizată. Te rog introdu din nou valoarea CAPTCHA."
+
+#: captcha.php:333
+msgid "Images"
+msgstr "Imagini"
+
+#: bws_menu/bws_functions.php:1152
+msgid "Documentation"
+msgstr "Documentație"
+
+#: bws_menu/bws_functions.php:205
+msgid "Check premium options on the plugin settings page!"
+msgstr "Verifică opțiunile premium din pagina setări a modulului!"
+
+#: bws_menu/bws_functions.php:390
+msgid "Show Pro features"
+msgstr "Arată funcționalități Pro"
+
+#: bws_menu/bws_functions.php:786
+msgid "You can always look at premium options by clicking on the \"Show Pro features\" in the \"Go PRO\" tab"
+msgstr "Poți să vezi mereu opțiunile premium, dând clic pe „Arată funcționalități Pro” în fila „Treci la PRO”"
+
+#: bws_menu/bws_functions.php:886
+msgid "Add shortcode"
+msgstr "Adaugă scurtcod"
+
+#: bws_menu/bws_functions.php:886
+msgid "Add BestWebSoft plugins' shortcodes using this button."
+msgstr "Adaugă scurtcoduri din module BestWebSoft folosind acest buton."
+
+#: bws_menu/bws_functions.php:1140
+msgid "Visit Help Center"
+msgstr "Vizitează centrul pentru ajutor"
+
+#: bws_menu/bws_functions.php:1151
+msgid "For more information:"
+msgstr "Pentru mai multe informații:"
+
+#: bws_menu/bws_functions.php:768
+msgid "The plugin's settings have been changed."
+msgstr "Setările modulului au fost schimbate."
+
+#: bws_menu/bws_functions.php:866
+msgid "Add BWS Plugins Shortcode"
+msgstr "Adaugă scurtcod module BWS"
+
+#: bws_menu/bws_functions.php:1090
+msgid "Plugin"
+msgstr "Modul"
+
+#: bws_menu/bws_functions.php:1099
+msgid "Shortcode settings"
+msgstr "Setări scurtcod"
+
+#: bws_menu/bws_functions.php:1104
+msgid "The shortcode will be inserted"
+msgstr "Scurtcodul va fi inserat"
+
+#: bws_menu/bws_functions.php:1109
+msgid "Insert"
+msgstr "Inserează"
+
+#: captcha.php:187
+msgid "You are in the white list"
+msgstr "Ești în lista albă"
+
+#: captcha.php:520
+msgid "download"
+msgstr "descarcă"
+
+#: includes/whitelist.php:125
+msgid "My IP"
+msgstr "IP-ul meu"
+
+#: includes/whitelist.php:180
+msgid "Date added"
+msgstr "Dată adăugată"
+
+#: bws_menu/bws_functions.php:91
+msgid "or higher! We do not guarantee that our plugin will work correctly. Please upgrade to WordPress latest version."
+msgstr "sau superioară! Noi nu garantam că modulul nostru va funcționa corect. Te rog actualizează la ultima versiune WordPress."
+
+#: bws_menu/bws_functions.php:687
+msgid "Thank you for installing"
+msgstr "Îți mulțumim pentru instalare"
+
+#: bws_menu/bws_functions.php:688
+msgid "Let's get started"
+msgstr "Să începem"
+
+#: bws_menu/bws_functions.php:689
+msgid "Configure Settings"
+msgstr "Configurează setările"
+
+#: bws_menu/bws_functions.php:692
+msgid "Add New"
+msgstr "Adaugă nou"
+
+#: bws_menu/bws_functions.php:143 bws_menu/bws_functions.php:652
+#: bws_menu/bws_functions.php:696 bws_menu/bws_functions.php:755
+msgid "Close notice"
+msgstr "Închide anunț"
+
+#: bws_menu/bws_menu.php:936
+msgid "Environment"
+msgstr "Mediu înconjurător"
+
+#: bws_menu/bws_menu.php:947
+msgid "Active Plugins"
+msgstr "Module active"
+
+#: bws_menu/bws_menu.php:960
+msgid "Inactive Plugins"
+msgstr "Module inactive"
+
+#: bws_menu/bws_menu.php:976
+msgid "Send to support"
+msgstr "Trimite către suport"
+
+#: bws_menu/bws_menu.php:983
+msgid "Send to custom email &#187;"
+msgstr "Trimite la email personalizat &#187;"
+
+#: captcha.php:33 captcha.php:456
+msgid "Captcha Settings"
+msgstr "Setări Captcha"
+
+#: captcha.php:33
+msgid "Captcha"
+msgstr "Captcha"
+
+#: captcha.php:184
+msgid "Please enter a CAPTCHA value."
+msgstr "Te rog introdu o valoare CAPTCHA."
+
+#: captcha.php:185
+msgid "Please enter a valid CAPTCHA value."
+msgstr "Te rog introdu o valoare CAPTCHA validă."
+
+#: captcha.php:314
+msgid "Login form"
+msgstr "Formular de autentificare"
+
+#: captcha.php:315
+msgid "Registration form"
+msgstr "Formular de înregistrare"
+
+#: captcha.php:316
+msgid "Reset Password form"
+msgstr "Formular resetare parolă"
+
+#: captcha.php:317
+msgid "Comments form"
+msgstr "Formular de comentarii"
+
+#: captcha.php:320
+msgid "in Comments form for registered users"
+msgstr "în Formular de comentarii pentru utilizatorii înregistrați"
+
+#: captcha.php:324
+msgid "Plus (&#43;)"
+msgstr "Plus (&#43;)"
+
+#: captcha.php:324
+msgid "Plus"
+msgstr "Plus"
+
+#: captcha.php:325
+msgid "Minus (&minus;)"
+msgstr "Minus (&minus;)"
+
+#: captcha.php:325
+msgid "Minus"
+msgstr "Minus"
+
+#: captcha.php:326
+msgid "Multiplication (&times;)"
+msgstr "Multiplicare (& ori;)"
+
+#: captcha.php:326
+msgid "Multiply"
+msgstr "Multiplică "
+
+#: captcha.php:331
+msgid "Numbers"
+msgstr "Numere"
+
+#: captcha.php:332
+msgid "Words"
+msgstr "Cuvinte"
+
+#: captcha.php:394
+msgid "Please select one item in the block Arithmetic and Complexity for CAPTCHA"
+msgstr "Te rog selectează un element în blocul Aritmetică și complexitate pentru CAPTCHA"
+
+#: captcha.php:429
+msgid "Settings saved."
+msgstr "Setări salvate."
+
+#: captcha.php:441
+msgid "All plugin settings were restored."
+msgstr "Toate setările modulului au fost restaurate."
+
+#: captcha.php:458
+msgid "How to Use Step-by-step Instruction"
+msgstr "Cum se folosesc instrucțiunile pas-cu-pas"
+
+#: captcha.php:463
+msgid "Whitelist"
+msgstr "Listă albă"
+
+#: bws_menu/bws_functions.php:1145 captcha.php:1938
+msgid "FAQ"
+msgstr "Întrebări frecvente"
+
+#: captcha.php:465
+msgid "Go PRO"
+msgstr "Treci la PRO"
+
+#: bws_menu/bws_functions.php:768
+msgid "Notice"
+msgstr "Observație"
+
+#: captcha.php:481 captcha.php:484 includes/pro_banners.php:36
+#: includes/pro_banners.php:39
+msgid "Enable CAPTCHA for"
+msgstr "Activează CAPTCHA pentru"
+
+#: captcha.php:567
+msgid "Arithmetic actions for CAPTCHA"
+msgstr "Operații aritmetice pentru CAPTCHA"
+
+#: captcha.php:533
+msgid "If you would like to add Captcha to a custom form, please see"
+msgstr "Dacă vrei să adaugi Captcha la un formular personalizat, te rog vezi"
+
+#: includes/pro_banners.php:51
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Dacă actualizezi la versiune Pro toate setările tale vor fi salvate."
+
+#: includes/pro_banners.php:24
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Deblochează opțiunile premium prin actualizare la versiunea Pro"
+
+#: captcha.php:541
+msgid "Hide CAPTCHA"
+msgstr "Ascunde CAPTCHA"
+
+#: captcha.php:552
+msgid "Required symbol"
+msgstr "Simbol necesar"
+
+#: captcha.php:634
+msgid "If CAPTCHA field is empty"
+msgstr "Dacă câmpul CAPTCHA este gol"
+
+#: captcha.php:635
+msgid "If CAPTCHA is incorrect"
+msgstr "Dacă CAPTCHA este incorect"
+
+#: bws_menu/bws_functions.php:769 bws_menu/bws_functions.php:1250
+#: captcha.php:645
+msgid "Save Changes"
+msgstr "Salvează modificările"
+
+#: captcha.php:785 captcha.php:792 captcha.php:807 captcha.php:809
+#: captcha.php:817 captcha.php:1021 captcha.php:1029 captcha.php:1045
+#: captcha.php:1049 captcha.php:1058 captcha.php:1082 captcha.php:1092
+#: captcha.php:1110 captcha.php:1113 captcha.php:1121
+msgid "ERROR"
+msgstr "EROARE"
+
+#: captcha.php:633 captcha.php:928 captcha.php:934 captcha.php:1135
+#: captcha.php:1151
+msgid "Error"
+msgstr "Eroare"
+
+#: captcha.php:928 captcha.php:934 captcha.php:1135 captcha.php:1151
+msgid "Click the BACK button on your browser, and try again."
+msgstr "Dă clic pe butonul ÎNAPOI din navigatorul tău și încearcă din nou."
+
+#: captcha.php:1372
+msgid "zero"
+msgstr "zero"
+
+#: captcha.php:1373 captcha.php:1826
+msgid "one"
+msgstr "unu"
+
+#: captcha.php:1374
+msgid "two"
+msgstr "doi"
+
+#: captcha.php:1375
+msgid "three"
+msgstr "trei"
+
+#: captcha.php:1376
+msgid "four"
+msgstr "patru"
+
+#: captcha.php:1377
+msgid "five"
+msgstr "cinci"
+
+#: captcha.php:1378 captcha.php:1826
+msgid "six"
+msgstr "șase"
+
+#: captcha.php:1379 captcha.php:1814 captcha.php:1820
+msgid "seven"
+msgstr "șapte"
+
+#: captcha.php:1380 captcha.php:1817
+msgid "eight"
+msgstr "opt"
+
+#: captcha.php:1381
+msgid "nine"
+msgstr "nouă"
+
+#: captcha.php:1384
+msgid "eleven"
+msgstr "unsprezece"
+
+#: captcha.php:1385
+msgid "twelve"
+msgstr "doisprezece"
+
+#: captcha.php:1386
+msgid "thirteen"
+msgstr "treisprezece"
+
+#: captcha.php:1387
+msgid "fourteen"
+msgstr "paisprezece"
+
+#: captcha.php:1388
+msgid "fifteen"
+msgstr "cincisprezece"
+
+#: captcha.php:1389
+msgid "sixteen"
+msgstr "șaisprezece"
+
+#: captcha.php:1390
+msgid "seventeen"
+msgstr "șaptesprezece"
+
+#: captcha.php:1391
+msgid "eighteen"
+msgstr "optsprezece"
+
+#: captcha.php:1392
+msgid "nineteen"
+msgstr "nouăasprezece"
+
+#: captcha.php:1383
+msgid "ten"
+msgstr "zece"
+
+#: captcha.php:1394
+msgid "twenty"
+msgstr "douăzeci"
+
+#: captcha.php:1405
+msgid "thirty"
+msgstr "treizeci"
+
+#: captcha.php:1416
+msgid "forty"
+msgstr "patruzeci"
+
+#: captcha.php:1427
+msgid "fifty"
+msgstr "cincizeci"
+
+#: captcha.php:1438
+msgid "sixty"
+msgstr "șaizeci"
+
+#: captcha.php:1449
+msgid "seventy"
+msgstr "șaptezeci"
+
+#: captcha.php:1460
+msgid "eighty"
+msgstr "optzeci"
+
+#: captcha.php:1471
+msgid "ninety"
+msgstr "nouăzeci"
+
+#: captcha.php:1546
+msgid "Encryption password is not set"
+msgstr "Parola de criptare nu este setată"
+
+#: captcha.php:1566
+msgid "Decryption password is not set"
+msgstr "Parola de decriptare nu este setată"
+
+#: captcha.php:1939
+msgid "Support"
+msgstr "Suport"
+
+#: includes/whitelist.php:70
+msgid "For IP addresses from the whitelist CAPTCHA will not be displayed"
+msgstr "Pentru adresele IP din lista albă CAPTCHA nu va fi afișată"
+
+#: includes/whitelist.php:93 includes/whitelist.php:129
+msgid "Add IP to whitelist"
+msgstr "Adaugă IP în lista albă"
+
+#: includes/whitelist.php:133
+msgid "Allowed formats:"
+msgstr "Formate permise:"
+
+#: includes/whitelist.php:134
+msgid "Allowed diapason:"
+msgstr "Diapazon permis:"
+
+#: includes/pro_banners.php:76
+msgid "Reason"
+msgstr "Motiv"
+
+#: includes/pro_banners.php:79
+msgid "Allowed separators for IPs: a comma"
+msgstr "Separatori permiși pentru IP-uri: o virgulă"
+
+#: includes/pro_banners.php:79 includes/pro_banners.php:80
+msgid "semicolon"
+msgstr "punct și virgulă"
+
+#: includes/pro_banners.php:79
+msgid "ordinary space, tab, new line or carriage return"
+msgstr "spațiul obișnuit, filă, linie nouă sau deplasare la început de rând"
+
+#: includes/pro_banners.php:80
+msgid "Allowed separators for reasons: a comma"
+msgstr "Separatori permiși pentru motive: o virgulă"
+
+#: includes/pro_banners.php:80
+msgid "tab, new line or carriage return"
+msgstr "filă, linie nouă sau deplasare la început de rând"
+
+#: includes/whitelist.php:140
+msgid "Search IP"
+msgstr "Căutare IP"
+
+#: includes/whitelist.php:172
+msgid "Nothing found"
+msgstr "N-am găsit nimic"
+
+#: includes/whitelist.php:172
+msgid "No IP in whitelist"
+msgstr "Niciun IP în lista albă"
+
+#: includes/whitelist.php:179
+msgid "IP address"
+msgstr "Adresă IP"
+
+#: includes/whitelist.php:229 includes/whitelist.php:238
+msgid "Remove from whitelist"
+msgstr "Înlătură din lista albă"
+
+#: includes/whitelist.php:312 includes/whitelist.php:334
+#: includes/whitelist.php:346
+msgid "Some errors occured"
+msgstr "Au apărut câteva erori"
+
+#: includes/whitelist.php:317
+msgid "Invalid IP. See allowed formats"
+msgstr "IP invalid. Vezi formate permise"
+
+#: includes/whitelist.php:340
+msgid "One IP was deleted successfully"
+msgstr "Un IP a fost șters cu succes"
+
+#: includes/whitelist.php:349
+msgid "You have not entered any value"
+msgstr "Nu ai introdus nicio valoare"
+
+#: includes/whitelist.php:352
+msgid "You have not entered any value in to the search form"
+msgstr "Nu ai introdus nicio valoare în formularul de căutare"
+
+#: includes/whitelist.php:354
+msgid "Search results for"
+msgstr "Rezultatele căutării după"
+
+#. Plugin Name of the plugin/theme
+msgid "Captcha by BestWebSoft"
+msgstr "Captcha de BestWebSoft"
+
+#. Plugin URI of the plugin/theme
+msgid "http://bestwebsoft.com/products/"
+msgstr "http://bestwebsoft.com/products/"
+
+#. Description of the plugin/theme
+msgid "Plugin Captcha intended to prove that the visitor is a human being and not a spam robot. Plugin asks the visitor to answer a math question."
+msgstr "Modulul Captcha intenționează să demonstreze că vizitatorul este o ființă umană și nu un robot de spam. Modulul cere vizitatorului să răspundă la o întrebare de matematică."
+
+#. Author of the plugin/theme
+msgid "BestWebSoft"
+msgstr "BestWebSoft"
+
+#. Author URI of the plugin/theme
+msgid "http://bestwebsoft.com/"
+msgstr "http://bestwebsoft.com/"
+
+#: bws_menu/bws_functions.php:65 bws_menu/bws_functions.php:89
+msgid "requires"
+msgstr "necesită"
+
+#: bws_menu/bws_functions.php:67
+msgid "or higher, that is why it has been deactivated! Please upgrade WordPress and try again."
+msgstr "sau superioară, de aceea a fost dezactivat! Te rog actualizează WordPress și încearcă din nou."
+
+#: bws_menu/bws_functions.php:68
+msgid "Back to the WordPress"
+msgstr "Înapoi la WordPress"
+
+#: bws_menu/bws_functions.php:70
+msgid "Plugins page"
+msgstr "Pagină module"
+
+#: bws_menu/bws_functions.php:148
+msgid "It’s time to upgrade your"
+msgstr "Este timpul să-ți actualizezi"
+
+#: bws_menu/bws_functions.php:148
+msgid "to"
+msgstr "la"
+
+#: bws_menu/bws_functions.php:148
+msgid "version!"
+msgstr "versiune!"
+
+#: bws_menu/bws_functions.php:149
+msgid "Extend standard plugin functionality with new great options."
+msgstr "Extinde funcționalitatea standard a modulului cu noi opțiuni grozave"
+
+#: bws_menu/bws_functions.php:152 bws_menu/bws_functions.php:593
+#: bws_menu/bws_menu.php:917 includes/pro_banners.php:25
+msgid "Learn More"
+msgstr "Află mai mult"
+
+#: bws_menu/bws_functions.php:169
+msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+msgstr "Dacă îți place modulul nostru, te rog oferă-i 5 stele pe WordPress"
+
+#: bws_menu/bws_functions.php:170
+msgid "Rate the plugin"
+msgstr "Evaluează modulul"
+
+#: bws_menu/bws_functions.php:173
+msgid "If there is something wrong about it, please contact us"
+msgstr "Dacă este ceva în neregulă cu el, te rog contactează-ne"
+
+#: bws_menu/bws_functions.php:212 bws_menu/bws_functions.php:248
+msgid "Wrong license key"
+msgstr "Cheie de licență greșită"
+
+#: bws_menu/bws_functions.php:242 bws_menu/bws_functions.php:506
+#: bws_menu/bws_functions.php:557
+msgid "Something went wrong. Please try again later. If the error appears again, please contact us"
+msgstr "Ceva n-a mers bine. Te rog încearcă din nou. Dacă eroarea apare din nou, te rog contactează-ne"
+
+#: bws_menu/bws_functions.php:242 bws_menu/bws_functions.php:506
+#: bws_menu/bws_functions.php:557
+msgid "We are sorry for inconvenience."
+msgstr "Ne pare rău pentru inconvenient."
+
+#: bws_menu/bws_functions.php:250
+msgid "This license key is bind to another site"
+msgstr "Această cheie de licență se leagă la un alt sit"
+
+#: bws_menu/bws_functions.php:252 bws_menu/bws_functions.php:416
+msgid "Unfortunately, you have exceeded the number of available tries per day. Please, upload the plugin manually."
+msgstr "Din păcate, ai depășit numărul de încercări pe zi disponibile. Te rog încarcă manual modulul."
+
+#: bws_menu/bws_functions.php:254
+msgid "Unfortunately, Your license has expired. To continue getting top-priority support and plugin updates you should extend it in your"
+msgstr "Din păcate, licența ta a expirat. Pentru a obține în continuare cel mai bun suport prioritar și actualizări ale modulului ar trebui s-o extinzi în"
+
+#: bws_menu/bws_functions.php:256
+msgid "Unfortunately, the Pro licence was already installed to this domain. The Pro Trial license can be installed only once."
+msgstr "Din păcate, licența Pro a fost deja instalată pentru acest domeniu. Licența de încercare Pro poate fi instalată numai o singură dată."
+
+#: bws_menu/bws_functions.php:277 bws_menu/bws_functions.php:299
+#: bws_menu/bws_functions.php:321
+msgid "Failed to download the zip archive. Please, upload the plugin manually"
+msgstr "Descărcarea arhivei zip a eșuat. Te rog încarcă manual modulul."
+
+#: bws_menu/bws_functions.php:289
+msgid "Failed to open the zip archive. Please, upload the plugin manually"
+msgstr "Deschiderea arhivei zip a eșuat. Te rog încarcă manual modulul."
+
+#: bws_menu/bws_functions.php:295
+msgid "Your server does not support either ZipArchive or Phar. Please, upload the plugin manually"
+msgstr "Serverul tău nu suportă ZipArchive sau Phar. Te rog încarcă manual modulul."
+
+#: bws_menu/bws_functions.php:302
+msgid "UploadDir is not writable. Please, upload the plugin manually"
+msgstr "UploadDir nu este editabil. Te rog încarcă manual modulul."
+
+#: bws_menu/bws_functions.php:325
+msgid "Something went wrong. Try again later or upload the plugin manually. We are sorry for inconvenience."
+msgstr "Ceva n-a mers bine. Încearcă din nou mai târziu sau încarcă manual modulul. Ne pare rău pentru inconvenient."
+
+#: bws_menu/bws_functions.php:350
+msgid "Please, enter Your license key"
+msgstr "Te rog să-ți introduci cheia de licență"
+
+#: bws_menu/bws_functions.php:380
+msgid "Congratulations! The Pro version of the plugin is successfully download and activated."
+msgstr "Felicitări! Versiunea Pro a modulului este descărcată și activată cu succes."
+
+#: bws_menu/bws_functions.php:382 bws_menu/bws_functions.php:473
+msgid "Please, go to"
+msgstr "Te rog mergi la"
+
+#: bws_menu/bws_functions.php:382 bws_menu/bws_functions.php:473
+msgid "the setting page"
+msgstr "pagina setări"
+
+#: bws_menu/bws_functions.php:383 bws_menu/bws_functions.php:474
+msgid "You will be redirected automatically in 5 seconds."
+msgstr "Vei fi redirecționat automat în 5 secunde."
+
+#: bws_menu/bws_functions.php:397
+msgid "You can download and activate"
+msgstr "Poți descărca și activa"
+
+#: bws_menu/bws_functions.php:399
+msgid "version of this plugin by entering Your license key."
+msgstr "versiunea acestui modul introducând cheia de licență."
+
+#: bws_menu/bws_functions.php:401 bws_menu/bws_functions.php:442
+msgid "You can find your license key on your personal page Client area, by clicking on the link"
+msgstr "Poți să-ți găsești cheia de licență pe pagina personală zonă Client, dând clic pe legătura"
+
+#: bws_menu/bws_functions.php:403 bws_menu/bws_functions.php:444
+msgid "(your username is the email you specify when purchasing the product)."
+msgstr "(numele tău de utilizator este adresa email pe care ai specificat-o în momentul cumpărării produsului)."
+
+#: bws_menu/bws_functions.php:407 bws_menu/bws_functions.php:691
+msgid "or"
+msgstr "sau"
+
+#: bws_menu/bws_functions.php:407
+msgid "Start Your Free %s-Day Trial Now"
+msgstr "Începe acum încercarea gratuită pentru %s zile"
+
+#: bws_menu/bws_functions.php:413 bws_menu/bws_functions.php:422
+#: bws_menu/bws_functions.php:452 bws_menu/bws_functions.php:460
+#: bws_menu/bws_functions.php:1242 bws_menu/bws_menu.php:693
+#: bws_menu/bws_menu.php:750
+msgid "Activate"
+msgstr "Activează"
+
+#: bws_menu/bws_functions.php:439 bws_menu/bws_functions.php:532
+msgid "In order to continue using the plugin it is necessary to buy a %s license."
+msgstr "Pentru a putea continua să folosești modulul trebuie să cumperi o licență %s."
+
+#: bws_menu/bws_functions.php:440
+msgid "After that you can activate it by entering your license key."
+msgstr "După aceea o poți activa introducând cheia de licență."
+
+#: bws_menu/bws_functions.php:454
+msgid "Unfortunately, you have exceeded the number of available tries per day."
+msgstr "Din păcate, ai depășit numărul de încercări pe zi disponibile."
+
+#: bws_menu/bws_functions.php:471
+msgid "Congratulations! The Pro license of the plugin is successfully activated."
+msgstr "Felicitări! Licența Pro a modulului este activată cu succes."
+
+#: bws_menu/bws_functions.php:512
+msgid "Wrong license key."
+msgstr "Cheia de licență greșită."
+
+#: bws_menu/bws_functions.php:514
+msgid "This license key is bind to another site."
+msgstr "Această cheie de licență se leagă la un alt sit."
+
+#: bws_menu/bws_functions.php:516
+msgid "This license key is valid, but Your license has expired. If you want to update our plugin in future, you should extend the license."
+msgstr "Această cheie de licență este validă, dar licența ta a expirat. Dacă vrei să actualizezi modulul nostru în viitor, ar trebui să-ți extinzi licența."
+
+#: bws_menu/bws_functions.php:518
+msgid "Unfortunately, you have exceeded the number of available tries."
+msgstr "Din păcate, ai depășit numărul de încercări disponibile."
+
+#: bws_menu/bws_functions.php:520
+msgid "Unfortunately, the Pro Trial licence was already installed to this domain. The Pro Trial license can be installed only once."
+msgstr "Din păcate, licența de încercare Pro a fost deja instalată pentru acest domeniu. Licența de încercare Pro poate fi instalată numai o singură dată."
+
+#: bws_menu/bws_functions.php:524
+msgid "The Pro Trial license key is valid."
+msgstr "Cheie de licență de încercare Pro este validă."
+
+#: bws_menu/bws_functions.php:526
+msgid "The license key is valid."
+msgstr "Cheie de licență este validă."
+
+#: bws_menu/bws_functions.php:529
+msgid "Your license will expire on"
+msgstr "Licența ta va expira pe"
+
+#: bws_menu/bws_functions.php:562
+msgid "Please, enter your license key"
+msgstr "Te rog să-ți introduci cheia de licență"
+
+#: bws_menu/bws_functions.php:575
+msgid "If needed you can check if the license key is correct or reenter it in the field below. You can find your license key on your personal page - Client area - on our website"
+msgstr "Dacă e nevoie, poți verifica dacă cheia de licență este corectă sau s-o reintroduci în câmpul de mai jos. Poți să-ți găsești cheia de licență pe pagina personală - zona Client - a sitului tău web."
+
+#: bws_menu/bws_functions.php:575
+msgid "(your username is the email you specify when purchasing the product). If necessary, please submit \"Lost your password?\" request."
+msgstr "(numele tău de utilizator este adresa email pe care ai specificat-o în momentul cumpărării produsului). Dacă este necesar te rog trimite solicitarea „Ți-ai pierdut parola?”."
+
+#: bws_menu/bws_functions.php:579
+msgid "Check license key"
+msgstr "Verifică cheia de licență"
+
+#: bws_menu/bws_functions.php:593
+msgid "WARNING: Illegal use notification"
+msgstr "AVERTISMENT: Folosirea notificării ilegală"
+
+#: bws_menu/bws_functions.php:593
+msgid "You can use one license of the Pro plugin for one domain only. Please check and edit your license or domain if necessary using you personal Client Area. We strongly recommend you to solve the problem within 24 hours, otherwise the Pro plugin will be deactivated."
+msgstr "Poți folosi o licență a modulului Pro numai pentru un singur domeniu. Te rog verifică-ți și editează-ți licența sau domeniul, dacă este necesar, folosind zona personală Client. Îți recomandăm insistent să rezolvi problema în termen de 24 de ore, în caz contrar modulul Pro va fi dezactivat."
+
+#: bws_menu/bws_functions.php:601
+msgid "Notice: Your Pro Trial license has expired. To continue using the plugin you should buy a Pro license"
+msgstr "Observație: Licența ta Pro de încercare a expirat. Pentru a continua să folosesti modulul ar trebui să cumperi o licență Pro"
+
+#: bws_menu/bws_functions.php:603
+msgid "Your license has expired. To continue getting top-priority support and plugin updates you should extend it."
+msgstr "Licența ta a expirat. Pentru a obține în continuare cel mai bun suport prioritar și actualizări ale modulului ar trebui s-o extinzi."
+
+#: bws_menu/bws_functions.php:603 bws_menu/bws_functions.php:656
+#: bws_menu/bws_functions.php:1210 bws_menu/bws_menu.php:669
+#: bws_menu/bws_menu.php:691 bws_menu/bws_menu.php:718
+#: bws_menu/bws_menu.php:748 bws_menu/bws_menu.php:794
+msgid "Learn more"
+msgstr "Află mai multe"
+
+#: bws_menu/bws_functions.php:613
+msgid "Notice: You are using the Pro Trial license of %s plugin."
+msgstr "Observație: Folosești licența Pro de încercare a modulului %s."
+
+#: bws_menu/bws_functions.php:615
+msgid "Notice: You are using the Pro Trial license of plugin."
+msgstr "Observație: Folosești licența Pro de încercare a modulului."
+
+#: bws_menu/bws_functions.php:618
+msgid "The Pro Trial license will expire on"
+msgstr "Licența Pro de încercare va expira la"
+
+#: bws_menu/bws_functions.php:656
+msgid "You license for"
+msgstr "Licența ta pentru"
+
+#: bws_menu/bws_functions.php:656
+msgid "expires on"
+msgstr "expiră la"
+
+#: bws_menu/bws_functions.php:656
+msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
+msgstr "și nu vei primi CEL MAI BUN SUPORT PRIORITAR sau ACTUALIZĂRI."
+
+#: bws_menu/bws_functions.php:935 includes/pro_banners.php:19
+msgid "Close"
+msgstr "Închide"
+
+#: bws_menu/bws_functions.php:1027
+msgid "Restore all plugin settings to defaults"
+msgstr "Restaurează toate setările modului la implicit"
+
+#: bws_menu/bws_functions.php:1029
+msgid "Restore settings"
+msgstr "Restaurare setări"
+
+#: bws_menu/bws_functions.php:1040
+msgid "Are you sure you want to restore all settings by default?"
+msgstr "Sigur vrei să restaurezi toate setările la valorile implicite?"
+
+#: bws_menu/bws_functions.php:1043
+msgid "Yes, restore all settings"
+msgstr "Da, restaurează toate setările"
+
+#: bws_menu/bws_functions.php:1044
+msgid "No, go back to the settings page"
+msgstr "Nu, mergi înapoi la pagina setări"
+
+#: bws_menu/bws_menu.php:509
+msgid "Not set"
+msgstr "Nesetat"
+
+#: bws_menu/bws_menu.php:511 bws_menu/bws_menu.php:512
+msgid "On"
+msgstr "Pornit"
+
+#: bws_menu/bws_menu.php:511 bws_menu/bws_menu.php:512
+msgid "Off"
+msgstr "Oprit"
+
+#: bws_menu/bws_menu.php:513 bws_menu/bws_menu.php:514
+#: bws_menu/bws_menu.php:515 bws_menu/bws_menu.php:516
+#: bws_menu/bws_menu.php:517 bws_menu/bws_menu.php:529
+msgid "N/A"
+msgstr "Nu se aplică"
+
+#: bws_menu/bws_menu.php:517
+msgid " Mb"
+msgstr " Mb"
+
+#: bws_menu/bws_menu.php:518 bws_menu/bws_menu.php:519
+#: bws_menu/bws_menu.php:520 bws_menu/bws_menu.php:525
+msgid "Yes"
+msgstr "Da"
+
+#: bws_menu/bws_menu.php:518 bws_menu/bws_menu.php:519
+#: bws_menu/bws_menu.php:520 bws_menu/bws_menu.php:527
+msgid "No"
+msgstr "Nu"
+
+#: bws_menu/bws_menu.php:537
+msgid "Operating System"
+msgstr "Sistem de operare"
+
+#: bws_menu/bws_menu.php:538
+msgid "Server"
+msgstr "Server"
+
+#: bws_menu/bws_menu.php:539
+msgid "Memory usage"
+msgstr "Folosirea memoriei"
+
+#: bws_menu/bws_menu.php:540
+msgid "MYSQL Version"
+msgstr "Versiune MYSQL"
+
+#: bws_menu/bws_menu.php:541
+msgid "SQL Mode"
+msgstr "Mod SQL"
+
+#: bws_menu/bws_menu.php:542
+msgid "PHP Version"
+msgstr "Versiune PHP"
+
+#: bws_menu/bws_menu.php:543
+msgid "PHP Safe Mode"
+msgstr "Mod de siguranță PHP"
+
+#: bws_menu/bws_menu.php:544
+msgid "PHP Allow URL fopen"
+msgstr "allow_url_fopen PHP"
+
+#: bws_menu/bws_menu.php:545
+msgid "PHP Memory Limit"
+msgstr "Limită de memorie PHP"
+
+#: bws_menu/bws_menu.php:546
+msgid "PHP Max Upload Size"
+msgstr "Dimensiune maximă de încărcare PHP"
+
+#: bws_menu/bws_menu.php:547
+msgid "PHP Max Post Size"
+msgstr "Dimensiune maximă articol PHP"
+
+#: bws_menu/bws_menu.php:548
+msgid "PHP Max Script Execute Time"
+msgstr "Timp maxim de executare a scriptului PHP"
+
+#: bws_menu/bws_menu.php:549
+msgid "PHP Exif support"
+msgstr "Suport PHP Exif"
+
+#: bws_menu/bws_menu.php:550
+msgid "PHP IPTC support"
+msgstr "Suport IPTC PHP"
+
+#: bws_menu/bws_menu.php:551
+msgid "PHP XML support"
+msgstr "Suport PHP XML"
+
+#: bws_menu/bws_menu.php:552
+msgid "Site URL"
+msgstr "URL sit"
+
+#: bws_menu/bws_menu.php:553
+msgid "Home URL"
+msgstr "URL prima pagină"
+
+#: bws_menu/bws_menu.php:556
+msgid "WordPress Version"
+msgstr "Versiune WordPress"
+
+#: bws_menu/bws_menu.php:557
+msgid "WordPress DB Version"
+msgstr "Versiune bază de date WordPress"
+
+#: bws_menu/bws_menu.php:558
+msgid "Multisite"
+msgstr "Multi-sit"
+
+#: bws_menu/bws_menu.php:559
+msgid "Active Theme"
+msgstr "Temă activă"
+
+#: bws_menu/bws_menu.php:574
+msgid "Please enter a valid email address."
+msgstr "Te rog introdu o adresă email validă."
+
+#: bws_menu/bws_menu.php:578
+msgid "Email with system info is sent to "
+msgstr "Emailul cu informații de sistem este trimis la"
+
+#: bws_menu/bws_menu.php:582
+msgid "Thank you for contacting us."
+msgstr "Îți mulțumim că ne-ai contactat."
+
+#: bws_menu/bws_menu.php:615
+msgid "Sorry, email message could not be delivered."
+msgstr "Regret, mesajul email nu a putut fi livrat."
+
+#: bws_menu/bws_menu.php:622
+msgid "Need help?"
+msgstr "Ai nevoie de ajutor?"
+
+#: bws_menu/bws_menu.php:623
+msgid "Client area"
+msgstr "Zonă client"
+
+#: bws_menu/bws_menu.php:624 bws_menu/bws_menu.php:933
+msgid "System status"
+msgstr "Stare sistem"
+
+#: bws_menu/bws_menu.php:629 captcha.php:506
+msgid "Plugins"
+msgstr "Module"
+
+#: bws_menu/bws_menu.php:630
+msgid "Themes"
+msgstr "Teme"
+
+#: bws_menu/bws_menu.php:634
+msgid "All"
+msgstr "Tot"
+
+#: bws_menu/bws_menu.php:635
+msgid "Installed"
+msgstr "Instalat"
+
+#: bws_menu/bws_menu.php:636
+msgid "Recommended"
+msgstr "Recomandat"
+
+#: bws_menu/bws_menu.php:640
+msgid "Installed plugins"
+msgstr "Module instalate"
+
+#: bws_menu/bws_menu.php:672 bws_menu/bws_menu.php:721 captcha.php:1924
+#: captcha.php:1937
+msgid "Settings"
+msgstr "Setări"
+
+#: bws_menu/bws_menu.php:693 bws_menu/bws_menu.php:750
+msgid "Activate this plugin"
+msgstr "Activează acest modul"
+
+#: bws_menu/bws_menu.php:708 bws_menu/bws_menu.php:738
+#: bws_menu/bws_menu.php:784
+msgid "Go"
+msgstr "Mergi"
+
+#: bws_menu/bws_menu.php:712 bws_menu/bws_menu.php:742
+#: bws_menu/bws_menu.php:788
+msgid "DONATE"
+msgstr "DONEAZĂ"
+
+#: bws_menu/bws_menu.php:758
+msgid "Recommended plugins"
+msgstr "Module recomandate"
+
+#: bws_menu/bws_menu.php:796
+msgid "Install now"
+msgstr "Instalează acum"
+
+#: bws_menu/bws_menu.php:817
+msgid "Try again"
+msgstr "Încearcă din nou"
+
+#: bws_menu/bws_menu.php:835
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Previzualizare &#8222;%s&#8221;"
+
+#: bws_menu/bws_menu.php:866
+msgid "Install %s"
+msgstr "Instalează %s"
+
+#: bws_menu/bws_menu.php:866
+msgid "Install Now"
+msgstr "Instalează acum"
+
+#: bws_menu/bws_menu.php:869
+msgid "Update to version %s"
+msgstr "Actualizează la versiunea %s"
+
+#: bws_menu/bws_menu.php:869
+msgid "Update"
+msgstr "Actualizare"
+
+#: bws_menu/bws_menu.php:873
+msgid "This theme is already installed and is up to date"
+msgstr "Această temă este deja instalată și actualizată"
+
+#: bws_menu/bws_menu.php:873
+msgctxt "theme"
+msgid "Installed"
+msgstr "Instalată"
+
+#: bws_menu/bws_menu.php:876
+msgid "Preview %s"
+msgstr "Previzualizare %s"
+
+#: bws_menu/bws_menu.php:876
+msgid "Preview"
+msgstr "Previzualizare"
+
+#: bws_menu/bws_menu.php:882 bws_menu/bws_menu.php:914
+msgid "By %s"
+msgstr "De %s"
+
+#: bws_menu/bws_menu.php:888
+msgid "Details"
+msgstr "Detalii"
+
+#: bws_menu/bws_menu.php:920
+msgid "Already Installed"
+msgstr "Deja instalat"

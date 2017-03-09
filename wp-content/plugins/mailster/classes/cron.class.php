@@ -57,7 +57,7 @@ class MailsterCron {
 		}
 
 		if ( ! mailster()->is_verified() ) {
-			if ( time() -get_option( 'mailster' ) > WEEK_IN_SECONDS
+			if ( time() - get_option( 'mailster' ) > WEEK_IN_SECONDS
 				&& get_option( 'mailster_setup' )
 				&& current_user_can( 'mailster_manage_licenses' ) ) {
 				mailster_notice( '<strong>' . sprintf( __( 'Hey! Would you like automatic updates and premium support? Please %s of Mailster', 'mailster' ), '<a href="admin.php?page=mailster_dashboard">' . esc_html__( 'activate your copy', 'mailster' ) . '</a>' ) . '</strong>', 'error', false, 'verify' );

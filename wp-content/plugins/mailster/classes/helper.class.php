@@ -395,7 +395,7 @@ class MailsterHelper {
 			'html5' => 'https://html5.com',
 			'instagram' => 'https://instagram.com/%%USERNAME%%',
 			'lastfm' => 'https://www.lastfm.de/user/%%USERNAME%%',
-			'linkedin' => 'https://www.linkedin.com/in/%%USERNAME%%',
+			'linkedin' => 'https://www.linkedin.com/%%USERNAME%%',
 			'myspace' => 'https://www.myspace.com/%%USERNAME%%',
 			'paypal' => 'https://paypal.com',
 			'picasa' => 'https://picasa.com',
@@ -412,7 +412,7 @@ class MailsterHelper {
 			'windows_8' => 'https://microsoft.com',
 			'wordpress' => 'https://profiles.wordpress.org/%%USERNAME%%',
 			'yahoo' => 'https://yahoo.com',
-			'youtube' => 'https://youtube.com/user/%%USERNAME%%',
+			'youtube' => 'https://youtube.com/%%USERNAME%%',
 		);
 
 		if ( $only_with_username ) {
@@ -1215,7 +1215,7 @@ class MailsterHelper {
 		$html .= '</body></html>';
 
 		$i_error = libxml_use_internal_errors( true );
-		$doc->loadHTML( $data );
+		$doc->loadHTML( $html );
 		libxml_clear_errors();
 		libxml_use_internal_errors( $i_error );
 
@@ -1243,9 +1243,6 @@ class MailsterHelper {
 		if ( empty( $object ) ) {
 			$d = html_entity_decode( $serialized_string, ENT_QUOTES, 'UTF-8' );
 
-			/**
-			 *
-			 */
 			$d = preg_replace_callback( '!s:(\d+):"(.*?)";!', function( $matches ) {
 					return 's:' . strlen( $matches[2] ) . ':"' . $matches[2] . '";';
 			}, $d );

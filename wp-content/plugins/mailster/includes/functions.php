@@ -49,6 +49,16 @@ function mailster_options() {
 }
 
 
+/**
+ *
+ *
+ * @return unknown
+ */
+function mailster_version() {
+	return defined( 'MAILSTER_VERSION' ) ? MAILSTER_VERSION : null;
+}
+
+
 if ( function_exists( 'wp_cache_add_non_persistent_groups' ) ) {
 	wp_cache_add_non_persistent_groups( array( 'mailster' ) );
 }

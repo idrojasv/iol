@@ -796,37 +796,23 @@ class MailsterUpgrade {
 		$output = ob_get_contents();
 
 		ob_end_clean();
-		if ( ! $output ) {
-			echo 'No problem found' . "\n";
-		}
 
-		// $structure = mailster()->get_table_structure( false );
-		$structure = array();
+		if ( false === mailster( 'subscribers' )->wp_id() ) {
+			$status = $wpdb->get_row( $wpdb->prepare( 'SHOW TABLE STATUS LIKE %s', $wpdb->users ) );
+			if ( isset( $status->Collation ) ) {
+				$tables = mailster()->get_tables( true );
 
-		$collate = $wpdb->get_charset_collate();
-
-		foreach ( $structure as $tablestructure ) {
-
-			if ( ! preg_match( '/CREATE TABLE (' . $wpdb->prefix . '\w+)/i', $tablestructure, $table ) ) { continue;
-			}
-			$table = $table[1];
-
-			if ( ! preg_match_all( '/(\w+) (varchar\(\d+\)|longtext)/i', $tablestructure, $fields ) ) { continue;
-			}
-			$fields_ext = $fields[0];
-			$fields = $fields[1];
-
-			foreach ( $fields as $i => $field ) {
-				$sql = "ALTER TABLE $table CHANGE $field " . $fields_ext[ $i ] . str_replace( 'DEFAULT', '', $collate );
-				if ( false !== $wpdb->query( $sql ) ) {
-					echo "'$field' of '$table' converted.\n";
+				foreach ( $tables as $table ) {
+					$sql = sprintf( 'ALTER TABLE %s CONVERT TO CHARACTER SET utf8mb4 COLLATE %s', $table, $status->Collation );
+					if ( false !== $wpdb->query( $sql ) ) {
+						echo "'$table' converted to {$status->Collation}.\n";
+					}
 				}
 			}
+		}
 
-			$sql = "ALTER TABLE $table $collate";
-			if ( false !== $wpdb->query( $sql ) ) {
-				echo "'$table' converted.\n";
-			}
+		if ( ! $output ) {
+			echo 'No DB structure problem found' . "\n";
 		}
 
 		if ( function_exists( 'maybe_convert_table_to_utf8mb4' ) ) {

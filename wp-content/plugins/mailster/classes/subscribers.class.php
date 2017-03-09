@@ -1087,10 +1087,10 @@ class MailsterSubscribers {
 		}
 
 		$userdata = wp_parse_args( $userdata, array(
-				'email' => $email,
-				'wp_id' => $user_id,
-				'firstname' => $first_name,
-				'lastname' => $last_name,
+			'email' => $email,
+			'wp_id' => $user_id,
+			'firstname' => $first_name,
+			'lastname' => $last_name,
 		) );
 
 		$subscriber_id = $this->add( $userdata, true );
@@ -1503,7 +1503,6 @@ class MailsterSubscribers {
 		}
 
 		$sql = "UPDATE {$wpdb->prefix}mailster_subscribers AS a INNER JOIN {$wpdb->users} AS b ON a.email = b.user_email SET a.wp_id = b.ID";
-
 		if ( false !== $wpdb->query( $sql ) ) {
 			return $wpdb->rows_affected;
 		}

@@ -255,8 +255,8 @@ class MailsterBounceHandler {
 			$bounceresult = $bouncehandler->parse_email( $message );
 			$bounceresult = (object) $bounceresult[0];
 
-			$subscriber = mailster( 'subscribers' )->get_by_hash( $hash[1], false );
-			$campaign = ! empty( $camp ) ? mailster( 'campaigns' )->get( intval( $camp[1] ) ) : null;
+			$subscriber = mailster( 'subscribers' )->get_by_hash( $hash[2], false );
+			$campaign = ! empty( $camp ) ? mailster( 'campaigns' )->get( intval( $camp[2] ) ) : null;
 
 			if ( $subscriber ) {
 
@@ -321,7 +321,7 @@ class MailsterBounceHandler {
 
 			} elseif ( $bounce_delete ) {
 
-					$this->delete_message( $id );
+				$this->delete_message( $id );
 
 			}
 		}
@@ -454,7 +454,7 @@ class MailsterBounceLegacyHandler extends MailsterBounceHandler {
 
 			} elseif ( $this->bounce_delete ) {
 
-					$this->delete_message( $i );
+				$this->delete_message( $i );
 
 			}
 		}

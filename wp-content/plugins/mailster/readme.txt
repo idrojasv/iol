@@ -2,8 +2,8 @@
 Contributors: revaxarts
 Tags: mailster, mymail, newsletter, email, revaxarts
 Requires at least: 3.8
-Tested up to: 4.7.2
-Stable tag: 2.2
+Tested up to: 4.7.3
+Stable tag: 2.2.1
 Author: revaxarts
 Author URI: https://mailster.co
 
@@ -82,6 +82,19 @@ Xaver Birsak – https://revaxarts.com
 
 == Changelog ==
 
+= Version 2.2.1 =
+
+* fixed: bounces weren't handled correctly in some cases
+* fixed: styles were not applied correctly while sending tests
+* fixed: Subscriber import with coma separated lists causes that new created lists were not assigned correctly
+* fixed: wrong DKIM record on some installations
+* fixed: error output on wrong formatted HTML in excerpts
+* added: option to export ratings
+* improved: URLs for some social services
+* improved: backwards compatibility
+* improved: datepicker is no longer triggered on datefields if operator is a regular expression
+
+
 = Version 2.2 =
 
 * new: Mailster Dashboard
@@ -99,6 +112,7 @@ Xaver Birsak – https://revaxarts.com
 * new: Subscriber Button Widget
 * new: share service VK.com, Telegram, Whatsapp
 * new: location hub: translate.mailster.co
+* new: 'mailster_excerpt_length' let you define the length of the excerpt used in your campaigns
 * improved: sending queue
 * improved: loading of language files
 * improved: better ordering of lists

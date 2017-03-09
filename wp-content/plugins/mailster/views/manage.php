@@ -139,13 +139,13 @@ jane.roe@<?php echo $_SERVER['HTTP_HOST'] ?>; Jane; Roe
 
 			if ( ! empty( $lists ) || $no_list ) : ?>
 
-								<div class="step1">
-									<form method="post" id="export-subscribers">
-									<?php wp_nonce_field( 'mailster_nonce' );?>
-									<h3>
-									<?php esc_html_e( 'which are in one of these lists', 'mailster' );?>:
-									</h3>
-									<?php if ( ! empty( $lists ) ) : ?>
+		<div class="step1">
+			<form method="post" id="export-subscribers">
+			<?php wp_nonce_field( 'mailster_nonce' );?>
+			<h3>
+			<?php esc_html_e( 'which are in one of these lists', 'mailster' );?>:
+			</h3>
+			<?php if ( ! empty( $lists ) ) : ?>
 			<ul>
 			<li><label><input type="checkbox" class="list-toggle" checked> <?php esc_html_e( 'toggle all', 'mailster' ); ?></label></li>
 			<li>&nbsp;</li>
@@ -153,28 +153,27 @@ jane.roe@<?php echo $_SERVER['HTTP_HOST'] ?>; Jane; Roe
 			</ul>
 			<?php endif; ?>
 
-									<?php if ( $no_list ) : ?>
+			<?php if ( $no_list ) : ?>
 			<ul>
 				<li><label><input type="checkbox" name="nolists" value="1" checked> <?php echo __( 'subscribers not assigned to a list', 'mailster' ) . ' <span class="count">(' . number_format_i18n( $no_list ) . ' ' . __( 'total', 'mailster' ) . ')</span>' ?></label></li>
 			</ul>
 			<?php endif; ?>
-									<h3>
-									<?php esc_html_e( 'and have one of these statuses', 'mailster' );?>:<br>
-									</h3>
-									<p>
-										<?php foreach ( mailster( 'subscribers' )->get_status( null, true ) as $i => $name ) {?>
+			<h3>
+			<?php esc_html_e( 'and have one of these statuses', 'mailster' );?>:<br>
+			</h3>
+			<p>
+				<?php foreach ( mailster( 'subscribers' )->get_status( null, true ) as $i => $name ) {?>
 				<label><input type="checkbox" name="status[]" value="<?php echo $i ?>" checked> <?php echo $name; ?> </label>
 				<?php }?>
-									</p>
-									<p>
-										<label><input type="checkbox" name="header" value="1"> <?php esc_html_e( 'include header', 'mailster' );?> </label>
-									</p>
-									<p>
-										<label><?php esc_html_e( 'Date Format', 'mailster' ) ?>:
-										<select name="dateformat">
-											<option value="0">timestamp - (<?php echo current_time( 'timestamp' ) ?>)</option>
-											<option value="<?php $d = get_option( 'date_format' ) . ' ' . get_option( 'time_format' );
-											echo $d?>">
+				</p>
+				<p>
+					<label><input type="checkbox" name="header" value="1"> <?php esc_html_e( 'include header', 'mailster' );?> </label>
+				</p>
+				<p>
+					<label><?php esc_html_e( 'Date Format', 'mailster' ) ?>:
+					<select name="dateformat">
+						<option value="0">timestamp - (<?php echo current_time( 'timestamp' ) ?>)</option>
+						<option value="<?php $d = get_option( 'date_format' ) . ' ' . get_option( 'time_format' ); echo $d ?>">
 					<?php echo $d . ' - (' . date( $d, current_time( 'timestamp' ) ) . ')'; ?>
 					</option>
 					<option value="<?php $d = get_option( 'date_format' );
@@ -189,47 +188,49 @@ jane.roe@<?php echo $_SERVER['HTTP_HOST'] ?>; Jane; Roe
 						echo $d?>">
 					<?php echo $d . ' - (' . date( $d, current_time( 'timestamp' ) ) . ')'; ?>
 					</option>
-							</select>
-							</label>
-						</p>
-						<p>
-							<label><?php esc_html_e( 'Output Format', 'mailster' ) ?>:
-							<select name="outputformat">
+					</select>
+					</label>
+				</p>
+				<p>
+				<label><?php esc_html_e( 'Output Format', 'mailster' ) ?>:
+				<select name="outputformat">
 					<option value="csv" selected><?php esc_html_e( 'CSV', 'mailster' );?></option>
 					<option value="html" ><?php esc_html_e( 'HTML', 'mailster' );?></option>
-							</select>
-							</label>
-						</p>
-						<p>
-							<label><?php esc_html_e( 'Separator for CSV output', 'mailster' ) ?>:
-							<select name="separator">
+					</select>
+					</label>
+				</p>
+				<p>
+				<label><?php esc_html_e( 'Separator for CSV output', 'mailster' ) ?>:
+				<select name="separator">
 					<option value=";" selected>;</option>
 					<option value="," >,</option>
 					<option value="|" >|</option>
 					<option value="tab" ><?php esc_html_e( '[Tab]', 'mailster' );?></option>
-							</select>
-							</label>
-						</p>
-						<p>
-							<label><?php esc_html_e( 'CharSet', 'mailster' ) ?>:
-							<?php $charsets = array(
-							'UTF-8' => 'Unicode 8',
-							'ISO-8859-1' => 'Western European',
-							'ISO-8859-2' => 'Central European',
-							'ISO-8859-3' => 'South European',
-							'ISO-8859-4' => 'North European',
-							'ISO-8859-5' => 'Latin/Cyrillic',
-							'ISO-8859-6' => 'Latin/Arabic',
-							'ISO-8859-7' => 'Latin/Greek',
-							'ISO-8859-8' => 'Latin/Hebrew',
-							'ISO-8859-9' => 'Turkish',
-							'ISO-8859-10' => 'Nordic',
-							'ISO-8859-11' => 'Latin/Thai',
-							'ISO-8859-13' => 'Baltic Rim',
-							'ISO-8859-14' => 'Celtic',
-							'ISO-8859-15' => 'Western European revision',
-							'ISO-8859-16' => 'South-Eastern European',
-							) ?>
+					</select>
+					</label>
+				</p>
+				<p>
+					<label><?php esc_html_e( 'CharSet', 'mailster' ) ?>:
+					<?php
+					$charsets = array(
+						'UTF-8' => 'Unicode 8',
+						'ISO-8859-1' => 'Western European',
+						'ISO-8859-2' => 'Central European',
+						'ISO-8859-3' => 'South European',
+						'ISO-8859-4' => 'North European',
+						'ISO-8859-5' => 'Latin/Cyrillic',
+						'ISO-8859-6' => 'Latin/Arabic',
+						'ISO-8859-7' => 'Latin/Greek',
+						'ISO-8859-8' => 'Latin/Hebrew',
+						'ISO-8859-9' => 'Turkish',
+						'ISO-8859-10' => 'Nordic',
+						'ISO-8859-11' => 'Latin/Thai',
+						'ISO-8859-13' => 'Baltic Rim',
+						'ISO-8859-14' => 'Celtic',
+						'ISO-8859-15' => 'Western European revision',
+						'ISO-8859-16' => 'South-Eastern European',
+							);
+					?>
 				<select name="encoding">
 					<?php foreach ( $charsets as $code => $region ) {?>
 					<option value="<?php echo $code; ?>"><?php echo $code; ?> - <?php echo $region; ?></option>
@@ -272,11 +273,12 @@ jane.roe@<?php echo $_SERVER['HTTP_HOST'] ?>; Jane; Roe
 							'ip_signup' => __( 'Signup IP', 'mailster' ),
 							'confirm' => __( 'Confirm Date', 'mailster' ),
 							'ip_confirm' => __( 'Confirm IP', 'mailster' ),
+							'rating' => __( 'Rating', 'mailster' ),
 						);
 						?>
-						<ul class="export-order">
-							<li><input type="checkbox" name="column[]" value="_number"> #</li>
-						<?php foreach ( $columns as $id => $name ) {?>
+			<ul class="export-order">
+				<li><input type="checkbox" name="column[]" value="_number"> #</li>
+			<?php foreach ( $columns as $id => $name ) {?>
 				<li><input type="checkbox" name="column[]" value="<?php echo $id ?>" checked> <?php echo $name ?></li>
 			<?php }?>
 			<?php foreach ( $customfields as $id => $data ) {?>
@@ -291,19 +293,19 @@ jane.roe@<?php echo $_SERVER['HTTP_HOST'] ?>; Jane; Roe
 				<input class="button button-large button-primary" type="submit" value="<?php esc_html_e( 'Download Subscribers', 'mailster' ) ?>" />
 			</p>
 			</form>
-					</div>
+			</div>
 
-					<div class="step2">
-			<div class="step2-body"></div>
-					</div>
+			<div class="step2">
+				<div class="step2-body"></div>
+			</div>
 
 				<?php else : ?>
 
 		<p><?php esc_html_e( 'no subscriber found', 'mailster' );?></p>
 
-	<?php endif; ?>
+		<?php endif; ?>
 
-<?php elseif ( 'delete' == $currentpage && current_user_can( 'mailster_bulk_delete_subscribers' ) ) : ?>
+		<?php elseif ( 'delete' == $currentpage && current_user_can( 'mailster_bulk_delete_subscribers' ) ) : ?>
 
 			<h2 class="delete-status"><?php esc_html_e( 'Delete Subscribers', 'mailster' ) ?></h2>
 			<?php
@@ -313,14 +315,14 @@ jane.roe@<?php echo $_SERVER['HTTP_HOST'] ?>; Jane; Roe
 
 			if ( ! empty( $lists ) || $no_list ) : ?>
 
-									<div class="step1">
-										<form method="post" id="delete-subscribers">
-										<?php wp_nonce_field( 'mailster_nonce' );?>
+			<div class="step1">
+				<form method="post" id="delete-subscribers">
+				<?php wp_nonce_field( 'mailster_nonce' );?>
 
-										<h3>
-										<?php esc_html_e( 'which are in one of these lists', 'mailster' );?>:
-										</h3>
-										<?php if ( ! empty( $lists ) ) : ?>
+				<h3>
+				<?php esc_html_e( 'which are in one of these lists', 'mailster' );?>:
+				</h3>
+				<?php if ( ! empty( $lists ) ) : ?>
 				<ul>
 				<li><label><input type="checkbox" class="list-toggle"> <?php esc_html_e( 'toggle all', 'mailster' ); ?></label></li>
 				<li>&nbsp;</li>
@@ -328,30 +330,30 @@ jane.roe@<?php echo $_SERVER['HTTP_HOST'] ?>; Jane; Roe
 				</ul>
 				<?php endif; ?>
 
-										<?php if ( $no_list ) : ?>
+				<?php if ( $no_list ) : ?>
 				<ul>
 					<li><label><input type="checkbox" name="nolists" value="1"> <?php echo __( 'subscribers not assigned to a list', 'mailster' ) . ' <span class="count">(' . number_format_i18n( $no_list ) . ' ' . __( 'total', 'mailster' ) . ')</span>' ?></label></li>
 				</ul>
 				<?php endif; ?>
-										<h3>
-										<?php esc_html_e( 'and have one of these statuses', 'mailster' );?>:<br>
-										</h3>
-										<p>
-											<?php foreach ( mailster( 'subscribers' )->get_status( null, true ) as $i => $name ) {?>
+				<h3>
+				<?php esc_html_e( 'and have one of these statuses', 'mailster' );?>:<br>
+				</h3>
+				<p>
+					<?php foreach ( mailster( 'subscribers' )->get_status( null, true ) as $i => $name ) { ?>
 					<label><input type="checkbox" name="status[]" value="<?php echo $i ?>" checked> <?php echo $name; ?> </label>
 					<?php }?>
-										</p>
-										<p>
-											<label><input type="checkbox" name="remove_lists" value="1"> <?php esc_html_e( 'remove selected lists', 'mailster' );?> </label>
-										</p>
-										<p>
-											<label><input type="checkbox" name="remove_actions" value="1" checked> <?php esc_html_e( 'remove all actions from affected users', 'mailster' );?> </label>
-										</p>
-										<p>
-											<input class="button button-large button-primary" type="submit" value="<?php esc_html_e( 'Delete Subscribers permanently', 'mailster' ) ?>" />
-										</p>
-										</form>
-									</div>
+				</p>
+				<p>
+					<label><input type="checkbox" name="remove_lists" value="1"> <?php esc_html_e( 'remove selected lists', 'mailster' );?> </label>
+				</p>
+				<p>
+					<label><input type="checkbox" name="remove_actions" value="1" checked> <?php esc_html_e( 'remove all actions from affected users', 'mailster' );?> </label>
+				</p>
+				<p>
+					<input class="button button-large button-primary" type="submit" value="<?php esc_html_e( 'Delete Subscribers permanently', 'mailster' ) ?>" />
+				</p>
+				</form>
+			</div>
 							<?php else : ?>
 		<p><?php esc_html_e( 'no subscriber found', 'mailster' );?></p>
 
