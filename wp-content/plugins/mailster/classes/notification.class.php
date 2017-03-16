@@ -121,12 +121,12 @@ class MailsterNotification {
 			}
 
 			return mailster( 'queue' )->add( array(
-					'campaign_id' => 0,
-					'subscriber_id' => $subscriber_id,
-					'timestamp' => $timestamp,
-					'priority' => 5,
-					'ignore_status' => 1,
-					'options' => $options,
+				'campaign_id' => 0,
+				'subscriber_id' => $subscriber_id,
+				'timestamp' => $timestamp,
+				'priority' => 5,
+				'ignore_status' => 1,
+				'options' => $options,
 			) );
 		}
 

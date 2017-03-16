@@ -13,14 +13,24 @@ div.mailster-notice .notice-dismiss {
 	right: 1px;
 	border: none;
 	margin: 0;
-	padding: 9px;
-	background: 0 0;
+	padding: 9px 14px;
 	color: #b4b9be;
 	cursor: pointer;
 	display: none;
+	text-decoration: none;
+}
+.rtl div.mailster-notice .notice-dismiss {
+	right: auto;
+	left: 1px;
 }
 .js div.mailster-notice .notice-dismiss {
 	display: block;
+}
+div.mailster-notice .notice-dismiss:before {
+	display: inline-block;
+	vertical-align: sub;
+	margin-right: 1px;
+	margin-left: 1px;
 }
 .branch-3-8 div.mailster-notice .notice-dismiss:before,
 .branch-3-9 div.mailster-notice .notice-dismiss:before,

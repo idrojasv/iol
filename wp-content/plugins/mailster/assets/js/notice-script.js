@@ -7,6 +7,8 @@ jQuery(document).ready(function ($) {
 	notices
 		.on('click', '.notice-dismiss', function (event) {
 
+			event.preventDefault();
+
 			var el = $(this).parent(),
 				id = el.data('id'),
 				type = !event.altKey ? 'notice_dismiss' : 'notice_dismiss_all';

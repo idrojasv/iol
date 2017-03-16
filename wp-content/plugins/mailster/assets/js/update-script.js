@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
 	"use strict"
 
 	window.onbeforeunload = function () {
-		return 'You have to finish the update before you can use Mailster 2!';
+		return 'You have to finish the update before you can use Mailster!';
 	};
 
 	if (typeof mailster_updates == 'undefined') {
@@ -31,13 +31,19 @@ jQuery(document).ready(function ($) {
 
 	function _init() {
 
-		run(0);
 		_output.on('click', '.skipbutton', function () {
 			skipit = true;
 			return false;
 		});
 
 	}
+
+	$('#mailster-start-upgrade')
+		.on('click', function () {
+			$('#mailster-update-process').slideDown(200);
+			$('#mailster-update-info').slideUp(200);
+			run(0);
+		})
 
 	function run(i, nooutput) {
 
@@ -116,6 +122,8 @@ jQuery(document).ready(function ($) {
 
 		output('finished', '<strong>alright, all updates have been finished!</strong>', true, 0, true);
 		output('finished_button', '<a href="edit.php?post_type=newsletter&page=mailster_welcome" class="button button-primary">Ok, fine!</a>', true, 0, true);
+
+		$('#mailster-post-upgrade').show();
 
 	}
 

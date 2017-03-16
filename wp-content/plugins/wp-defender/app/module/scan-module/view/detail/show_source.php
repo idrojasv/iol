@@ -12,7 +12,7 @@
 		</div>
 		<div class="box-content">
 			<?php
-			$source = $model->get_file_source();	 		  			 	  								
+			$source = $model->get_file_source();
 			?>
 			<?php esc_html_e( "Compare your file with the original file in the WordPress repository. Pieces highlighted in red will be removed when you patch the file, and pieces highlighted in green will be added.", wp_defender()->domain ) ?>
 			<pre><code><?php echo htmlentities($source) ?></code></pre>

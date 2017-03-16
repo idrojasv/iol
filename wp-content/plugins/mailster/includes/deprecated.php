@@ -15,15 +15,13 @@ function mymail_check_deprecated_forms() {
 	if ( strpos( $_SERVER['REQUEST_URI'], 'myMail/form.php' ) !== false && isset( $_SERVER['HTTP_REFERER'] ) && 'form.php' == $pagenow ) {
 
 		$referer = '<a href="' . esc_url_raw( $_SERVER['HTTP_REFERER'] ) . '" target="_blank">' . esc_url_raw( $_SERVER['HTTP_REFERER'] ) . '</a>';
-		$key = md5( $_SERVER['HTTP_REFERER'] . $_SERVER['REQUEST_URI'] );
-
 		if ( isset( $_GET['button'] ) ) {
 			$msg = 'A deprecated Subscriber Button for Mailster has been found at %1$s. Please update the HTML following %2$s.';
 		} else {
 			$msg = 'An deprecated external form for Mailster has been found at %1$s. Please update the HTML following %2$s.';
 		}
 
-		mymail_notice( '<strong>' . sprintf( $msg, $referer, '<a href="https://kb.mailster.co/updating-mymail-to-mailster/" target="_blank">this guide</a>' ) . '</strong>' , 'error', false, $key );
+		mymail_notice( '<strong>' . sprintf( $msg, $referer, '<a href="https://kb.mailster.co/updating-mymail-to-mailster/" target="_blank">this guide</a>' ) . '</strong>' , 'error', 3600, 'oldsubscriberbtn' );
 	}
 
 }
@@ -38,7 +36,7 @@ function mymail_check_deprecated_cron() {
 
 		$msg = 'The URL to the cron has changed but still get triggered! Please update your cron service to the new URL.</strong></p><a class="button button-primary" href="edit.php?post_type=newsletter&page=mailster_settings#cron">Get the new URL</a>';
 
-		mymail_notice( '<strong>' . $msg . '</strong>' , 'error', false, 'oldcronurl' );
+		mymail_notice( '<strong>' . $msg . '</strong>' , 'error', 3600, 'oldcronurl' );
 	}
 
 }

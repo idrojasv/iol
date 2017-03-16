@@ -41,8 +41,8 @@ class Ai1wm_Database_Mysql extends Ai1wm_Database {
 	 * @param  string $input String to escape
 	 * @return string
 	 */
-	public function quote( $input ) {
-		return "'" . mysql_real_escape_string( $input, $this->wpdb->dbh ) . "'";
+	public function escape( $input ) {
+		return mysql_real_escape_string( $input, $this->wpdb->dbh );
 	}
 
 	/**

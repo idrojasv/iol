@@ -273,7 +273,7 @@ class Mailster {
 
 				$msg .= '<p>' . ( $text ? $text : '&nbsp;' ) . '</p>';
 				if ( ! $notice['once'] || is_numeric( $notice['once'] ) ) {
-					$msg .= '<button type="button" class="notice-dismiss" title="' . esc_attr__( 'Dismiss this notice (Alt-click to dismiss all notices)', 'mailster' ) . '"><span class="screen-reader-text">' . esc_attr__( 'Dismiss this notice (Alt-click to dismiss all notices)', 'mailster' ) . '</span></button>';
+					$msg .= '<a class="notice-dismiss" title="' . esc_attr__( 'Dismiss this notice (Alt-click to dismiss all notices)', 'mailster' ) . '" href="' . add_query_arg( array( 'mailster_remove_notice' => $id ) ) . '">' . esc_attr__( 'Dismiss', 'mailster' ) . '<span class="screen-reader-text">' . esc_attr__( 'Dismiss this notice (Alt-click to dismiss all notices)', 'mailster' ) . '</span></a>';
 
 					if ( is_numeric( $notice['once'] ) && (int) $notice['once'] - time() < 0 ) {
 						unset( $mailster_notices[ $id ] );

@@ -562,9 +562,6 @@ class MailsterFrontpage {
 
 				if ( isset( $_GET['frame'] ) && $_GET['frame'] == '0' ) {
 
-					require_once ABSPATH . WPINC . '/class-phpass.php';
-					$hasher = new PasswordHash( 8, true );
-
 					// remove oembed
 					if ( isset( $GLOBALS['wp_embed'] ) ) {
 						remove_filter( 'the_content', array( $GLOBALS['wp_embed'], 'run_shortcode' ), 8 );
@@ -575,16 +572,9 @@ class MailsterFrontpage {
 
 						// unlock post if pwd hash is provided
 						if ( isset( $_GET['pwd'] ) && $_GET['pwd'] == md5( $post->post_password . AUTH_KEY ) ) {
-							$expire = time() + 30;
-							$referer = wp_get_referer();
+							require_once ABSPATH . WPINC . '/class-phpass.php';
+							$hasher = new PasswordHash( 8, true );
 							$pwd = $hasher->HashPassword( wp_unslash( $post->post_password ) );
-							if ( $referer ) {
-								$secure = ( 'https' === parse_url( $referer, PHP_URL_SCHEME ) );
-							} else {
-								$secure = false;
-							}
-
-							// setcookie( 'wp-postpass_' . COOKIEHASH, $pwd, $expire, COOKIEPATH, COOKIE_DOMAIN, $secure );
 							$_COOKIE[ 'wp-postpass_' . COOKIEHASH ] = $pwd;
 						}
 					}
@@ -625,20 +615,20 @@ class MailsterFrontpage {
 						'email' => antispambot( 'some@example.com' ),
 					) );
 
-							$placeholder->share_service( get_permalink( get_the_ID() ), get_the_title() );
+					$placeholder->share_service( get_permalink( get_the_ID() ), get_the_title() );
 
-							$content = $placeholder->get_content();
-							$search = array( '<a ',  '@media only screen and (max-device-width:' );
-							$replace = array( '<a target="_top" ', '@media only screen and (max-width:' );
-							$content = str_replace( $search, $replace, $content );
+					$content = $placeholder->get_content();
+					$search = array( '<a ',  '@media only screen and (max-device-width:' );
+					$replace = array( '<a target="_top" ', '@media only screen and (max-width:' );
+					$content = str_replace( $search, $replace, $content );
 
 					if ( mailster_option( 'frontpage_public' ) || ! get_option( 'blog_public' ) ) {
 						$content = str_replace( '</head>', "<meta name='robots' content='noindex,nofollow' />\n</head>", $content );
 					}
 
-							echo $content;
+					echo $content;
 
-							exit;
+					exit;
 
 				} else {
 
@@ -663,8 +653,9 @@ class MailsterFrontpage {
 
 					}
 
-							exit;
+					exit;
 				}
+
 		endwhile;
 
 		else :

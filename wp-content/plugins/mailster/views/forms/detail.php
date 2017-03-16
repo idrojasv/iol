@@ -58,7 +58,7 @@ if ( $customfields ) {
 <?php if ( $currentpage != 'use' ) : ?>
 <p class="alignright">
 	<?php if ( ! $is_new && current_user_can( 'mailster_delete_forms' ) ) : ?>
-		<input type="submit" name="delete" class="button button-large" value="<?php esc_html_e( 'delete Form', 'mailster' );?>" onclick="return confirm('<?php esc_attr_e( 'Do you really like to remove this form?', 'mailster' );?>');">
+		<input type="submit" name="delete" class="button button-large" value="<?php esc_html_e( 'Delete Form', 'mailster' );?>" onclick="return confirm('<?php esc_attr_e( 'Do you really like to remove this form?', 'mailster' );?>');">
 	<?php endif; ?>
 	<input type="submit" name="save" class="button button-primary" value="<?php esc_html_e( 'Save', 'mailster' );?>">
 </p>
@@ -156,7 +156,7 @@ if ( $is_new ) {
 				</li>
 		<?php endforeach; ?>
 		</ul>
-				<p class="description"><?php printf( __( 'add more custom fields on the %s.', 'mailster' ), '<a href="edit.php?post_type=newsletter&page=mailster_settings#subscribers">' . __( 'Settings Page', 'mailster' ) . '</a>' ) ?></p>
+				<p class="description"><?php printf( __( 'Add more custom fields on the %s.', 'mailster' ), '<a href="edit.php?post_type=newsletter&page=mailster_settings#subscribers">' . __( 'Settings Page', 'mailster' ) . '</a>' ) ?></p>
 
 	</fieldset>
 </div>
@@ -171,7 +171,7 @@ if ( $is_new ) {
 
 <?php $style = $form->style; ?>
 
-<p class="section-nav"><span class="alignleft"><input type="submit" name="structure" value="&laquo; <?php esc_html_e( 'back to Fields', 'mailster' );?>" class="button-primary button-small"></span><span class="alignright"><input type="submit" name="settings" value="<?php esc_html_e( 'define the Options', 'mailster' );?> &raquo;" class="button-primary button-small"></span></p>
+<p class="section-nav"><span class="alignleft"><input type="submit" name="structure" value="&laquo; <?php esc_html_e( 'Back to Fields', 'mailster' );?>" class="button-primary button-small"></span><span class="alignright"><input type="submit" name="settings" value="<?php esc_html_e( 'Define the Options', 'mailster' );?> &raquo;" class="button-primary button-small"></span></p>
 
 <div id="form-preview">
 
@@ -181,7 +181,7 @@ if ( $is_new ) {
 	<p><label><input type="checkbox" id="themestyle" checked> <?php esc_html_e( 'Include your Theme\'s style.css', 'mailster' ) ?></label></p>
 	<p class="description clear"><?php esc_html_e( 'Your form may look different depending on the place you are using it!', 'mailster' ) ?></p>
 	<div id="form-design">
-		<iframe id="form-design-iframe" width="100%" height="500" allowTransparency="true" frameborder="0" scrolling="no" src="<?php echo $this->url( array( 'id' => $id, 'edit' => wp_create_nonce( 'mailsteriframeform' ), 's' => 1 ) ); ?>"></iframe>
+		<iframe id="form-design-iframe" width="100%" height="500" allowTransparency="true" frameborder="0" scrolling="no" src="<?php echo $this->url( array( 'id' => $id, 'edit' => wp_create_nonce( 'mailsteriframeform' ), 's' => 1, 'path' => ABSPATH ) ); ?>"></iframe>
 	</div>
 	<div id="form-design-options">
 	<div class="form-design-options-nav">
@@ -253,7 +253,7 @@ if ( $is_new ) {
 
 	<fieldset>
 		<legend><?php esc_html_e( 'Custom Style', 'mailster' ) ?></legend>
-		<p class="description"><?php esc_html_e( 'add custom CSS to your form', 'mailster' ) ?></p>
+		<p class="description"><?php esc_html_e( 'Add custom CSS to your form', 'mailster' ) ?></p>
 		<div id="custom-style-wrap" class="wrapper">
 		<div class="wrapper-left">
 		<textarea id="custom-style" class="code" name="mailster_design[custom]"><?php echo esc_textarea( $form->custom_style ) ?></textarea>
@@ -283,40 +283,40 @@ if ( $is_new ) {
 
 </div>
 
-<p class="section-nav"><span class="alignleft"><input type="submit" name="structure" value="&laquo; <?php esc_html_e( 'back to Fields', 'mailster' );?>" class="button-primary button-small"></span><span class="alignright"><input type="submit" name="settings" value="<?php esc_html_e( 'define the Options', 'mailster' );?> &raquo;" class="button-primary button-small"></span></p>
+<p class="section-nav"><span class="alignleft"><input type="submit" name="structure" value="&laquo; <?php esc_html_e( 'Back to Fields', 'mailster' );?>" class="button-primary button-small"></span><span class="alignright"><input type="submit" name="settings" value="<?php esc_html_e( 'define the Options', 'mailster' );?> &raquo;" class="button-primary button-small"></span></p>
 
 <?php elseif ( 'settings' == $currentpage ) : ?>
 
 <?php $is_profile = mailster_option( 'profile_form', 0 ) == $form->ID; ?>
 
-<p class="section-nav"><span class="alignleft"><input type="submit" name="design" value="&laquo; <?php esc_html_e( 'back to Design', 'mailster' );?>" class="button-primary button-small"></span></p>
+<p class="section-nav"><span class="alignleft"><input type="submit" name="design" value="&laquo; <?php esc_html_e( 'Back to Design', 'mailster' );?>" class="button-primary button-small"></span></p>
 
 <div id="form-options">
 		<div class="subtab form" id="form-tab-<?php echo $id ?>">
 
 		<fieldset>
 			<legend><?php esc_html_e( 'Form Options', 'mailster' ) ?></legend>
-				<p><label><input type="hidden" name="mailster_data[asterisk]" value="0"><input type="checkbox" name="mailster_data[asterisk]" value="1" <?php checked( $form->asterisk ) ?>> <?php esc_html_e( 'show asterisk on required fields', 'mailster' );?></label>
+				<p><label><input type="hidden" name="mailster_data[asterisk]" value="0"><input type="checkbox" name="mailster_data[asterisk]" value="1" <?php checked( $form->asterisk ) ?>> <?php esc_html_e( 'Show asterisk on required fields', 'mailster' );?></label>
 				</p>
 
-				<p><label><input type="hidden" name="mailster_data[inline]" value="0"><input type="checkbox" name="mailster_data[inline]" value="1" <?php checked( $form->inline ) ?>> <?php esc_html_e( 'place labels inside input fields', 'mailster' );?></label>
+				<p><label><input type="hidden" name="mailster_data[inline]" value="0"><input type="checkbox" name="mailster_data[inline]" value="1" <?php checked( $form->inline ) ?>> <?php esc_html_e( 'Place labels inside input fields', 'mailster' );?></label>
 				</p>
 
-				<p><label><input type="hidden" name="mailster_data[prefill]" value="0"><input type="checkbox" name="mailster_data[prefill]" value="1" <?php checked( $form->prefill ) ?>> <?php esc_html_e( 'fill fields with known data if user is logged in', 'mailster' );?></label>
+				<p><label><input type="hidden" name="mailster_data[prefill]" value="0"><input type="checkbox" name="mailster_data[prefill]" value="1" <?php checked( $form->prefill ) ?>> <?php esc_html_e( 'Fill fields with known data if user is logged in', 'mailster' );?></label>
 				</p>
 
-				<p><label><input type="hidden" name="mailster_data[redirect]" value=""><input id="redirect-cb" type="checkbox" <?php checked( ! ! $form->redirect ) ?>> <?php esc_html_e( 'redirect after submit', 'mailster' );?></label>
+				<p><label><input type="hidden" name="mailster_data[redirect]" value=""><input id="redirect-cb" type="checkbox" <?php checked( ! ! $form->redirect ) ?>> <?php esc_html_e( 'Redirect after submit', 'mailster' );?></label>
 				<input type="text" id="redirect-tf" name="mailster_data[redirect]" class="widefat regular-text" value="<?php echo $form->redirect; ?>" placeholder="https://www.example.com" >
 				</p>
 
-				<p><label><input type="hidden" name="mailster_data[overwrite]" value="0"><input type="checkbox" name="mailster_data[overwrite]" value="1" <?php checked( $form->overwrite ) ?>> <?php esc_html_e( 'allow users to update their data with this form', 'mailster' );?></label>
+				<p><label><input type="hidden" name="mailster_data[overwrite]" value="0"><input type="checkbox" name="mailster_data[overwrite]" value="1" <?php checked( $form->overwrite ) ?>> <?php esc_html_e( 'Allow users to update their data with this form', 'mailster' );?></label>
 				</p>
 		</fieldset>
 
 		<fieldset>
 			<legend><?php esc_html_e( 'Profile', 'mailster' ) ?></legend>
 				<p><label>
-					<input type="hidden" name="profile_form" value="0"><input type="checkbox" name="profile_form" value="1" <?php checked( $is_profile ) ?> <?php if ( $is_profile ) { echo 'disabled'; }?>> <?php esc_html_e( 'use this form as user profile.', 'mailster' );?>
+					<input type="hidden" name="profile_form" value="0"><input type="checkbox" name="profile_form" value="1" <?php checked( $is_profile ) ?> <?php if ( $is_profile ) { echo 'disabled'; }?>> <?php esc_html_e( 'Use this form as user profile.', 'mailster' );?>
 				</label>
 				</p>
 					<?php if ( ! $is_profile ) :
@@ -330,19 +330,19 @@ if ( $is_new ) {
 		<fieldset>
 			<legend><?php esc_html_e( 'List Options', 'mailster' ) ?></legend>
 				<p>
-				<label><input type="hidden" name="mailster_data[userschoice]" value="0"><input type="checkbox" name="mailster_data[userschoice]" class="mailster_userschoice" value="1" <?php checked( $form->userschoice );?>> <?php esc_html_e( 'users decide which list they subscribe to', 'mailster' );?></label>
-				<br> &nbsp; <label><input type="hidden" name="mailster_data[dropdown]" value="0"><input type="checkbox" name="mailster_data[dropdown]" class="mailster_dropdown" value="1" <?php checked( $form->dropdown ) ?><?php disabled( ! $form->userschoice ) ?>> <?php esc_html_e( 'show drop down instead of check boxes', 'mailster' );?></label>
+				<label><input type="hidden" name="mailster_data[userschoice]" value="0"><input type="checkbox" name="mailster_data[userschoice]" class="mailster_userschoice" value="1" <?php checked( $form->userschoice );?>> <?php esc_html_e( 'Users decide which list they subscribe to', 'mailster' );?></label>
+				<br> &nbsp; <label><input type="hidden" name="mailster_data[dropdown]" value="0"><input type="checkbox" name="mailster_data[dropdown]" class="mailster_dropdown" value="1" <?php checked( $form->dropdown ) ?><?php disabled( ! $form->userschoice ) ?>> <?php esc_html_e( 'Show drop down instead of check boxes', 'mailster' );?></label>
 				</p>
 				<fieldset>
-				<legend class="mailster_userschoice_td" <?php if ( $form->userschoice ) {echo ' style="display:none"';}?>><?php esc_html_e( 'subscribe new users to', 'mailster' );?></legend>
-				<legend class="mailster_userschoice_td" <?php if ( ! $form->userschoice ) {echo ' style="display:none"';}?>><?php esc_html_e( 'users can subscribe to', 'mailster' );?></legend>
+				<legend class="mailster_userschoice_td" <?php if ( $form->userschoice ) {echo ' style="display:none"';}?>><?php esc_html_e( 'Subscribe new users to', 'mailster' );?></legend>
+				<legend class="mailster_userschoice_td" <?php if ( ! $form->userschoice ) {echo ' style="display:none"';}?>><?php esc_html_e( 'Users can subscribe to', 'mailster' );?></legend>
 
 				<?php mailster( 'lists' )->print_it( null, null, 'mailster_data[lists]', false, $form->lists ); ?>
 
 				<p><label><input type="hidden" name="mailster_data[precheck]" value="0"><input type="checkbox" name="mailster_data[precheck]" value="1" <?php checked( $form->precheck ) ?>> <?php esc_html_e( 'checked by default', 'mailster' ); ?></label>
 				</p>
 				</fieldset>
-				<p><label><input type="hidden" name="mailster_data[addlists]" value="0"><input type="checkbox" name="mailster_data[addlists]" value="1" <?php checked( $form->addlists ) ?>> <?php esc_html_e( 'assign new lists automatically to this form', 'mailster' ); ?></label>
+				<p><label><input type="hidden" name="mailster_data[addlists]" value="0"><input type="checkbox" name="mailster_data[addlists]" value="1" <?php checked( $form->addlists ) ?>> <?php esc_html_e( 'Assign new lists automatically to this form', 'mailster' ); ?></label>
 				</p>
 
 		</fieldset>
@@ -379,7 +379,7 @@ if ( $is_new ) {
 									<td scope="row"><label for="mailster_text_content"><?php esc_html_e( 'Text', 'mailster' );?>: <code>{content}</code></label><p class="description"><?php printf( __( 'The text new subscribers get when Double-Opt-In is selected. Use %s for the link placeholder. Basic HTML is allowed', 'mailster' ), '<code>{link}</code>' ); ?></p></td>
 									<td><textarea id="mailster_text_content" name="mailster_data[content]" rows="10" cols="50" class="large-text"><?php echo esc_attr( $form->content ); ?></textarea></td>
 								</tr>
-								<tr><td><?php esc_html_e( 'used template file', 'mailster' );?></td><td>
+								<tr><td><?php esc_html_e( 'Used template file', 'mailster' );?></td><td>
 									<select name="mailster_data[template]">
 									<?php
 									$templatefiles = mailster( 'templates' )->get_files( mailster_option( 'default_template' ) );
@@ -395,16 +395,16 @@ if ( $is_new ) {
 
 								<tr>
 									<td><?php esc_html_e( 'Resend Confirmation', 'mailster' ) ?></td>
-									<td><div><input type="checkbox" name="mailster_data[resend]" value="1" <?php checked( $form->resend ) ?>> <?php printf( __( 'resend confirmation %1$s times with a delay of %2$s hours if user hasn\'t confirmed the subscription', 'mailster' ), '<input type="text" name="mailster_data[resend_count]" value="' . esc_attr( $form->resend_count ) . '" class="small-text">', '<input type="text" name="mailster_data[resend_time]" value="' . esc_attr( $form->resend_time ) . '" class="small-text">' ) ?></div></td>
+									<td><div><input type="checkbox" name="mailster_data[resend]" value="1" <?php checked( $form->resend ) ?>> <?php printf( __( 'Resend confirmation %1$s times with a delay of %2$s hours if user hasn\'t confirmed the subscription', 'mailster' ), '<input type="text" name="mailster_data[resend_count]" value="' . esc_attr( $form->resend_count ) . '" class="small-text">', '<input type="text" name="mailster_data[resend_time]" value="' . esc_attr( $form->resend_time ) . '" class="small-text">' ) ?></div></td>
 								</tr>
 
-								<tr><td><?php esc_html_e( 'redirect after confirm', 'mailster' );?></td><td><input type="text" name="mailster_data[confirmredirect]" class="widefat" value="<?php if ( isset( $form->confirmredirect ) ) {	echo $form->confirmredirect; } ?>" placeholder="http://www.example.com" ></td>
+								<tr><td><?php esc_html_e( 'Redirect after confirm', 'mailster' );?></td><td><input type="text" name="mailster_data[confirmredirect]" class="widefat" value="<?php if ( isset( $form->confirmredirect ) ) {	echo $form->confirmredirect; } ?>" placeholder="http://www.example.com" ></td>
 								</tr>
 								<tr>
 									<td>&nbsp;</td>
-									<td><label><input type="hidden" name="mailster_data[vcard]" class="vcard" value="0"><input type="checkbox" name="mailster_data[vcard]" class="vcard" value="1" <?php checked( $form->vcard );?> data-id="<?php echo $id; ?>"> <?php esc_html_e( 'attach vCard to all confirmation mails', 'mailster' ) ?></label>
+									<td><label><input type="hidden" name="mailster_data[vcard]" class="vcard" value="0"><input type="checkbox" name="mailster_data[vcard]" class="vcard" value="1" <?php checked( $form->vcard );?> data-id="<?php echo $id; ?>"> <?php esc_html_e( 'Attach vCard to all confirmation mails', 'mailster' ) ?></label>
 									<div id="vcard-field" <?php if ( ! $form->vcard ) {	echo ' style="display:none"'; } ?> class="vcard-field">
-									<p class="description"><?php printf( __( 'paste in your vCard content. You can use %s to generate your personal vcard', 'mailster' ), '<a href="http://vcardmaker.com/" class="external">vcardmaker.com</a>' ); ?></p>
+									<p class="description"><?php printf( __( 'Paste in your vCard content. You can use %s to generate your personal vcard', 'mailster' ), '<a href="http://vcardmaker.com/" class="external">vcardmaker.com</a>' ); ?></p>
 									<?php $vcard = $form->vcard_content ? $form->vcard_content : $this->get_vcard(); ?><textarea name="mailster_data[vcard_content]" rows="10" cols="50" class="large-text code"><?php echo esc_textarea( $vcard ); ?></textarea>
 									</div>
 
@@ -424,7 +424,7 @@ if ( $is_new ) {
 
 </div>
 
-<p class="section-nav"><span class="alignleft"><input type="submit" name="design" value="&laquo; <?php esc_html_e( 'back to Design', 'mailster' );?>" class="button-primary button-small"></span></p>
+<p class="section-nav"><span class="alignleft"><input type="submit" name="design" value="&laquo; <?php esc_html_e( 'Back to Design', 'mailster' );?>" class="button-primary button-small"></span></p>
 
 <?php endif; ?>
 <?php if ( ! $is_new ) :  ?>

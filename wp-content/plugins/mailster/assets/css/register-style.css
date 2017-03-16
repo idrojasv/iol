@@ -37,8 +37,8 @@
 }
 
 .register_form_wrap .howto{
-	width: 66%;
-	margin: 0.3em auto;
+	width: 80%;
+	margin: 0.6em auto 0;
 	line-height: 1.4em;
 }
 .register_form_wrap .registration_complete{

@@ -34,7 +34,14 @@ class Ai1wm_File_Htaccess {
 	 * @return boolean|null
 	 */
 	public static function create( $path ) {
-		$contents = "<IfModule mod_mime.c>\nAddType application/octet-stream .wpress\n</IfModule>";
+		$contents = "<IfModule mod_mime.c>\n" .
+					"AddType application/octet-stream .wpress\n" .
+					"</IfModule>\n" .
+					"<IfModule mod_dir.c>\n" .
+					"DirectoryIndex index.php\n" .
+					"</IfModule>\n" .
+					"Options -Indexes\n";
+
 		return Ai1wm_File::create( $path, $contents );
 	}
 }

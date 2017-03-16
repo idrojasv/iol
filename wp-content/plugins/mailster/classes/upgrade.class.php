@@ -12,6 +12,8 @@ class MailsterUpgrade {
 		add_action( 'wp_ajax_mailster_batch_update', array( &$this, 'run_update' ) );
 		add_action( 'admin_menu', array( &$this, 'admin_menu' ) );
 
+		register_activation_hook( 'myMail/myMail.php', array( &$this, 'maybe_deactivate_mymail' ) );
+
 	}
 
 	public function init() {
@@ -91,6 +93,23 @@ class MailsterUpgrade {
 	}
 
 
+	public function maybe_deactivate_mymail() {
+
+		add_action( 'update_option_active_plugins', array( &$this, 'deactivate_mymail' ) );
+
+	}
+
+
+	public function deactivate_mymail( $info = true ) {
+		if ( is_plugin_active( 'myMail/myMail.php' ) ) {
+			if ( $info ) {
+				mailster_notice( '<strong>MyMail is now Mailster - Plugin deactivated.</strong>', 'error', true );
+			}
+			deactivate_plugins( 'myMail/myMail.php' );
+		}
+	}
+
+
 	public function run_update() {
 
 		// cron look
@@ -112,14 +131,14 @@ class MailsterUpgrade {
 			$output = ob_get_contents();
 			ob_end_clean();
 			if ( ! empty( $output ) ) {
-				$return['output'] = "======================================================\n";
+				$return['output'] = "===========================================================\n";
 				$return['output'] .= "* OUTPUT for $id (" . date( 'H:i:s', current_time( 'timestamp' ) ) . ') - ' . size_format( memory_get_peak_usage( true ), 2 ) . "\n";
-				$return['output'] .= "======================================================\n";
+				$return['output'] .= "===========================================================\n";
 				$return['output'] .= strip_tags( $output ) . "\n";
 			} else {
-				// $return['output']  = "======================================================\n";
+				// $return['output']  = "===========================================================\n";
 				// $return['output'] .= "* NO OUTPUT for $id (".date('Y-m-d H:i:s', current_time('timestamp')).")\n";
-				// $return['output'] .= "======================================================\n";
+				// $return['output'] .= "===========================================================\n";
 			}
 		}
 
@@ -158,13 +177,14 @@ class MailsterUpgrade {
 			$actions = wp_parse_args( array(
 					'pre_mailster_updateslug' => 'Update Plugin Slug',
 					'pre_mailster_backuptables' => 'Backup old Tables',
+					'pre_mailster_form_prepare' => 'Checking Forms',
 					'pre_mailster_copytables' => 'Copy Database Tables',
 					'pre_mailster_options' => 'Copy Options',
 					'pre_mailster_updatedpostmeta' => 'Update Post Meta',
 					'pre_mailster_movefiles' => 'Moving Files and Folders',
 					// 'pre_mailster_checkhooks' => 'Check Hooks',
 					'pre_mailster_removeoldtables' => 'Remove old Tables',
-					'pre_mailster_removebackup' => 'Remove Backup',
+					// 'pre_mailster_removebackup' => 'Remove Backup',
 					'pre_mailster_removemymail' => 'Remove old Options',
 					'pre_mailster_legacy' => 'Prepare Legacy mode',
 					// 'db_structure' => 'checking DB structure',
@@ -242,23 +262,32 @@ class MailsterUpgrade {
 ?>
 	<div class="wrap">
 		<h2>Mailster Batch Update</h2>
-		<?php wp_nonce_field( 'mailster_nonce', 'mailster_nonce', false );
-?>
-		<p><strong>Some additional updates are required! Please keep this browser tab open until all updates are finished!</strong></p>
-		<p>
-			<form action="" method="get">
-			<input type="hidden" name="post_type" value="newsletter">
-			<input type="hidden" name="page" value="mailster_update">
-				<input type="submit" class="button button-small" name="redo" value="redo update" onclick="return confirm('Do you really like to redo the update?');">
-			</form>
-		</p>
-		<div class="alignleft" style="width:54%">
-			<div id="output"></div>
-			<div id="error-list"></div>
-		</div>
+		<?php wp_nonce_field( 'mailster_nonce', 'mailster_nonce', false ); ?>
 
-		<div class="alignright" style="width:45%">
-			<textarea id="textoutput" class="widefat" rows="30" style="width:100%;font-size:12px;font-family:monospace;background:none"></textarea>
+		<p><strong>Some additional updates are required! Please keep this browser tab open until all updates are finished!</strong></p>
+		<div id="mailster-update-info">
+			<div class="notice-error error inline"><p>Make sure to create a backup before upgrading MyMail to Mailster. If you experience any issues upgrading please reach out to us via our member area <a href="https://mailster.co/go/register" class="external">here</a>.<br>
+			<strong>Important: No data can get lost thanks to our smart upgrade process.</strong></p></div>
+			<p>
+				<a class="button button-primary button-hero" id="mailster-start-upgrade">Ok, I've got a backup. Start the Update Process</a>
+			</p>
+		</div>
+		<div id="mailster-update-process" style="display: none;">
+
+			<div class="alignleft" style="width:54%">
+				<div id="output"></div>
+				<div id="error-list"></div>
+				<form id="mailster-post-upgrade" action="" method="get" style="display: none;">
+				<input type="hidden" name="post_type" value="newsletter">
+				<input type="hidden" name="page" value="mailster_update">
+					<input type="submit" class="hidden button button-small" name="redo" value="redo update" onclick="return confirm('Do you really like to redo the update?');">
+				</form>
+			</div>
+
+			<div class="alignright" style="width:45%">
+				<textarea id="textoutput" class="widefat" rows="30" style="width:100%;font-size:12px;font-family:monospace;background:none"></textarea>
+			</div>
+
 		</div>
 
 	</div>
@@ -360,7 +389,7 @@ class MailsterUpgrade {
 	 */
 	private function do_pre_mailster_updateslug() {
 
-		deactivate_plugins( array( 'myMail/myMail.php' ), false, true );
+		$this->deactivate_mymail( false );
 
 		$active_plugins = get_option( 'active_plugins', array() );
 
@@ -397,6 +426,25 @@ class MailsterUpgrade {
 		}
 
 		return false;
+
+	}
+
+
+	/**
+	 *
+	 *
+	 * @return unknown
+	 */
+	private function do_pre_mailster_form_prepare() {
+
+		global $wpdb;
+
+		if ( $formstructure = $wpdb->get_row( "SELECT * FROM {$wpdb->prefix}mymail_forms WHERE ID = 0" ) ) {
+			$wpdb->query( "DELETE FROM {$wpdb->prefix}mymail_forms WHERE ID = 0" );
+			update_option( '_mailster_formstructure', $formstructure );
+		}
+
+		return true;
 
 	}
 
@@ -520,7 +568,6 @@ class MailsterUpgrade {
 
 	}
 
-
 	/**
 	 *
 	 *
@@ -530,7 +577,24 @@ class MailsterUpgrade {
 
 		global $wpdb;
 
+		if ( $formstructure = get_option( '_mailster_formstructure' ) ) {
+			unset( $formstructure->ID );
+			$wpdb->insert( "{$wpdb->prefix}mailster_forms", (array) $formstructure );
+			delete_option( '_mailster_formstructure' );
+			$form_id = $wpdb->insert_id;
+
+			$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->prefix}mailster_form_fields SET form_id = %d WHERE form_id = 0", $form_id ) );
+			$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->prefix}mailster_forms_lists SET form_id = %d WHERE form_id = 0", $form_id ) );
+			$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->posts} SET `post_content` = replace(post_content, %s, %s)", '[newsletter_signup_form id=0]', '[newsletter_signup_form id=' . $form_id . ']' ) );
+
+			$old_profile_form = mailster_option( 'profile_form' );
+			if ( 0 == $old_profile_form ) {
+				mailster_update_option( 'profile_form', $form_id );
+			}
+		}
+
 		$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->postmeta} SET `meta_key` = replace(meta_key, %s, %s)", 'mymail', 'mailster' ) );
+		$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->posts} SET `post_content` = replace(post_content, %s, %s)", 'mymail_image_placeholder', 'mailster_image_placeholder' ) );
 
 		$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->prefix}mailster_forms SET `style` = replace(style, %s, %s)", 'mymail', 'mailster' ) );
 		$wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->prefix}mailster_forms SET `custom_style` = replace(custom_style, %s, %s)", 'mymail', 'mailster' ) );
@@ -583,7 +647,7 @@ class MailsterUpgrade {
 		}
 
 		if ( is_dir( $new_location . '_bak' ) ) {
-			$wp_filesystem->rmdir( $new_location . '_bak', true );
+			// $wp_filesystem->rmdir( $new_location . '_bak', true );
 		}
 
 		$new_location_url = preg_replace( '/https?:/', '', MAILSTER_UPLOAD_URI );
@@ -704,6 +768,8 @@ class MailsterUpgrade {
 		global $wp_filesystem;
 		mailster_require_filesystem();
 
+		$this->deactivate_mymail( false );
+
 		if ( ! is_dir( WP_PLUGIN_DIR . '/myMail' ) ) {
 			wp_mkdir_p( WP_PLUGIN_DIR . '/myMail' );
 		}
@@ -722,7 +788,7 @@ class MailsterUpgrade {
 			@copy( $from, $to );
 		}
 
-		$content = "<?php\n/*\nPlugin Name: MyMail Legacy Code Helper\nDescription: Helper for legacy external forms and cron of Mailster (former MyMail). You can delete this 'plugin' if you have no external forms or subscriber buttons or you have update them already to the new version.\n */\ndie('You cannot activate this plugin!')";
+		$content = "<?php\n/*\nPlugin Name: MyMail Legacy Code Helper\nDescription: Helper for legacy external forms and cron of Mailster (former MyMail). You can delete this 'plugin' if you have no external forms or subscriber buttons or you have update them already to the new version.\n */\ndie('There\'s no need to activate this plugin! If you experience any issues upgrading please reach out to us via our member area <a href=\"https://mailster.co/go/register\" target=\"_blank\">here</a>.');\n";
 
 		if ( ! $wp_filesystem->put_contents( WP_PLUGIN_DIR . '/myMail/deprecated.php', $content, FS_CHMOD_FILE ) ) {
 			file_put_contents( WP_PLUGIN_DIR . '/myMail/deprecated.php', $content );

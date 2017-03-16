@@ -173,6 +173,7 @@ class MailsterTemplate {
 			$xpath = new DOMXPath( $doc );
 			$logos = $xpath->query( '//*/img[@label="Logo" or @label="logo" or @label="Your Logo"]' );
 			$high_dpi = mailster_option( 'high_dpi' ) ? 2 : 1;
+			$logo_link = mailster_option( 'logo_link' );
 
 			foreach ( $logos as $logo ) {
 
@@ -185,12 +186,18 @@ class MailsterTemplate {
 				if ( ! $new_logo ) {
 					continue;
 				}
-
 				$logo->setAttribute( 'data-id', $new_logo['id'] );
 				$logo->setAttribute( 'width', $width );
-				$logo->setAttribute( 'height', $width / $new_logo['asp'] );
+				$logo->setAttribute( 'height', round( $width / $new_logo['asp'] ) );
 				$logo->setAttribute( 'src', $new_logo['url'] );
 
+				if ( $logo_link ) {
+					$parent = $logo->parentNode;
+					$link = $doc->createElement( 'a' );
+					$link->setAttribute( 'href', $logo_link );
+					$link->appendChild( $logo );
+					$parent->appendChild( $link );
+				}
 			}
 		}
 

@@ -82,6 +82,7 @@ class MailsterSettings {
 			'system_mail' => false,
 
 			'default_template' => 'mymail',
+			'logo_link' => get_bloginfo( 'url' ),
 			'high_dpi' => true,
 
 			'homepage' => false,

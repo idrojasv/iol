@@ -24,10 +24,12 @@
 		<p class="description"><?php _e( 'Use a logo for new created campaigns', 'mailster' ) ?></p>
 		</th>
 		<td>
-			<?php
-			mailster( 'helper' )->media_editor_link( mailster_option( 'logo', get_theme_mod( 'custom_logo' ) ), 'mailster_options[logo]', 'full' );
-?>
+		<?php mailster( 'helper' )->media_editor_link( mailster_option( 'logo', get_theme_mod( 'custom_logo' ) ), 'mailster_options[logo]', 'full' ); ?>
 		</td>
+	</tr>
+	<tr valign="top">
+		<th scope="row"><?php esc_html_e( 'Logo Link', 'mailster' ) ?> *</th>
+		<td><input type="text" name="mailster_options[logo_link]" value="<?php echo esc_attr( mailster_option( 'logo_link' ) ); ?>" class="regular-text"> <span class="description"><?php esc_html_e( 'A link for your logo.', 'mailster' ) ?></span></td>
 	</tr>
 	<tr valign="top">
 		<th scope="row"><?php _e( 'Social Services', 'mailster' ) ?> *

@@ -59,10 +59,10 @@ if ( $is_new ) {
 <?php }?>
 	<span class="alignright">
 		<?php if ( ! $is_new && $subscriber->status == 0 ) : ?>
-			<input type="submit" name="confirmation" class="button button-large" value="<?php esc_html_e( 'resend confirmation', 'mailster' );?>" onclick="return confirm('<?php esc_attr_e( 'Do you really like to resend the confirmation?', 'mailster' );?>');">
+			<input type="submit" name="confirmation" class="button button-large" value="<?php esc_html_e( 'Resend Confirmation', 'mailster' );?>" onclick="return confirm('<?php esc_attr_e( 'Do you really like to resend the confirmation?', 'mailster' );?>');">
 		<?php endif; ?>
 		<?php if ( ! $is_new && current_user_can( 'mailster_delete_subscribers' ) ) : ?>
-			<input type="submit" name="delete" class="button button-large" value="<?php esc_html_e( 'delete Subscriber', 'mailster' );?>" onclick="return confirm('<?php esc_attr_e( 'Do you really like to remove this subscriber?', 'mailster' );?>');">
+			<input type="submit" name="delete" class="button button-large" value="<?php esc_html_e( 'Delete Subscriber', 'mailster' );?>" onclick="return confirm('<?php esc_attr_e( 'Do you really like to remove this subscriber?', 'mailster' );?>');">
 		<?php endif; ?>
 		<input type="submit" name="save" class="button button-primary button-large" value="<?php esc_html_e( 'Save', 'mailster' );?>">
 	</span>

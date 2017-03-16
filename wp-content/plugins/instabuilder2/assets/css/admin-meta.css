@@ -1,0 +1,254 @@
+/*= TOGGLE SWITCH
+ * ========================
+ */
+#ib2-launch-btn {
+	padding-top:10px;
+	text-align:center;
+	border-top:1px solid #E5E5E5;
+}
+.ib2-switch-label {
+	margin-bottom:7px;
+}
+.ib2-switch {
+	display:block;
+	margin-bottom:24px;
+}
+.ib2-switch label {
+	color: transparent;
+	background: url('../img/switch-sprite.png') -40px 0  no-repeat;
+	border-radius: 14px;
+	box-shadow: 0 1px 2px #888, 0 0px 3px #777, inset 0 -1px 5px #333;
+	display: block;
+	position: relative;
+	text-indent: 100%;
+	width: 65px; height: 29px;
+	-webkit-transition: background-position .3s ease;
+	-moz-transition: background-position .3s ease;
+	cursor: pointer;
+	font-size: .01em;
+	float: left;
+}
+.ib2-switch input[type=checkbox] {
+	display: none;
+}
+.ib2-switch label span {
+	background: url('../img/switch-sprite.png') -1px -30px no-repeat;
+	border: 0px solid transparent;
+	border-radius: 14px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 2px 13px rgba(0,0,0,0.5);
+	content: "";
+	display: block;
+	position: absolute; top: 0; left: -1px;
+	width: 28px; height: 28px;
+	-webkit-transition: left .3s ease;
+	-moz-transition: left .3s ease;
+}
+.ib2-switch input[type=checkbox]:checked + label {
+	background-position: 0 0;
+}
+.ib2-switch input[type=checkbox]:checked + label span {
+	left: 40px;
+}
+/*= Button
+ * ========================
+ */
+.ib2-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none !important;
+}
+.ib2-btn:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.ib2-btn:hover,
+.ib2-btn:focus {
+  color: #333;
+  text-decoration: none !important;
+}
+.ib2-btn:active,
+.ib2-btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.ib2-btn.disabled,
+.ib2-btn[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+.ib2-btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.ib2-btn-default:hover,
+.ib2-btn-default:focus,
+.ib2-btn-default:active,
+.ib2-btn-default.active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.ib2-btn-default:active,
+.ib2-btn-default.active {
+  background-image: none;
+}
+.ib2-btn-default.disabled,
+.ib2-btn-default[disabled],
+.ib2-btn-default.disabled:hover,
+.ib2-btn-default[disabled]:hover,
+.ib2-btn-default.disabled:focus,
+.ib2-btn-default[disabled]:focus,
+.ib2-btn-default.disabled:active,
+.ib2-btn-default[disabled]:active,
+.ib2-btn-default.disabled.active,
+.ib2-btn-default[disabled].active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.ib2-btn-primary {
+  color: #fff;
+  background-color: #9fb659;
+  border-color: #7c913b;
+}
+.ib2-btn-primary:hover,
+.ib2-btn-primary:focus,
+.ib2-btn-primary:active,
+.ib2-btn-primary.active {
+  color: #fff;
+  background-color: #79973e;
+  border-color: #66822f;
+}
+.ib2-btn-primary:active,
+.ib2-btn-primary.active {
+  background-image: none;
+}
+.ib2-btn-primary.disabled,
+.ib2-btn-primary[disabled],
+.ib2-btn-primary.disabled:hover,
+.ib2-btn-primary[disabled]:hover,
+.ib2-btn-primary.disabled:focus,
+.ib2-btn-primary[disabled]:focus,
+.ib2-btn-primary.disabled:active,
+.ib2-btn-primary[disabled]:active,
+.ib2-btn-primary.disabled.active,
+.ib2-btn-primary[disabled].active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.ib2-btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.ib2-btn-sm {
+  padding: 7px 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+/*= Thumbnail
+ * ========================
+ */
+.ib2-img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.ib2-img-responsive {
+  width: 100%;
+  height:auto;
+}
+/*= Template List
+ * ========================
+ */
+#ib2-templates-content {
+	width:100%;
+	height:360px;
+	overflow-y: auto;
+}
+.ib2-tmpl-thumb {
+	float: left;
+	width:260px;
+	height:135px;
+	overflow:hidden;
+	cursor:pointer;
+	position:relative;
+	margin-right:15px;
+	margin-bottom:15px;
+	border: 3px solid #212121;
+}
+#ib2-templates-bg {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#000;
+	opacity:0.6;
+	z-index: 1000;
+	display:none;
+}
+#ib2-templates,
+#ib2-new-variant {
+	display:none;
+	position:absolute;
+	background-color:#3d3d3d;
+	color:#FeFeFe;
+	width:920px;
+	height:auto;
+	z-index: 1025;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border:1px solid #212121;
+	-webkit-box-shadow: 0 0 10px 4px rgba(0,0,0,0.4);
+	box-shadow: 0 0 10px 4px rgba(0,0,0,0.4);
+}
+.ib2-template-header {
+	font-size:16px;
+	font-weight:800;
+	border-bottom:1px solid #212121;
+	padding:10px 25px;
+	color:#ccc;
+}
+.ib2-template-content {
+	padding:10px 25px;
+	border-top:1px solid #545454;
+	border-bottom:1px solid #212121;
+}
+.ib2-template-content h3 {
+	color:#FeFeFe !important;
+}
+
+.ib2-template-footer {
+	border-top:1px solid #545454;
+	padding:8px 25px;
+	color:#ccc;
+	text-align:right;
+}

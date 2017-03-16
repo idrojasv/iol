@@ -60,7 +60,7 @@ foreach ( $current_colors as $i => $color ) {
 		<?php
 		$customcolors = get_option( 'mailster_colors' );
 		if ( isset( $customcolors[ $this->get_template() ] ) ) : ?>
-			<a class="colorschema-delete-all"><?php esc_html_e( 'delete all custom schemas', 'mailster' ) ?></a>
+			<a class="colorschema-delete-all"><?php esc_html_e( 'Delete all custom schemas', 'mailster' ) ?></a>
 		<?php endif; ?>
 	</p>
 	<ul class="colorschema" title="<?php esc_html_e( 'original', 'mailster' ) ?>">

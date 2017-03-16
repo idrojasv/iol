@@ -308,21 +308,11 @@ jQuery(document).ready(function ($) {
 				});
 
 				_ajax('send_test', {
-					ID: campaign_id,
-					subject: _subject.val(),
-					from: $('#mailster_from').val(),
-					from_name: $('#mailster_from-name').val(),
-					to: $('#mailster_testmail').val(),
-					reply_to: $('#mailster_reply_to').val(),
 					spamtest: true,
-					template: $('#mailster_template_name').val(),
-					preheader: _preheader.val(),
-					embed_images: $('#mailster_data_embed_images').is(':checked'),
-					issue: $('#mailster_autoresponder_issue').val(),
+					formdata: $('#post').serialize(),
+					to: $('#mailster_testmail').val(),
 					content: _content.val(),
-					plaintext: _excerpt.val(),
-					autoplain: $('#plaintext').is(':checked'),
-					head: _head.val()
+					plaintext: _excerpt.val()
 
 				}, function (response) {
 

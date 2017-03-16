@@ -97,8 +97,8 @@ defined('ABSPATH') or die("you do not have acces to this page!");
       //flush the permalinks
       if ($this->clicked_activate_ssl()) {
         add_action( 'admin_init', 'flush_rewrite_rules' ,39);
-        //global $rsssl_cache;
-        //add_action('admin_init', array($rsssl_cache,'flush'),40);
+        global $rsssl_cache;
+        add_action('admin_init', array($rsssl_cache,'flush'),40);
       }
 
       if (!$this->wpconfig_ok()) {
@@ -177,7 +177,8 @@ defined('ABSPATH') or die("you do not have acces to this page!");
   */
 
   private function clicked_activate_ssl() {
-    if (!isset( $_POST['rsssl_nonce'] ) || !wp_verify_nonce( $_POST['rsssl_nonce'], 'rsssl_nonce' )) return false;
+    //$bypass_nonce = (defined("rsssl_bypass_nonce") && rsssl_bypass_nonce) ? true : false;
+    //if (!$bypass_nonce && !(isset( $_POST['rsssl_nonce'] ) && wp_verify_nonce( $_POST['rsssl_nonce'], 'rsssl_nonce' ))) return false;
 
     if (isset($_POST['rsssl_do_activate_ssl'])) {
       $this->ssl_enabled=true;
@@ -327,6 +328,7 @@ defined('ABSPATH') or die("you do not have acces to this page!");
     <form action="" method="post">
       <?php wp_nonce_field( 'rsssl_nonce', 'rsssl_nonce' );?>
       <input type="submit" class='button button-primary' value="<?php _e("Go ahead, activate SSL!","really-simple-ssl");?>" id="rsssl_do_activate_ssl" name="rsssl_do_activate_ssl">
+      <br><?php _e("You may need to login in again.", "really-simple-ssl")?>
     </form>
   </p>
     <?php
@@ -537,6 +539,7 @@ defined('ABSPATH') or die("you do not have acces to this page!");
             $this->set_siteurl_to_ssl_networkwide();
           }
         }
+
       }
   }
 
@@ -1169,16 +1172,26 @@ protected function get_server_variable_fix_code(){
        //plugin url: domain.com/wp-content/etc
        $testpage_url = trailingslashit($this->test_url())."ssl-test-page.php";
        $this->trace_log("Opening testpage to check for ssl: ".$testpage_url);
-       $filecontents = $rsssl_url->get_contents($testpage_url);
-       if($rsssl_url->error_number!=0) {
-         $errormsg = $rsssl_url->get_curl_error($rsssl_url->error_number);
-         $this->site_has_ssl = FALSE;
-         $this->trace_log("No ssl detected. No certificate, or the testpage is blocked by security settings. The ssl testpage returned the error: ".$errormsg);
-       } else {
+
+       $response = wp_remote_get( $testpage_url );
+       if( is_array($response) ) {
+         $status = wp_remote_retrieve_response_code( $response );
+         $filecontents = wp_remote_retrieve_body($response);
+       }
+
+       $this->trace_log("test page url, enter in browser to check manually: ".$testpage_url);
+
+       if(!is_wp_error( $response ) && (strpos($filecontents, "#SSL TEST PAGE#") !== false)) {
          $this->site_has_ssl = TRUE;
          $this->trace_log("SSL test page loaded successfully");
+       } else {
+         $this->site_has_ssl = FALSE;
+         $error = "";
+         if (is_wp_error( $response ) ) $error = $response->get_error_message();
+         $this->trace_log("No ssl detected. No certificate, or the testpage is blocked by security settings. The ssl testpage returned the error: ".$error);
        }
      }
+
      if ($this->site_has_ssl) {
        //check the type of ssl, either by parsing the returned string, or by reading the server vars.
        if ((strpos($filecontents, "#CLOUDFRONT#") !== false) || (isset($_SERVER['HTTP_CLOUDFRONT_FORWARDED_PROTO']) && ($_SERVER['HTTP_CLOUDFRONT_FORWARDED_PROTO'] == 'https'))) {
@@ -1273,16 +1286,23 @@ protected function get_server_variable_fix_code(){
      }
 
      $testpage_url .= ("/ssl-test-page.html");
-     $filecontents = $rsssl_url->get_contents($testpage_url);
-     $this->trace_log("test page url, click to check manually: ".$testpage_url);
-     if (($rsssl_url->error_number==0) && (strpos($filecontents, "#SSL TEST PAGE#") !== false)) {
+
+     $response = wp_remote_get( $testpage_url );
+     if( is_array($response) ) {
+       $status = wp_remote_retrieve_response_code( $response );
+       $filecontents = wp_remote_retrieve_body($response);
+     }
+
+     $this->trace_log("test page url, enter in browser to check manually: ".$testpage_url);
+
+     if (!is_wp_error( $response ) && (strpos($filecontents, "#SSL TEST PAGE#") !== false)) {
        $this->htaccess_test_success = TRUE;
- 		  if ($this->debug) {$this->trace_log("htaccess rules tested successfully.");}
+ 		   $this->trace_log("htaccess rules tested successfully.");
      } else {
        //.htaccess rewrite rule seems to be giving problems.
        $this->htaccess_test_success = FALSE;
-       if ($rsssl_url->error_number!=0) {
-         $this->trace_log("htaccess rules test failed with error: ".$rsssl_url->get_curl_error($rsssl_url->error_number));
+       if (is_wp_error( $response )) {
+         $this->trace_log("htaccess rules test failed with error: ".$response->get_error_message());
        } else {
          $this->trace_log("htaccess test rules failed. Set WordPress redirect in settings/ssl");
        }
@@ -1528,63 +1548,28 @@ protected function get_server_variable_fix_code(){
       }
 
       $htaccess = file_get_contents($this->ABSpath.".htaccess");
-      if(!$this->htaccess_contains_redirect_rules()){
 
-        if (!is_writable($this->ABSpath.".htaccess")) {
-          //set the javascript redirect as fallback, because .htaccess couldn't be edited.
-          if ($this->clicked_activate_ssl()) $this->wp_redirect = true;
-          $this->save_options();
-          $this->trace_log(".htaccess not writable.");
-          $this->errors["NO_REDIRECT_IN_HTACCESS"] = true;
-          return;
-        }
-
-        $rules = $this->get_redirect_rules();
-
-        //insert rules before wordpress part.
-        if (strlen($rules)>0) {
-          $wptag = "# BEGIN WordPress";
-          if (strpos($htaccess, $wptag)!==false) {
-              $htaccess = str_replace($wptag, $rules.$wptag, $htaccess);
-          } else {
-              $htaccess = $htaccess.$rules;
-          }
-
-          file_put_contents($this->ABSpath.".htaccess", $htaccess);
-        }
-
-    } elseif ((is_multisite() && !$this->ssl_enabled_networkwide) || ($this->hsts!=$this->contains_hsts())) {
-
-        /*
-            Remove all rules and add new IF
-            - or the hsts option has changed, so we need to edit the htaccess anyway.
-            - or rewrite per site (if a site is added or removed on per site activated
-            - in multisite we need to rewrite even if the rules are already there.
-        */
-
-        if ($this->debug) {$this->trace_log("settings page, per site activation or hsts option change, updating htaccess...");}
-
-        if (!is_writable($this->ABSpath.".htaccess")) {
-          if($this->debug) $this->trace_log(".htaccess not writable.");
-          return;
-        }
-
-	      $htaccess = preg_replace("/#\s?BEGIN\s?rlrssslReallySimpleSSL.*?#\s?END\s?rlrssslReallySimpleSSL/s", "", $htaccess);
-        $htaccess = preg_replace("/\n+/","\n", $htaccess);
-
-        $rules = $this->get_redirect_rules();
-
-        //insert rules before wordpress part.
-        if (strlen($rules)>0) {
-          $wptag = "# BEGIN WordPress";
-          if (strpos($htaccess, $wptag)!==false) {
-              $htaccess = str_replace($wptag, $rules.$wptag, $htaccess);
-          } else {
-              $htaccess = $htaccess.$rules;
-          }
-          file_put_contents($this->ABSpath.".htaccess", $htaccess);
-        }
+      if (!is_writable($this->ABSpath.".htaccess")) {
+        if($this->debug) $this->trace_log(".htaccess not writable.");
+        return;
       }
+
+      $htaccess = preg_replace("/#\s?BEGIN\s?rlrssslReallySimpleSSL.*?#\s?END\s?rlrssslReallySimpleSSL/s", "", $htaccess);
+      $htaccess = preg_replace("/\n+/","\n", $htaccess);
+
+      $rules = $this->get_redirect_rules();
+
+      //insert rules before wordpress part.
+      if (strlen($rules)>0) {
+        $wptag = "# BEGIN WordPress";
+        if (strpos($htaccess, $wptag)!==false) {
+            $htaccess = str_replace($wptag, $rules.$wptag, $htaccess);
+        } else {
+            $htaccess = $htaccess.$rules;
+        }
+        file_put_contents($this->ABSpath.".htaccess", $htaccess);
+      }
+
   }
 
   /**
@@ -1595,12 +1580,19 @@ protected function get_server_variable_fix_code(){
   */
 
   public function mixed_content_fixer_detected(){
-    global $rsssl_url;
+
+    $status = 0;
+    $web_source = "";
     //check if the mixed content fixer is active
-    $web_source = $rsssl_url->get_contents(home_url());
-    if ($rsssl_url->error_number!=0 || (strpos($web_source, "data-rsssl=") === false)) {
-      if ($rsssl_url->error_number!=0) $this->mixed_content_fixer_status = $rsssl_url->get_curl_error($rsssl_url->error_number);
-      $this->trace_log("Check for Mixed Content detection failed ".$this->mixed_content_fixer_status);
+    $response = wp_remote_get( home_url() );
+
+    if( is_array($response) ) {
+      $status = wp_remote_retrieve_response_code( $response );
+      $web_source = wp_remote_retrieve_body($response);
+    }
+
+    if ($status!=200 || (strpos($web_source, "data-rsssl=") === false)) {
+      $this->trace_log("Check for Mixed Content detection failed, http statuscode ".$status);
       return false;
     } else {
       $this->trace_log("Mixed content fixer was successfully detected on the front end.");

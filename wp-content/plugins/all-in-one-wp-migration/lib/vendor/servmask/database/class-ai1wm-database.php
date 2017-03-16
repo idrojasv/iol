@@ -113,6 +113,14 @@ abstract class Ai1wm_Database {
 	protected $number_of_replaces = 0;
 
 	/**
+	 * Visual Composer
+	 *
+	 * @access protected
+	 * @var bool
+	 */
+	protected $visual_composer = false;
+
+	/**
 	 * Constructor
 	 *
 	 * @param  object $wpdb WPDB instance
@@ -315,6 +323,27 @@ abstract class Ai1wm_Database {
 	}
 
 	/**
+	 * Set Visual Composer
+	 *
+	 * @param  bool $active Is Visual Composer Active?
+	 * @return Ai1wm_Database
+	 */
+	public function set_visual_composer( $active ) {
+		$this->visual_composer = $active;
+
+		return $this;
+	}
+
+	/**
+	 * Get Visual Composer
+	 *
+	 * @return bool
+	 */
+	public function get_visual_composer() {
+		return $this->visual_composer;
+	}
+
+	/**
 	 * Get tables
 	 *
 	 * @return array
@@ -382,11 +411,6 @@ abstract class Ai1wm_Database {
 	 * @return bool
 	 */
 	public function export( $file_name, &$current_table_index = 0, $timeout = 0 ) {
-		// Add support for MariaDB
-		if ( stripos( $this->version(), 'mariadb' ) !== false ) {
-			$this->query( "SET SESSION sql_mode = 'NO_TABLE_OPTIONS'" );
-		}
-
 		// Set file handler
 		$file_handler = ai1wm_open( $file_name, 'ab' );
 
@@ -432,8 +456,11 @@ abstract class Ai1wm_Database {
 				// Replace create table prefixes
 				$create_table = $this->replace_table_prefixes( $table['Create Table'], 14 );
 
-				// Strip table constraints
-				$create_table = $this->strip_table_constraints( $create_table );
+				// Replace table constraints
+				$create_table = $this->replace_table_constraints( $create_table );
+
+				// Replace create table options
+				$create_table = $this->replace_table_options( $create_table );
 
 				// Write table structure
 				ai1wm_write( $file_handler, $create_table );
@@ -468,7 +495,7 @@ abstract class Ai1wm_Database {
 					}
 
 					// Replace table values
-					$items[] = is_null( $value ) ? 'NULL' : $this->quote( $this->replace_table_values( $value ) );
+					$items[] = is_null( $value ) ? 'NULL' : "'" . $this->replace_table_export_values( $this->escape( $value ) ) . "'";
 				}
 
 				// Set table values
@@ -520,11 +547,6 @@ abstract class Ai1wm_Database {
 	 * @return bool
 	 */
 	public function import( $file_name ) {
-		// Add support for MariaDB
-		if ( stripos( $this->version(), 'mariadb' ) !== false ) {
-			$this->query( "SET SESSION sql_mode = 'IGNORE_BAD_TABLE_OPTIONS'" );
-		}
-
 		// Set max allowed packet
 		$max_allowed_packet = $this->get_max_allowed_packet();
 
@@ -548,11 +570,11 @@ abstract class Ai1wm_Database {
 					// Replace table prefixes
 					$query = $this->replace_table_prefixes( $query );
 
-					// Replace table values
-					$query = $this->replace_table_values( $query, true );
-
 					// Replace table collations
 					$query = $this->replace_table_collations( $query );
+
+					// Replace table values
+					$query = $this->replace_table_import_values( $query );
 
 					try {
 
@@ -669,7 +691,7 @@ abstract class Ai1wm_Database {
 	 * Replace table prefixes
 	 *
 	 * @param  string  $input    Table value
-	 * @param  boolean $position Replace first occurrence at a specified position
+	 * @param  bool    $position Replace first occurrence at a specified position
 	 * @return string
 	 */
 	protected function replace_table_prefixes( $input, $position = false ) {
@@ -694,64 +716,82 @@ abstract class Ai1wm_Database {
 	}
 
 	/**
-	 * Replace table values
+	 * Replace table export values
 	 *
 	 * @param  string  $input Table value
-	 * @param  boolean $parse Parse value
 	 * @return string
 	 */
-	protected function replace_table_values( $input, $parse = false ) {
-		// Get replace values
-		$old = $this->get_old_replace_values();
-		$new = $this->get_new_replace_values();
+	protected function replace_table_export_values( $input ) {
+		$this->number_of_replaces = 0;
 
-		$old_values = array();
-		$new_values = array();
+		// Serialization format
+		$array  = '(a:\d+:{.+?})';
+		$string = '(s:\d+:\\\\?"(.+?)\\\\?";)';
+		$object = '(O:\d+:\\\\?"(.+?)\\\\?":\d+:{.*?})';
 
-		// Prepare replace values
-		for ( $i = 0; $i < count( $old ); $i++ ) {
-			if ( stripos( $input, $old[$i] ) !== false ) {
-				$old_values[] = $old[$i];
-				$new_values[] = $new[$i];
-			}
+		// Replace base64 encoded values (Visual Composer)
+		if ( $this->get_visual_composer() ) {
+			$input = preg_replace_callback( "/(?<=\[vc_raw_html\])(.+?)(?=\[\/vc_raw_html\])/S", array( $this, 'replace_base64_values_callback' ), $input );
 		}
 
-		// Do replace values
-		if ( $old_values ) {
-			if ( $parse ) {
-				return $this->parse_serialized_values( $old_values, $new_values, $input );
-			}
+		// Replace serialized values
+		$input = preg_replace_callback( "/(?<=\A)($array|$string|$object)(?=\z)/S", array( $this, 'replace_serialized_values_callback' ), $input );
 
-			return Ai1wm_Database_Utility::replace_serialized_values( $old_values, $new_values, $input );
+		// Replace values
+		if ( $this->number_of_replaces === 0 ) {
+			$input = Ai1wm_Database_Utility::replace_values( $this->get_old_replace_values(), $this->get_new_replace_values(), $input );
 		}
 
 		return $input;
 	}
 
 	/**
-	 * Parse serialized values
+	 * Replace table import values
 	 *
-	 * @param  array  $old_values Old replace values
-	 * @param  array  $new_values New replace values
-	 * @param  string $input      Table value
+	 * @param  string  $input Table value
 	 * @return string
 	 */
-	protected function parse_serialized_values( $old_values, $new_values, $input ) {
-		// Serialization format
-		$array  = '(a:\d+:{.*?})';
-		$string = '(s:\d+:".*?")';
-		$object = '(O:\d+:".+":\d+:{.*})';
-
-		// Number of serialized replaces
+	protected function replace_table_import_values( $input ) {
 		$this->number_of_replaces = 0;
 
+		// Serialization format
+		$array  = '(a:\d+:{.+?})';
+		$string = '(s:\d+:\\\\?"(.+?)\\\\?";)';
+		$object = '(O:\d+:\\\\?"(.+?)\\\\?":\d+:{.*?})';
+
+		// Replace base64 encoded values (Visual Composer)
+		if ( $this->get_visual_composer() ) {
+			$input = preg_replace_callback( "/(?<=\[vc_raw_html\])(.+?)(?=\[\/vc_raw_html\])/S", array( $this, 'replace_base64_values_callback' ), $input );
+		}
+
 		// Replace serialized values
-		$input = preg_replace_callback( "/'($array|$string|$object)'/", array( $this, 'replace_serialized_values' ), $input );
+		$input = preg_replace_callback( "/(?<=')($array|$string|$object)(?=')/S", array( $this, 'replace_serialized_values_callback' ), $input );
 
 		// Replace values
 		if ( $this->number_of_replaces === 0 ) {
-			$input = Ai1wm_Database_Utility::replace_values( $old_values, $new_values, $input );
+			$input = Ai1wm_Database_Utility::replace_values( $this->get_old_replace_values(), $this->get_new_replace_values(), $input );
 		}
+
+		return $input;
+	}
+
+	/**
+	 * Replace base64 values (callback)
+	 *
+	 * @param  array  $matches List of matches
+	 * @return string
+	 */
+	protected function replace_base64_values_callback( $matches ) {
+		$this->number_of_replaces++;
+
+		// Decode base64 characters
+		$input = rawurldecode( base64_decode( strip_tags( $matches[1] ) ) );
+
+		// Replace serialized values
+		$input = Ai1wm_Database_Utility::replace_values( $this->get_old_replace_values(), $this->get_new_replace_values(), $input );
+
+		// Encode base64 characters
+		$input = base64_encode( rawurlencode( $input ) );
 
 		return $input;
 	}
@@ -762,7 +802,7 @@ abstract class Ai1wm_Database {
 	 * @param  array  $matches List of matches
 	 * @return string
 	 */
-	protected function replace_serialized_values( $matches ) {
+	protected function replace_serialized_values_callback( $matches ) {
 		$this->number_of_replaces++;
 
 		// Unescape MySQL special characters
@@ -771,8 +811,10 @@ abstract class Ai1wm_Database {
 		// Replace serialized values
 		$input = Ai1wm_Database_Utility::replace_serialized_values( $this->get_old_replace_values(), $this->get_new_replace_values(), $input );
 
-		// Prepare query values
-		return $this->quote( $input );
+		// Escape MySQL special characters
+		$input = Ai1wm_Database_Utility::escape_mysql( $input );
+
+		return $input;
 	}
 
 	/**
@@ -789,10 +831,10 @@ abstract class Ai1wm_Database {
 		if ( empty( $search ) || empty( $replace ) ) {
 			if ( ! $this->wpdb->has_cap( 'utf8mb4_520' ) ) {
 				if ( ! $this->wpdb->has_cap( 'utf8mb4' ) ) {
-					$search = array( 'utf8mb4_unicode_520_ci', 'utf8mb4' );
+					$search  = array( 'utf8mb4_unicode_520_ci', 'utf8mb4' );
 					$replace = array( 'utf8_unicode_ci', 'utf8' );
 				} else {
-					$search = array( 'utf8mb4_unicode_520_ci' );
+					$search  = array( 'utf8mb4_unicode_520_ci' );
 					$replace = array( 'utf8mb4_unicode_ci' );
 				}
 			}
@@ -802,18 +844,55 @@ abstract class Ai1wm_Database {
 	}
 
 	/**
-	 * Strip table constraints
+	 * Replace table constraints
 	 *
 	 * @param  string $input SQL statement
 	 * @return string
 	 */
-	protected function strip_table_constraints( $input ) {
+	protected function replace_table_constraints( $input ) {
 		$pattern = array(
 			'/\s+CONSTRAINT(.+)REFERENCES(.+),/i',
 			'/,\s+CONSTRAINT(.+)REFERENCES(.+)/i',
 		);
 
 		return preg_replace( $pattern, '', $input );
+	}
+
+	/**
+	 * Replace table options
+	 *
+	 * @param  string $input SQL statement
+	 * @return string
+	 */
+	protected function replace_table_options( $input ) {
+		// Set table replace options
+		$search = array(
+			'ENGINE=Aria',
+			'TRANSACTIONAL=0',
+			'TRANSACTIONAL=1',
+			'PAGE_CHECKSUM=0',
+			'PAGE_CHECKSUM=1',
+			'TABLE_CHECKSUM=0',
+			'TABLE_CHECKSUM=1',
+			'ROW_FORMAT=PAGE',
+			'ROW_FORMAT=FIXED',
+			'ROW_FORMAT=DYNAMIC',
+
+		);
+		$replace = array(
+			'ENGINE=MyISAM',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+		);
+
+		return str_ireplace( $search, $replace, $input );
 	}
 
 	/**
@@ -853,7 +932,7 @@ abstract class Ai1wm_Database {
 	 * @param  string $input String to escape
 	 * @return string
 	 */
-	abstract public function quote( $input );
+	abstract public function escape( $input );
 
 	/**
 	 * Return the error code for the most recent function call

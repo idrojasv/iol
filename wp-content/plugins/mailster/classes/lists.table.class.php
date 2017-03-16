@@ -244,7 +244,9 @@ class Mailster_Lists_Table extends WP_List_Table {
 		$orderby = ! empty( $_GET['orderby'] ) ? esc_sql( $_GET['orderby'] ) : 'name';
 		$order = ! empty( $_GET['order'] ) ? esc_sql( $_GET['order'] ) : 'ASC';
 
-		if ( ! empty( $orderby ) & ! empty( $order ) ) {$sql .= ' ORDER BY _sort ' . $order . ', ' . $orderby . ' ' . $order;}
+		if ( ! empty( $orderby ) && ! empty( $order ) ) {
+			$sql .= ' ORDER BY _sort ' . $order . ', ' . $orderby . ' ' . $order;
+		}
 
 		$totalitems = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}mailster_lists" );
 

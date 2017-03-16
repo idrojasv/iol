@@ -795,8 +795,8 @@ function ai1wm_unlink( $file ) {
 /**
  * Copies one file's contents to another
  *
- * @param  string   $source_file      File to copy the contents from
- * @param  string   $destination_file File to copy the contents to
+ * @param  string $source_file      File to copy the contents from
+ * @param  string $destination_file File to copy the contents to
  */
 function ai1wm_copy( $source_file, $destination_file ) {
 	$source_handle = ai1wm_open( $source_file, 'rb' );
@@ -806,37 +806,6 @@ function ai1wm_copy( $source_file, $destination_file ) {
 	}
 	ai1wm_close( $source_handle );
 	ai1wm_close( $destination_handle );
-}
-
-/**
- * Sanitize path
- *
- * @param  string  $path           Path string
- * @param  boolean $leading_slash  Add leading slash
- * @param  boolean $trailing_slash Add trailing slash
- * @return string
- */
-function ai1wm_sanitize_path( $path, $leading_slash = false, $trailing_slash = false ) {
-	// Strip leadning and trailing whitespaces
-	$path = trim( $path );
-
-	// Strip leading backward and forward slashes
-	$path = ltrim( $path, '/\\' );
-
-	// Strip trailing backward and forward slashes
-	$path = rtrim( $path, '/\\' );
-
-	// Add forward leading slash
-	if ( $leading_slash ) {
-		$path = sprintf( '/%s', $path );
-	}
-
-	// Add forward trailing slash
-	if ( $trailing_slash ) {
-		$path = sprintf( '%s/', $path );
-	}
-
-	return preg_replace( '/[\\\\\/]+/', '/', $path );
 }
 
 /**
@@ -899,5 +868,16 @@ function ai1wm_fseek( $file_handle, Math_BigInteger $offset ) {
 		$bytes      = ai1wm_read( $file_handle, $chunk_size->toInteger() );
 		$offset     = $offset->subtract( new Math_BigInteger( strlen( $bytes ) ) );
 		$chunk_size = ai1wm_find_smaller_number( $chunk_size, $offset );
+	}
+}
+
+/**
+ * Disable Jetpack Photon module
+ *
+ * @return void
+ */
+function ai1wm_disable_jetpack_photon() {
+	if ( ( $jetpack = get_option( AI1WM_JETPACK_ACTIVE_MODULES, array() ) ) ) {
+		update_option( AI1WM_JETPACK_ACTIVE_MODULES, array_values( array_diff( $jetpack, array( 'photon' ) ) ) );
 	}
 }

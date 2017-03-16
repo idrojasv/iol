@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
 
 	var wpnonce = $('#mailster_nonce').val(),
 		isMobile = $(document.body).hasClass('mobile'),
+		isWPDashboard = $(document.body).hasClass('index-php'),
 		$handleButtons = $('.postbox .handlediv'),
 		subscribers = $('.mailster-db-subscribers'),
 		subscriberselect = $('#mailster-subscriber-range'),
@@ -55,40 +56,43 @@ jQuery(document).ready(function ($) {
 		return false;
 	});
 
-	$('.meta-box-sortables').sortable({
-		placeholder: 'sortable-placeholder',
-		connectWith: '.meta-box-sortables',
-		items: '.postbox',
-		handle: '.hndle',
-		cursor: 'move',
-		delay: (isMobile ? 200 : 0),
-		distance: 2,
-		tolerance: 'pointer',
-		forcePlaceholderSize: true,
-		helper: function (event, element) {
-			return element.clone()
-				.find(':input')
-				.attr('name', function (i, currentName) {
-					return 'sort_' + parseInt(Math.random() * 100000, 10).toString() + '_' + currentName;
-				})
-				.end();
-		},
-		opacity: 0.65,
-		update: function (e, ui) {
-			orderMetaBoxes();
-		}
-	});
-
-	$('.postbox .handlediv')
-		.each(function () {
-			var $el = $(this);
-			$el.attr('aria-expanded', !$el.parent('.postbox').hasClass('closed'));
-		})
-		.on('click', function () {
-			var $el = $(this);
-			$el.parent('.postbox').toggleClass('closed');
-			$el.attr('aria-expanded', !$el.parent('.postbox').hasClass('closed'));
+	if (!isWPDashboard) {
+		$('.meta-box-sortables').sortable({
+			placeholder: 'sortable-placeholder',
+			connectWith: '.meta-box-sortables',
+			items: '.postbox',
+			handle: '.hndle',
+			cursor: 'move',
+			delay: (isMobile ? 200 : 0),
+			distance: 2,
+			tolerance: 'pointer',
+			forcePlaceholderSize: true,
+			helper: function (event, element) {
+				return element.clone()
+					.find(':input')
+					.attr('name', function (i, currentName) {
+						return 'sort_' + parseInt(Math.random() * 100000, 10).toString() + '_' + currentName;
+					})
+					.end();
+			},
+			opacity: 0.65,
+			update: function (e, ui) {
+				orderMetaBoxes();
+			}
 		});
+
+		$('.postbox .handlediv')
+			.each(function () {
+				var $el = $(this);
+				$el.attr('aria-expanded', !$el.parent('.postbox').hasClass('closed'));
+			})
+			.on('click', function () {
+				var $el = $(this);
+				$el.parent('.postbox').toggleClass('closed');
+				$el.attr('aria-expanded', !$el.parent('.postbox').hasClass('closed'));
+			});
+	}
+
 
 	$(document)
 		.on('verified.mailster', function () {

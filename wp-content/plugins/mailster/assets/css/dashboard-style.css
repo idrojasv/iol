@@ -60,6 +60,9 @@
 .welcome-panel-column-container{
 	text-align: center;
 }
+.mailster-dashboard .register_form_wrap .howto{
+	width: 66%;
+}
 .register_form_wrap form input[type="submit"]{
 	width: 70%;
 }

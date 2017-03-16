@@ -27,26 +27,23 @@ class Ai1wm_Import_Clean {
 
 	public static function execute( $params ) {
 
-		// Remove import log file
-		unlink( ai1wm_import_path( $params ) );
+		// Iterate over storage directory
+		$iterator = new Ai1wm_Recursive_Directory_Iterator( ai1wm_storage_path( $params ) );
 
-		// Get storage iterator
-		$iterator = new RecursiveIteratorIterator(
-			new Ai1wm_Recursive_Directory_Iterator( ai1wm_storage_path( $params ) ),
-			RecursiveIteratorIterator::CHILD_FIRST
-		);
+		// Recursively iterate over storage directory
+		$iterator = new RecursiveIteratorIterator( $iterator, RecursiveIteratorIterator::CHILD_FIRST, RecursiveIteratorIterator::CATCH_GET_CHILD );
 
 		// Remove files and directories
 		foreach ( $iterator as $item ) {
 			if ( $item->isDir() ) {
-				rmdir( $item->getPathname() );
+				@rmdir( $item->getPathname() );
 			} else {
-				unlink( $item->getPathname() );
+				@unlink( $item->getPathname() );
 			}
 		}
 
 		// Remove storage path
-		rmdir( ai1wm_storage_path( $params ) );
+		@rmdir( ai1wm_storage_path( $params ) );
 
 		exit;
 	}

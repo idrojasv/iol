@@ -347,12 +347,20 @@ class MailsterCron {
 	 *
 	 * @return unknown
 	 */
-	public function url() {
+	public function url( $alternative = false ) {
 
-		return apply_filters( 'mailster_cron_url', add_query_arg( array(
-			'action' => 'mailster_cron',
-			'secret' => mailster_option( 'cron_secret' ),
-		), admin_url( 'admin-ajax.php' ) ) );
+		if ( $alternative ) {
+			return apply_filters( 'mailster_cron_url', add_query_arg( array(
+				'secret' => mailster_option( 'cron_secret' ),
+			), MAILSTER_URI . 'cron.php' ), $alternative );
+
+		} else {
+			return apply_filters( 'mailster_cron_url', add_query_arg( array(
+				'action' => 'mailster_cron',
+				'secret' => mailster_option( 'cron_secret' ),
+			), admin_url( 'admin-ajax.php' ) ), $alternative );
+
+		}
 
 	}
 

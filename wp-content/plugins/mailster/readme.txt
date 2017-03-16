@@ -3,7 +3,7 @@ Contributors: revaxarts
 Tags: mailster, mymail, newsletter, email, revaxarts
 Requires at least: 3.8
 Tested up to: 4.7.3
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 Author: revaxarts
 Author URI: https://mailster.co
 
@@ -82,6 +82,15 @@ Xaver Birsak – https://revaxarts.com
 
 == Changelog ==
 
+= Version 2.2.2 =
+
+* added: option to add link to your logo
+* fixed: issue in segmentation if WP user meta field matches a reserved Mailster fields
+* fixed: changing order of WP dashboard widgets wasn't stored
+* improved: checks for path if plugin directory is not at it's default locations
+* improved: dismiss option on dashboard notifications
+* improved: update mechanism
+
 = Version 2.2.1 =
 
 * fixed: bounces weren't handled correctly in some cases
@@ -93,7 +102,6 @@ Xaver Birsak – https://revaxarts.com
 * improved: URLs for some social services
 * improved: backwards compatibility
 * improved: datepicker is no longer triggered on datefields if operator is a regular expression
-
 
 = Version 2.2 =
 
@@ -111,7 +119,7 @@ Xaver Birsak – https://revaxarts.com
 * new tag: 'author'. usage `{post_author:-1}`
 * new: Subscriber Button Widget
 * new: share service VK.com, Telegram, Whatsapp
-* new: location hub: translate.mailster.co
+* new: localization hub: translate.mailster.co
 * new: 'mailster_excerpt_length' let you define the length of the excerpt used in your campaigns
 * improved: sending queue
 * improved: loading of language files

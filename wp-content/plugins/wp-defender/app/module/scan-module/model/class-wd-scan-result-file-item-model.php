@@ -37,7 +37,7 @@ class WD_Scan_Result_File_Item_Model extends WD_Scan_Result_Item_Model {
 	}
 
 	public function get_detail() {
-		return '<img class="text-warning" src="' . wp_defender()->get_plugin_url() . 'assets/img/robot.png' . '"/> <strong>' . esc_html__( "Suspicious function found", wp_defender()->domain ) . '</strong>' . $this->get_suspicious_gauge();
+		return '<img class="text-warning" src="' . wp_defender()->get_plugin_url() . 'assets/img/robot.png' . '"/> <strong>' . esc_html__( "Suspicious function found", wp_defender()->domain ) . '</strong>' . $this->get_suspicious_gauge();	 		  			 	  								
 	}
 
 	public function get_type() {

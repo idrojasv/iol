@@ -46,14 +46,14 @@ class MailsterRegister {
 		$page = isset( $_GET['page'] ) ? str_replace( 'mailster_', '', $_GET['page'] ) : 'dashboard';
 
 		$args = wp_parse_args( $args, array(
-				'pretext' => sprintf( esc_html__( 'Enter Your Purchase Code To Register (Don\'t have one for this site? %s)', 'mailster' ), '<a href="' . esc_url( 'https://mailster.co/go/buy/?utm_campaign=plugin&utm_medium=' . $page ) . '" class="external">' . esc_html__( 'Buy Now!', 'mailster' ) . '</a>' ),
-				'purchasecode' => get_option( 'mailster_license' ),
+			'pretext' => sprintf( esc_html__( 'Enter Your Purchase Code To Register (Don\'t have one for this site? %s)', 'mailster' ), '<a href="' . esc_url( 'https://mailster.co/go/buy/?utm_campaign=plugin&utm_medium=' . $page ) . '" class="external">' . esc_html__( 'Buy Now!', 'mailster' ) . '</a>' ),
+			'purchasecode' => get_option( 'mailster_license' ),
 		) );
 
 		$user_id = get_current_user_id();
 		$user = get_userdata( $user_id );
 
-		$username = get_option( 'mailster_username', $user->data->user_login );
+		$username = get_option( 'mailster_username', '' );
 		$useremail = get_option( 'mailster_email', $user->data->user_email );
 
 		wp_print_styles( 'mailster-register-style' );

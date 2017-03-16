@@ -499,7 +499,16 @@ class MailsterAjax {
 
 			parse_str( $_POST['formdata'], $formdata );
 
-			$receivers = explode( ',', stripslashes( $_POST['to'] ) );
+			$spam_test = isset( $_POST['spamtest'] );
+			if ( $spam_test ) {
+				$spam_check_id = uniqid();
+				$receivers = apply_filters( 'mymail_spam_score_mail', apply_filters( 'mailster_spam_score_mail', 'mailster-' . $spam_check_id . '@check.newsletter-plugin.com' ) );
+				if ( ! is_array( $receivers ) ) {
+					$receivers = array( $receivers );
+				}
+			} else {
+				$receivers = explode( ',', stripslashes( $_POST['to'] ) );
+			}
 
 			$subject = $formdata['mailster_data']['subject'];
 			$from = $formdata['mailster_data']['from_email'];
@@ -531,7 +540,6 @@ class MailsterAjax {
 			$campaign_permalink = get_permalink( $ID );
 
 			$replace_links = true;
-			$spam_test = isset( $_POST['spamtest'] );
 
 			$attach = array();
 
@@ -621,14 +629,14 @@ class MailsterAjax {
 
 				} elseif ( $current_user ) {
 
-						$profilelink = mailster()->get_profile_link( $ID, '' );
+					$profilelink = mailster()->get_profile_link( $ID, '' );
 
-						$firstname = ( $current_user->user_firstname ) ? $current_user->user_firstname : $current_user->display_name;
-						$names = array(
-							'firstname' => $firstname,
-							'lastname' => $current_user->user_lastname,
-							'fullname' => mailster_option( 'name_order' ) ? trim( $current_user->user_lastname . ' ' . $firstname ) : trim( $firstname . ' ' . $current_user->user_lastname ),
-						);
+					$firstname = ( $current_user->user_firstname ) ? $current_user->user_firstname : $current_user->display_name;
+					$names = array(
+						'firstname' => $firstname,
+						'lastname' => $current_user->user_lastname,
+						'fullname' => mailster_option( 'name_order' ) ? trim( $current_user->user_lastname . ' ' . $firstname ) : trim( $firstname . ' ' . $current_user->user_lastname ),
+					);
 				} else {
 					// no subscriber found for data
 				}
@@ -688,10 +696,8 @@ class MailsterAjax {
 
 					if ( $count < 10 ) {
 
-						$id = uniqid();
-						$mail->to = apply_filters( 'mymail_spam_score_mail', apply_filters( 'mailster_spam_score_mail', 'mailster-' . $id . '@check.newsletter-plugin.com' ) );
 						$return['success'] = $return['success'] && $mail->send();
-						$return['id'] = $id;
+						$return['id'] = $spam_check_id;
 						update_option( '_transient__mailster_spam_score_count', ++$count );
 
 					} else {

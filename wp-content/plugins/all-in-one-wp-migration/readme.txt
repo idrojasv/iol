@@ -3,7 +3,7 @@ Contributors: yani.iliev, bangelov, pimjitsawang
 Tags: db migration, migration, wordpress migration, db backup, db restore, website backup, website restore, website migration, website deploy, wordpress deploy, db backup, database export, database serialization, database find replace
 Requires at least: 3.3
 Tested up to: 4.7
-Stable tag: 6.40
+Stable tag: 6.41
 License: GPLv2 or later
 
 All-in-One WP Migration is the only tool that you will ever need to migrate a WordPress site.
@@ -20,7 +20,7 @@ All in One WP Plugin is the first plugin to offer true mobile experience on Word
 * We have tested the plugin on the major Linux distributions, Mac OS X, and Microsoft Windows.
 
 = Bypass all upload size restriction =
-* We use chunks to import your data and that way we bypass any webserver upload size restrictions up to **512MB** - commercial version supports up to **5GB**.
+* We use chunks to import your data and that way we bypass any webserver upload size restrictions.
 
 = 0 Dependencies =
 * The plugin does not require any php extensions and can work with PHP v5.2.
@@ -78,6 +78,13 @@ All in One WP Plugin is the first plugin to offer true mobile experience on Word
 3. Plugin Menu
 
 == Changelog ==
+= 6.41 =
+* Support Visual Composer plugin
+* Support Jetpack Photon module
+* Improved Maria DB support
+* Disable WordPress authentication checking during migration
+* Clean any temporary files after migration
+
 = 6.40 =
 * Do not extract dropins files on import
 * Fix an issue with large files on import

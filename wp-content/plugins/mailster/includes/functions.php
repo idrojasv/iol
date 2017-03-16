@@ -43,8 +43,16 @@ function mailster_option( $option, $fallback = null ) {
  *
  * @return unknown
  */
-function mailster_options() {
+function mailster_options( $option = null, $fallback = null ) {
+
 	global $mailster_options;
+
+	if ( ! is_null( $option ) ) {
+		return mailster_option( $option, $fallback );
+	}
+	if ( empty( $mailster_options ) ) {
+		$mailster_options = get_option( 'mailster_options', array() );
+	}
 	return $mailster_options;
 }
 
@@ -141,7 +149,7 @@ function mailster_text( $option, $fallback = '' ) {
 
 	$string = isset( $mailster_texts[ $option ] ) ? $mailster_texts[ $option ] : $fallback ;
 
-	return apply_filters( 'mymail_text', $string, apply_filters( 'mailster_text', $string, $option, $fallback ), $option, $fallback );
+	return apply_filters( 'mymail_text', apply_filters( 'mailster_text', $string, $option, $fallback ), $option, $fallback );
 }
 
 

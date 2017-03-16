@@ -433,6 +433,9 @@ class Ai1wm_Import_Database {
 			}
 		}
 
+		// Set Visual Composer
+		$client->set_visual_composer( ! is_wp_error( validate_plugin( 'js_composer/js_composer.php' ) ) );
+
 		// Import database
 		$client->import( ai1wm_database_path( $params ) );
 

@@ -31,8 +31,10 @@
 			<textarea rows="3" id="ai1wm-feedback-message" class="ai1wm-feedback-message" placeholder="<?php _e( 'Leave plugin developers any feedback here..', AI1WM_PLUGIN_NAME ); ?>"></textarea>
 		</div>
 		<div class="ai1wm-field ai1wm-feedback-terms-segment">
-			<input type="checkbox" class="ai1wm-feedback-terms" id="ai1wm-feedback-terms" />
-			<label for="ai1wm-feedback-terms"><?php _e( 'I agree that by clicking the send button below my email address and comments will be send to a ServMask server.', AI1WM_PLUGIN_NAME ); ?></label>
+			<label for="ai1wm-feedback-terms">
+				<input type="checkbox" class="ai1wm-feedback-terms" id="ai1wm-feedback-terms" />
+				<?php _e( 'I agree that by clicking the send button below my email address and comments will be send to a ServMask server.', AI1WM_PLUGIN_NAME ); ?>
+			</label>
 		</div>
 		<div class="ai1wm-field">
 			<div class="ai1wm-buttons">

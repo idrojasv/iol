@@ -87,16 +87,16 @@ class Ai1wm_Main_Controller {
 		add_action( 'plugins_loaded', array( $this, 'ai1wm_buttons' ), 10 );
 
 		// Add export scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_export_scripts_and_styles' ), 10 );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_export_scripts_and_styles' ), 5 );
 
 		// Add import scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_import_scripts_and_styles' ), 10 );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_import_scripts_and_styles' ), 5 );
 
 		// Add backups scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_backups_scripts_and_styles' ), 10 );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_backups_scripts_and_styles' ), 5 );
 
 		// Add updater scripts and styles
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_updater_scripts_and_styles' ), 10 );
+		add_action( 'admin_enqueue_scripts', array( $this, 'register_updater_scripts_and_styles' ), 5 );
 
 		return $this;
 	}
@@ -368,6 +368,9 @@ class Ai1wm_Main_Controller {
 		// we don't want heartbeat to occur when exporting
 		wp_deregister_script( 'heartbeat' );
 
+		// we don't want auth check for monitoring whether the user is still logged in
+		remove_action( 'admin_enqueue_scripts', 'wp_auth_check_load' );
+
 		wp_enqueue_style(
 			'ai1wm-css-export',
 			Ai1wm_Template::asset_link( 'css/export.min.css' )
@@ -412,6 +415,9 @@ class Ai1wm_Main_Controller {
 
 		// we don't want heartbeat to occur when importing
 		wp_deregister_script( 'heartbeat' );
+
+		// we don't want auth check for monitoring whether the user is still logged in
+		remove_action( 'admin_enqueue_scripts', 'wp_auth_check_load' );
 
 		wp_enqueue_style(
 			'ai1wm-css-import',
@@ -489,6 +495,12 @@ class Ai1wm_Main_Controller {
 		}
 
 		do_action( 'ai1mw_register_backups_scripts_and_styles' );
+
+		// we don't want heartbeat to occur when restoring
+		wp_deregister_script( 'heartbeat' );
+
+		// we don't want auth check for monitoring whether the user is still logged in
+		remove_action( 'admin_enqueue_scripts', 'wp_auth_check_load' );
 
 		wp_enqueue_style(
 			'ai1wm-css-backups',

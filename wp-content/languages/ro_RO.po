@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 4.7.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-01-26 15:42:11+0000\n"
+"PO-Revision-Date: 2017-03-06 22:32:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ro\n"
 "Project-Id-Version: WordPress - 4.7.x\n"
 
@@ -145,7 +145,7 @@ msgstr "Nume de autentificare pentru utilizator."
 msgid "The user cannot be deleted."
 msgstr "Utilizatorul nu poate fi șters."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:496
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:500
 msgid "Error creating new user."
 msgstr "Eroare la crearea noului utilizator."
 
@@ -264,16 +264,16 @@ msgstr "Eroare RSS:"
 msgid "Cannot create a comment with that type."
 msgstr "Nu pot crea un comentariu de acel tip."
 
-#: wp-includes/post.php:3131 wp-includes/rest-api.php:1051
+#: wp-includes/post.php:3131 wp-includes/rest-api.php:1069
 msgid "Invalid date."
 msgstr "Dată invalidă."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:614
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:618
 msgid "Invalid slug."
 msgstr "Descriptor invalid."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:606
-#: wp-includes/rest-api.php:1061
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:610
+#: wp-includes/rest-api.php:1079
 msgid "Invalid email address."
 msgstr "Adresă email invalidă."
 
@@ -290,60 +290,60 @@ msgstr "Conținut comentariu invalid."
 msgid "Invalid page template."
 msgstr "Șablon pagină invalid."
 
-#: wp-includes/theme.php:1388
+#: wp-includes/theme.php:1397
 msgid "Video is playing."
 msgstr "Videoul rulează."
 
-#: wp-includes/theme.php:1387
+#: wp-includes/theme.php:1396
 msgid "Video is paused."
 msgstr "Videoul este oprit."
 
-#: wp-includes/theme.php:1952
+#: wp-includes/theme.php:1961
 msgctxt "Theme starter content"
 msgid "Archives"
 msgstr "Arhive"
 
-#: wp-includes/theme.php:2074
+#: wp-includes/theme.php:2083
 msgctxt "Theme starter content"
 msgid "This is an example of a homepage section. Homepage sections can be any page other than the homepage itself, including the page that shows your latest blog posts."
 msgstr "Acesta e un exemplu de secțiune pentru prima pagină. Secțiunile de pe prima pagină pot fi orice altă pagină exceptând-o pe prima, inclusiv pagina care arată ultimele tale articole de blog."
 
-#: wp-includes/theme.php:2055
+#: wp-includes/theme.php:2064
 msgctxt "Theme starter content"
 msgid "You might be an artist who would like to introduce yourself and your work here or maybe you&rsquo;re a business with a mission to describe."
 msgstr "Poate că ești un artist ce ar dori să se prezinte și să-și prezinte lucrările aici sau poate ai o afacere căreia i-ai putea descrie aici scopul."
 
-#: wp-includes/theme.php:2068
+#: wp-includes/theme.php:2077
 msgctxt "Theme starter content"
 msgid "News"
 msgstr "Știri"
 
-#: wp-includes/theme.php:2060
+#: wp-includes/theme.php:2069
 msgctxt "Theme starter content"
 msgid "This is a page with some basic contact information, such as an address and phone number. You might also try a plugin to add a contact form."
 msgstr "Aceasta e o pagină cu câteva simple informații de contact, cum ar fi adresa sau numărul de telefon. Ai putea să încerci și un modul ca să adaugi un formular de contact."
 
-#: wp-includes/theme.php:1964
+#: wp-includes/theme.php:1973
 msgctxt "Theme starter content"
 msgid "Recent Comments"
 msgstr "Comentarii recente"
 
-#: wp-includes/theme.php:1967
+#: wp-includes/theme.php:1976
 msgctxt "Theme starter content"
 msgid "Recent Posts"
 msgstr "Articole recente"
 
-#: wp-includes/theme.php:2050
+#: wp-includes/theme.php:2059
 msgctxt "Theme starter content"
 msgid "Welcome to your site! This is your homepage, which is what most visitors will see when they come to your site for the first time."
 msgstr "Bine ai venit pe situl tău! Aceasta e prima ta pagină, ce va fi văzută de cei mai mulți vizitatori care vin pe situl tău pentru prima dată."
 
-#: wp-includes/theme.php:1955
+#: wp-includes/theme.php:1964
 msgctxt "Theme starter content"
 msgid "Calendar"
 msgstr "Calendar"
 
-#: wp-includes/theme.php:1961
+#: wp-includes/theme.php:1970
 msgctxt "Theme starter content"
 msgid "Meta"
 msgstr "Meta"
@@ -408,34 +408,34 @@ msgstr "Regret, nu ai voie să creezi termeni noi."
 msgid "Sorry, you are not allowed to read comments without a post."
 msgstr "Regret, nu ai voie să citești comentarii fără un articol."
 
-#: wp-includes/theme.php:2014
+#: wp-includes/theme.php:2023
 msgctxt "Theme starter content"
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: wp-includes/theme.php:2018
+#: wp-includes/theme.php:2027
 msgctxt "Theme starter content"
 msgid "GitHub"
 msgstr "GitHub"
 
-#: wp-includes/theme.php:2026
+#: wp-includes/theme.php:2035
 msgctxt "Theme starter content"
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: wp-includes/theme.php:2030
+#: wp-includes/theme.php:2039
 msgctxt "Theme starter content"
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: wp-includes/theme.php:2042
+#: wp-includes/theme.php:2051
 msgctxt "Theme starter content"
 msgid "YouTube"
 msgstr "YouTube"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1273
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:497
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:641
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:500
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:644
 msgid "Sorry, you are not allowed to make posts sticky."
 msgstr "Regret, nu ai voie să faci articole reprezentative."
 
@@ -446,17 +446,17 @@ msgstr "Regret, nu ai voie să faci articole reprezentative."
 msgid "Sorry, you are not allowed to edit the %s custom field."
 msgstr "Regret, nu ai voie să editezi câmpul personalizat %s."
 
-#: wp-includes/theme.php:1948
+#: wp-includes/theme.php:1957
 msgctxt "Theme starter content"
 msgid "About This Site"
 msgstr "Despre acest sit"
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:505
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:645
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:508
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:648
 msgid "Sorry, you are not allowed to assign the provided terms."
 msgstr "Regret, nu ai voie să atribui termenii furnizați."
 
-#: wp-includes/theme.php:1949
+#: wp-includes/theme.php:1958
 msgctxt "Theme starter content"
 msgid "This may be a good place to introduce yourself and your site or include some credits."
 msgstr "Acesta ar putea fi un loc bun în care să te prezinți și să-ți prezinți situl sau să incluzi ceva merite."
@@ -466,124 +466,124 @@ msgstr "Acesta ar putea fi un loc bun în care să te prezinți și să-ți prez
 msgid "Reassign the deleted user's posts and links to this user ID."
 msgstr "Reatribuie articolele utilizatorului șters și leagă-le de acest ID de utilizator."
 
-#: wp-includes/class-wp-customize-manager.php:3851
+#: wp-includes/class-wp-customize-manager.php:3866
 msgid "This theme doesn't support video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "Această temă nu suportă antet video pe această pagină. Navighează pe prima pagină sau pe altă pagină care suportă antete video."
 
-#: wp-includes/class-wp-customize-manager.php:3935
+#: wp-includes/class-wp-customize-manager.php:3950
 msgid "Choose Video"
 msgstr "Alege video"
 
-#: wp-includes/class-wp-customize-manager.php:3933
+#: wp-includes/class-wp-customize-manager.php:3948
 msgid "No video selected"
 msgstr "Niciun video selectat"
 
-#: wp-includes/class-wp-customize-manager.php:3932
+#: wp-includes/class-wp-customize-manager.php:3947
 msgid "Change Video"
 msgstr "Schimbă video"
 
-#: wp-includes/class-wp-customize-manager.php:3931
-#: wp-includes/class-wp-customize-manager.php:3934
+#: wp-includes/class-wp-customize-manager.php:3946
+#: wp-includes/class-wp-customize-manager.php:3949
 msgid "Select Video"
 msgstr "Alege video"
 
-#: wp-includes/theme.php:2073
+#: wp-includes/theme.php:2082
 msgctxt "Theme starter content"
 msgid "A homepage section"
 msgstr "O secțiune pe prima pagină"
 
-#: wp-includes/theme.php:2022
+#: wp-includes/theme.php:2031
 msgctxt "Theme starter content"
 msgid "Instagram"
 msgstr "Instagram"
 
-#: wp-includes/theme.php:2006
+#: wp-includes/theme.php:2015
 msgctxt "Theme starter content"
 msgid "Email"
 msgstr "Email"
 
-#: wp-includes/theme.php:1976 wp-includes/theme.php:2049
+#: wp-includes/theme.php:1985 wp-includes/theme.php:2058
 msgctxt "Theme starter content"
 msgid "Home"
 msgstr "Prima pagină"
 
-#: wp-includes/theme.php:2054
+#: wp-includes/theme.php:2063
 msgctxt "Theme starter content"
 msgid "About"
 msgstr "Despre"
 
-#: wp-includes/theme.php:2059
+#: wp-includes/theme.php:2068
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr "Contact"
 
-#: wp-includes/theme.php:2064
+#: wp-includes/theme.php:2073
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr "Blog"
 
-#: wp-includes/theme.php:1942
+#: wp-includes/theme.php:1951
 msgctxt "Theme starter content"
 msgid "123 Main Street"
 msgstr "123 Strada principală"
 
-#: wp-includes/theme.php:1942
+#: wp-includes/theme.php:1951
 msgctxt "Theme starter content"
 msgid "New York, NY 10001"
 msgstr "București, B 7000"
 
-#: wp-includes/theme.php:1944
+#: wp-includes/theme.php:1953
 msgctxt "Theme starter content"
 msgid "Monday&mdash;Friday: 9:00AM&ndash;5:00PM"
 msgstr "Luni&mdash;Vineri: 9:00&ndash;17:00"
 
-#: wp-includes/theme.php:1970
+#: wp-includes/theme.php:1979
 msgctxt "Theme starter content"
 msgid "Search"
 msgstr "Căutare"
 
-#: wp-includes/theme.php:1958
+#: wp-includes/theme.php:1967
 msgctxt "Theme starter content"
 msgid "Categories"
 msgstr "Categorii"
 
-#: wp-includes/theme.php:2038
+#: wp-includes/theme.php:2047
 msgctxt "Theme starter content"
 msgid "Yelp"
 msgstr "Yelp"
 
-#: wp-includes/theme.php:2010
+#: wp-includes/theme.php:2019
 msgctxt "Theme starter content"
 msgid "Facebook"
 msgstr "Facebook"
 
-#: wp-includes/theme.php:2034
+#: wp-includes/theme.php:2043
 msgctxt "Theme starter content"
 msgid "Twitter"
 msgstr "Twitter"
 
-#: wp-includes/theme.php:1943
+#: wp-includes/theme.php:1952
 msgctxt "Theme starter content"
 msgid "Hours"
 msgstr "Program"
 
-#: wp-includes/theme.php:1944
+#: wp-includes/theme.php:1953
 msgctxt "Theme starter content"
 msgid "Saturday &amp; Sunday: 11:00AM&ndash;3:00PM"
 msgstr "Sâmbătă și Duminică: 11:00&ndash;15:00"
 
-#: wp-includes/theme.php:1939
+#: wp-includes/theme.php:1948
 msgctxt "Theme starter content"
 msgid "Find Us"
 msgstr "Găsește-ne"
 
-#: wp-includes/theme.php:1941
+#: wp-includes/theme.php:1950
 msgctxt "Theme starter content"
 msgid "Address"
 msgstr "Adresă"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:167
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:479
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:483
 msgid "Invalid user parameter(s)."
 msgstr "Parametri utilizator invalizi."
 
@@ -613,9 +613,9 @@ msgstr "Ascunde comenzile"
 msgid "Document Preview"
 msgstr "Previzualizare document"
 
-#: wp-includes/class-wp-customize-manager.php:3846
+#: wp-includes/class-wp-customize-manager.php:3861
 msgid "Header Media"
-msgstr "Antet media"
+msgstr "Media de antet"
 
 #. translators: %s: add new page label
 #: wp-includes/class-wp-customize-control.php:593
@@ -647,11 +647,11 @@ msgstr "Text asociat HTML pentru atașament, transformat pentru afișare."
 msgid "Caption for the attachment, as it exists in the database."
 msgstr "Text asociat pentru atașament, așa cum există el în baza de date."
 
-#: wp-includes/class-wp-customize-manager.php:4127
+#: wp-includes/class-wp-customize-manager.php:4142
 msgid "CSS allows you to customize the appearance and layout of your site with code. Separate CSS is saved for each of your themes. In the editing area the Tab key enters a tab character. To move below this area by pressing Tab, press the Esc key followed by the Tab key."
 msgstr "CSS-ul îți permite să personalizezi aspectul și aranjamentul sitului tău cu cod. Câte un CSS separat este salvat pentru fiecare dintre temele tale. În zona de editare tasta Tab introduce un caracter tab. Pentru a te muta sub această zonă apăsând Tab, apasă tasta Esc urmată de tasta Tab."
 
-#: wp-includes/class-wp-customize-manager.php:4316
+#: wp-includes/class-wp-customize-manager.php:4331
 msgid "Please enter a valid YouTube URL."
 msgstr "Te rog introdu un URL YouTube valid."
 
@@ -663,7 +663,7 @@ msgstr "Extinde meniu principal"
 msgid "Collapse Main menu"
 msgstr "Restrânge meniu principal"
 
-#: wp-includes/class-wp-customize-manager.php:3943
+#: wp-includes/class-wp-customize-manager.php:3958
 msgid "Or, enter a YouTube URL:"
 msgstr "Sau introdu un URL YouTube:"
 
@@ -679,7 +679,7 @@ msgstr "Termenii nu suportă aruncarea la gunoi. Setează force=true pentru a ș
 msgid "Revisions do not support trashing. Set force=true to delete."
 msgstr "Reviziile nu suportă aruncarea la gunoi. Setează force=true pentru a șterge."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:815
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:818
 msgid "The post does not support trashing. Set force=true to delete."
 msgstr "Articolul nu suportă aruncarea la gunoi. Setează force=true pentru a șterge."
 
@@ -692,11 +692,11 @@ msgid "Invalid JSON body passed."
 msgstr "Corp JSON transferat invalid."
 
 #. translators: %s: taxonomy name
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2174
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2193
 msgid "Limit result set to all items except those that have the specified term assigned in the %s taxonomy."
 msgstr "Limitează setul de rezultate la toate elementele cu excepția celor care au termenul specificat atribuit în taxonomia %s."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2148
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2167
 msgid "Limit result set to posts assigned one or more statuses."
 msgstr "Limitează setul de rezultate la articole atribuite unei sau mai multor stări."
 
@@ -713,7 +713,7 @@ msgstr "Afișează locație"
 msgid "Taxonomies associated with post type."
 msgstr "Taxonomii asociate cu tip de articol."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2138
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2157
 msgid "Limit result set to posts with one or more specific slugs."
 msgstr "Limitează setul de rezultate la articole cu unul sau mai mulți descriptori specifici."
 
@@ -762,59 +762,59 @@ msgid "Item selected."
 msgstr "Element selectat."
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1109
+#: wp-includes/rest-api.php:1127
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s trebuie să fie între %2$d (inclusiv) și %3$d (inclusiv)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1104
+#: wp-includes/rest-api.php:1122
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s trebuie să fie între %2$d (exclusiv) și %3$d (inclusiv)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1099
+#: wp-includes/rest-api.php:1117
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s trebuie să fie între %2$d (inclusiv) și %3$d (exclusiv)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1094
+#: wp-includes/rest-api.php:1112
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s trebuie să fie între %2$d (exclusiv) și %3$d (exclusiv)"
 
 #. translators: 1: parameter, 2: maximum number
-#: wp-includes/rest-api.php:1088
+#: wp-includes/rest-api.php:1106
 msgid "%1$s must be less than %2$d (inclusive)"
 msgstr "%1$s trebuie să fie mai mic decât %2$d (inclusiv)"
 
 #. translators: 1: parameter, 2: maximum number
-#: wp-includes/rest-api.php:1085
+#: wp-includes/rest-api.php:1103
 msgid "%1$s must be less than %2$d (exclusive)"
 msgstr "%1$s trebuie să fie mai mic decât %2$d (exclusiv)"
 
 #. translators: 1: parameter, 2: minimum number
-#: wp-includes/rest-api.php:1080
+#: wp-includes/rest-api.php:1098
 msgid "%1$s must be greater than %2$d (inclusive)"
 msgstr "%1$s trebuie să fie mai mare decât %2$d (inclusiv)"
 
 #. translators: 1: parameter, 2: minimum number
-#: wp-includes/rest-api.php:1077
+#: wp-includes/rest-api.php:1095
 msgid "%1$s must be greater than %2$d (exclusive)"
 msgstr "%1$s trebuie să fie mai mare decât %2$d (exclusiv)"
 
 #. translators: %s: IP address
-#: wp-includes/rest-api.php:1067
+#: wp-includes/rest-api.php:1085
 msgid "%s is not a valid IP address."
 msgstr "%s nu este o adresă IP validă."
 
 #. translators: 1: parameter, 2: type name
-#: wp-includes/rest-api.php:1011 wp-includes/rest-api.php:1029
-#: wp-includes/rest-api.php:1034 wp-includes/rest-api.php:1039
-#: wp-includes/rest-api.php:1044
+#: wp-includes/rest-api.php:1029 wp-includes/rest-api.php:1047
+#: wp-includes/rest-api.php:1052 wp-includes/rest-api.php:1057
+#: wp-includes/rest-api.php:1062
 msgid "%1$s is not of type %2$s."
 msgstr "%1$s nu este de tipul %2$s."
 
 #. translators: 1: parameter, 2: list of valid values
-#: wp-includes/rest-api.php:1023
+#: wp-includes/rest-api.php:1041
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s nu este unul dintre %2$s."
 
@@ -861,7 +861,7 @@ msgstr "Adresă de email pentru utilizator."
 msgid "The role %s does not exist."
 msgstr "Rolul %s nu există."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:610
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:614
 msgid "Username isn't editable."
 msgstr "Numele de utilizator nu este editabil."
 
@@ -873,25 +873,21 @@ msgstr "ID utilizator invalid pentru reatribuire."
 msgid "Sorry, you are not allowed to delete this user."
 msgstr "Regret, nu ai voie să ștergi acest utilizator."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:420
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:424
 msgid "You are not currently logged in."
 msgstr "Acum nu ești autentificat."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:578
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:582
 msgid "Sorry, you are not allowed to edit roles of this user."
 msgstr "Regret, nu ai voie să editezi rolurile acestui utilizator."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:460
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:464
 msgid "Cannot create existing user."
 msgstr "Nu pot crea utilizatorul existent."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:873
 msgid "Type attribution for the term."
 msgstr "Tip de atribuire pentru termen."
-
-#: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:962
-msgid "Whether to hide terms not assigned to any posts."
-msgstr "Fie pentru a ascunde termeni neatribuite niciunui articol."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:947
 msgid "Sort collection by term attribute."
@@ -912,6 +908,10 @@ msgstr "Limitează setul de rezultate la termeni atribuiți unui anumit articol.
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:969
 msgid "Limit result set to terms assigned to a specific parent."
 msgstr "Limitează setul de rezultate la termeni atribuiți unui anumit părinte."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:962
+msgid "Whether to hide terms not assigned to any posts."
+msgstr "Fie pentru a ascunde termeni neatribuiți niciunui articol."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:838
 msgid "Number of published posts for the term."
@@ -938,11 +938,11 @@ msgstr "Proprietatea %s are o valoare stocată invalidă și nu poate fi actuali
 msgid "Invalid revision ID."
 msgstr "ID revizie invalid."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2240
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2259
 msgid "Status is forbidden."
 msgstr "Starea este interzisă."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2185
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2204
 msgid "Limit result set to items that are sticky."
 msgstr "Limitează setul de rezultate la elemente care sunt reprezentative."
 
@@ -955,36 +955,36 @@ msgstr "Este necesar să fie adevărat, deoarece utilizatorii nu suportă arunca
 msgid "Limit results to taxonomies associated with a specific post type."
 msgstr "Limitează rezultatele la taxonomii asociate cu un anumit tip de articol."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2046
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2065
 msgid "Ensure result set excludes posts assigned to specific authors."
 msgstr "Asigură că setul de rezultate exclude articolele atribuite unor anumiți autori."
 
 #. translators: %s: taxonomy name
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2164
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2183
 msgid "Limit result set to all items that have the specified term assigned in the %s taxonomy."
 msgstr "Limitează setul de rezultate la toate elementele care au termenul specificat atribuit în taxonomia %s."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2128
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2147
 msgid "Limit result set to all items except those of a particular parent ID."
 msgstr "Limitează setul de rezultate la toate elementele cu excepția celor ale unui anumit ID părinte."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2120
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2139
 msgid "Limit result set to those of particular parent IDs."
 msgstr "Limitează setul de rezultate la cele cu anumite ID-uri părinte."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2038
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2057
 msgid "Limit result set to posts assigned to specific authors."
 msgstr "Limitează setul de rezultate la articole atribuite unor anumiți autori."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1373
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2087
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2106
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:931
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1336
 msgid "Offset the result set by a specific number of items."
 msgstr "Compensează setul de rezultate după un anumit număr de elemente."
 
 #. translators: %s: taxonomy name
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2005
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2024
 msgid "The terms assigned to the object in the %s taxonomy."
 msgstr "Termenii atribuiți obiectului în taxonomia %s."
 
@@ -992,154 +992,154 @@ msgstr "Termenii atribuiți obiectului în taxonomia %s."
 msgid "Limit result set to users with a specific slug."
 msgstr "Limitează setul de rezultate la utilizatori cu un anumit descriptor."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2081
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2100
 msgid "Limit result set to posts with a specific menu_order value."
 msgstr "Limitează setul de rezultate la articole cu o anumită valoare menu_order."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1987
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2006
 msgid "Whether or not the object should be treated as sticky."
 msgstr "În orice caz obiectul ar trebuie să fie tratat ca reprezentativ."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1941
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1964
 msgid "Whether or not comments are open on the object."
 msgstr "În orice caz comentariile sunt deschise pe obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1994
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2013
 msgid "The theme file to use to display the object."
 msgstr "Fișierul temei de folosit pentru a afișa obiectul."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1770
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1793
 msgid "A password to protect access to the content and excerpt."
 msgstr "O parolă pentru a proteja accesul la conținut și rezumat."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1922
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1945
 msgid "Whether the excerpt is protected with a password."
 msgstr "Indiferent dacă rezumatul este protejat cu o parolă."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1971
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1990
 msgid "The format for the object."
 msgstr "Formatul pentru obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1956
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1979
 msgid "The order of the object in relation to other object of its type."
 msgstr "Ordinea obiectului în raport cu un alt obiect de acest tip."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1933
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1956
 msgid "The ID of the featured media for the object."
 msgstr "ID-ul pentru media reprezentativă pentru obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1916
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1939
 msgid "HTML excerpt for the object, transformed for display."
 msgstr "Rezumat HTML pentru obiect, transformat pentru afișare."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1947
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1970
 msgid "Whether or not the object can be pinged."
 msgstr "Indiferent dacă obiectul poate fi sau nu ping-uit."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1895
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1918
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:471
 msgid "The ID for the author of the object."
 msgstr "ID-ul pentru autorul obiectului."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1750
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1773
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:515
 msgid "An alphanumeric identifier for the object unique to its type."
 msgstr "Un identificator alfanumeric pentru obiectul unic pentru tipul său."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1884
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1907
 msgid "Whether the content is protected with a password."
 msgstr "Indiferent dacă conținutul este protejat cu o parolă."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1911
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1934
 msgid "Excerpt for the object, as it exists in the database."
 msgstr "Rezumat pentru obiect, așa cum există în baza de date."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1903
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1926
 msgid "The excerpt for the object."
 msgstr "Rezumatul pentru obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1841
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1864
 msgid "The title for the object."
 msgstr "Titlul pentru obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1764
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1787
 msgid "Type of Post for the object."
 msgstr "Tip de articol pentru obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1758
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1781
 msgid "A named status for the object."
 msgstr "O stare numită pentru obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1854
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1877
 msgid "HTML title for the object, transformed for display."
 msgstr "Titlu HTML pentru obiect, transformat pentru afișare."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1849
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1872
 msgid "Title for the object, as it exists in the database."
 msgstr "Titlu pentru obiect, așa cum există în baza de date."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1743
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1766
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:504
 msgid "The date the object was last modified, as GMT."
 msgstr "Data la care obiectul a fost modificat ultima dată, ca GMT."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1736
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1759
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:498
 msgid "The date the object was last modified, in the site's timezone."
 msgstr "Data la care obiectul a fost modificat ultima dată, în fusul orar al sitului."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1237
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1697
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1720
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:482
 msgid "The date the object was published, as GMT."
 msgstr "Data la care obiectul a fost publicat, ca GMT."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1231
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1691
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1714
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:476
 msgid "The date the object was published, in the site's timezone."
 msgstr "Data la care obiectul a fost publicat, în fusul orar al sitului."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1048
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1053
 msgid "A password protected post can not be set to sticky."
 msgstr "Un articol protejat cu parolă nu poate fi setat ca reprezentativ."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1703
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1726
 msgid "The globally unique identifier for the object."
 msgstr "Identificatorul unic global pentru obiect."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1715
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1738
 msgid "GUID for the object, transformed for display."
 msgstr "GUID pentru obiect, transformat pentru afișare."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1709
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1732
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:488
 msgid "GUID for the object, as it exists in the database."
 msgstr "GUID pentru obiect, așa cum există în baza de date."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1150
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1155
 msgid "Invalid featured media ID."
 msgstr "ID media reprezentativă invalid."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1059
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1064
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:134
 msgid "Invalid post parent ID."
 msgstr "ID părinte articol invalid."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1041
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1046
 msgid "A sticky post can not be password protected."
 msgstr "Un articol reprezentativ nu poate fi protejat cu parolă."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1037
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1042
 msgid "A post can not be sticky and have a password."
 msgstr "Un articol nu poate fi reprezentativ și să aibă o parolă."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:820
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:823
 msgid "The post has already been deleted."
 msgstr "Articolul a fost deja șters."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:487
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:522
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:490
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:525
 msgid "Cannot create existing post."
 msgstr "Nu pot crea articol existent."
 
@@ -1148,11 +1148,11 @@ msgstr "Nu pot crea articol existent."
 msgid "Sorry, you are not allowed to edit comments."
 msgstr "Regret, nu ai voie să editezi comentarii."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:443
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:447
 msgid "Sorry, you are not allowed to create new users."
 msgstr "Regret, nu ai voie să creezi utilizatori noi."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:402
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:405
 msgid "Incorrect post password."
 msgstr "Parolă articol incorectă."
 
@@ -1255,13 +1255,13 @@ msgid "The register_routes() method must be overridden"
 msgstr "Metoda register_routes() trebuie să fie contramandată"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1388
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2099
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2118
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1349
 msgid "Sort collection by object attribute."
 msgstr "Sortează colecția după atribut obiect."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1378
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2092
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2111
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:937
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1342
 msgid "Order sort attribute ascending or descending."
@@ -1276,7 +1276,7 @@ msgid "Limit result set to comments of specific parent IDs."
 msgstr "Limitează setul de rezultate la comentarii ale unor anumite ID-uri părinte."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1355
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2062
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2081
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:912
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1318
 msgid "Ensure result set excludes specific IDs."
@@ -1287,7 +1287,7 @@ msgid "Ensure result set excludes comments assigned to specific user IDs. Requir
 msgstr "Asigură că setul de rezultate exclude comentariile atribuite unor anumite ID-uri de utilizator. Necesită autorizare."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1364
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2071
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2090
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:921
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1327
 msgid "Limit result set to specific IDs."
@@ -1315,16 +1315,16 @@ msgstr "URL-uri avatar pentru autor obiect"
 msgid "Avatar URL with image size of %d pixels."
 msgstr "URL avatar cu dimensiune imagine de %d pixeli."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2056
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2075
 msgid "Limit response to posts published before a given ISO8601 compliant date."
 msgstr "Limitează răspunsul la articole publicate înainte de data conformă dată de ISO8601."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2031
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2050
 msgid "Limit response to posts published after a given ISO8601 compliant date."
 msgstr "Limitează răspunsul la articole publicate după data conformă dată de ISO8601."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1250
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1781
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1804
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:76
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:92
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:510
@@ -1332,7 +1332,7 @@ msgid "The ID for the parent of the object."
 msgstr "ID-ul pentru părintele obiectului."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1210
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1865
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1888
 msgid "The content for the object."
 msgstr "Conținutul pentru obiect."
 
@@ -1341,17 +1341,17 @@ msgid "State of the object."
 msgstr "Starea obiectului."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1243
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1729
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1752
 msgid "URL to the object."
 msgstr "URL către obiect."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1223
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1878
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1901
 msgid "HTML content for the object, transformed for display."
 msgstr "Conținut HTML pentru obiect, transformat pentru afișare."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1218
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1873
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1896
 msgid "Content for the object, as it exists in the database."
 msgstr "Conținut pentru obiect, așa cum există în baza de date."
 
@@ -1370,7 +1370,7 @@ msgstr "ID-ul obiectului utilizator, dacă autorul a fost un utilizator."
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:68
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1161
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:93
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1723
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1746
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:96
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:493
 msgid "Unique identifier for the object."
@@ -1660,10 +1660,6 @@ msgstr "Anterior"
 msgid "Username or Email Address"
 msgstr "Nume utilizator sau adresă de email"
 
-#: wp-includes/functions.php:1225
-msgid "ERROR: This is not a valid feed."
-msgstr "EROARE: Acesta nu este un flux valid."
-
 #: wp-includes/customize/class-wp-customize-selective-refresh.php:188
 msgid "Click to edit this element."
 msgstr "Dă clic pentru a edita acest element."
@@ -1779,52 +1775,52 @@ msgid "Post"
 msgstr "Articol"
 
 #. translators: 1: .mp4, 2: .mov
-#: wp-includes/class-wp-customize-manager.php:4292
+#: wp-includes/class-wp-customize-manager.php:4307
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
-msgstr "Numai fișierele %1$s or %2$s pot fi folosite pentru antet video. Te rog convertește fișierul tău video și încearcă din nou, sau încarcă-ți videoul pe YouTube și leagă-l cu opțiunea de mai jos."
+msgstr "Numai fișierele %1$s sau %2$s pot fi folosite pentru video de antet. Te rog convertește fișierul tău video și încearcă din nou sau încarcă-ți videoul pe YouTube și leagă-l cu opțiunea de mai jos."
 
-#: wp-includes/class-wp-customize-manager.php:4286
+#: wp-includes/class-wp-customize-manager.php:4301
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 msgstr "Acest fișier video este prea mare pentru a-l folosi ca video de antet. Încearcă un video mai scurt sau optimizează setările de compresie și reîncarcă un fișier care este mai mic de 8 MO. Sau încarcă-ți videoul pe YouTube și leagă-l cu opțiunea de mai jos."
 
-#: wp-includes/class-wp-customize-manager.php:4246
+#: wp-includes/class-wp-customize-manager.php:4261
 msgid "Unrecognized background setting."
 msgstr "Setare fundal nerecunoscută."
 
-#: wp-includes/class-wp-customize-manager.php:4237
-#: wp-includes/class-wp-customize-manager.php:4241
+#: wp-includes/class-wp-customize-manager.php:4252
+#: wp-includes/class-wp-customize-manager.php:4256
 msgid "Invalid value for background size."
 msgstr "Valoare invalidă pentru dimensiune fundal."
 
-#: wp-includes/class-wp-customize-manager.php:4233
+#: wp-includes/class-wp-customize-manager.php:4248
 msgid "Invalid value for background position Y."
 msgstr "Valoare invalidă pentru poziția Y fundal."
 
-#: wp-includes/class-wp-customize-manager.php:4229
+#: wp-includes/class-wp-customize-manager.php:4244
 msgid "Invalid value for background position X."
 msgstr "Valoare invalidă pentru poziția X fundal."
 
-#: wp-includes/class-wp-customize-manager.php:4225
+#: wp-includes/class-wp-customize-manager.php:4240
 msgid "Invalid value for background attachment."
 msgstr "Valoare invalidă pentru atașament fundal."
 
-#: wp-includes/class-wp-customize-manager.php:4221
+#: wp-includes/class-wp-customize-manager.php:4236
 msgid "Invalid value for background repeat."
 msgstr "Valoare invalidă pentru repetare fundal."
 
-#: wp-includes/class-wp-customize-manager.php:4130
+#: wp-includes/class-wp-customize-manager.php:4145
 msgid "(link opens in a new window)"
 msgstr "(legătura se deschide într-o fereastră nouă)"
 
-#: wp-includes/class-wp-customize-manager.php:4129
+#: wp-includes/class-wp-customize-manager.php:4144
 msgid "Learn more about CSS"
 msgstr "Află mai multe despre CSS"
 
-#: wp-includes/class-wp-customize-manager.php:4123
+#: wp-includes/class-wp-customize-manager.php:4138
 msgid "Additional CSS"
 msgstr "CSS suplimentar"
 
-#: wp-includes/class-wp-customize-manager.php:4136
+#: wp-includes/class-wp-customize-manager.php:4151
 msgid ""
 "You can add your own CSS here.\n"
 "\n"
@@ -1834,80 +1830,80 @@ msgstr ""
 "\n"
 "Dă clic pe iconul de ajutor de mai sus pentru a afla mai mult."
 
-#: wp-includes/class-wp-customize-manager.php:4054
+#: wp-includes/class-wp-customize-manager.php:4069
 msgid "Scroll with Page"
 msgstr "Derulează cu pagină"
 
-#: wp-includes/class-wp-customize-manager.php:4042
+#: wp-includes/class-wp-customize-manager.php:4057
 msgid "Repeat Background Image"
 msgstr "Repetă imagine fundal"
 
-#: wp-includes/class-wp-customize-manager.php:4029
+#: wp-includes/class-wp-customize-manager.php:4044
 msgid "Original"
 msgstr "Original"
 
-#: wp-includes/class-wp-customize-manager.php:4025
+#: wp-includes/class-wp-customize-manager.php:4040
 msgid "Image Size"
 msgstr "Dimensiune imagine"
 
-#: wp-includes/class-wp-customize-manager.php:4010
+#: wp-includes/class-wp-customize-manager.php:4025
 #: wp-includes/customize/class-wp-customize-background-position-control.php:69
 msgid "Image Position"
 msgstr "Poziție imagine"
 
-#: wp-includes/class-wp-customize-manager.php:3993
+#: wp-includes/class-wp-customize-manager.php:4008
 msgctxt "Custom Preset"
 msgid "Custom"
 msgstr "Personalizat"
 
-#: wp-includes/class-wp-customize-manager.php:3992
+#: wp-includes/class-wp-customize-manager.php:4007
 msgctxt "Repeat Image"
 msgid "Repeat"
 msgstr "Repetă"
 
-#: wp-includes/class-wp-customize-manager.php:3991
-#: wp-includes/class-wp-customize-manager.php:4030
+#: wp-includes/class-wp-customize-manager.php:4006
+#: wp-includes/class-wp-customize-manager.php:4045
 msgid "Fit to Screen"
 msgstr "Încadrat în ecran"
 
-#: wp-includes/class-wp-customize-manager.php:3989
+#: wp-includes/class-wp-customize-manager.php:4004
 msgctxt "Default Preset"
 msgid "Default"
 msgstr "Implicit"
 
-#: wp-includes/class-wp-customize-manager.php:3985
+#: wp-includes/class-wp-customize-manager.php:4000
 msgctxt "Background Preset"
 msgid "Preset"
 msgstr "Presetat"
 
-#: wp-includes/class-wp-customize-manager.php:3925
+#: wp-includes/class-wp-customize-manager.php:3940
 msgid "Header Video"
 msgstr "Video de antet"
 
 #. translators: 1: .mp4, 2: header width in pixels
-#: wp-includes/class-wp-customize-manager.php:3865
+#: wp-includes/class-wp-customize-manager.php:3880
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
 msgstr "Încarcă-ți videoul în format %1$s și minimizează-i dimensiunea pentru cele mai bune rezultate. Tema ta recomandă o lățime de %2$s pixeli."
 
 #. translators: 1: .mp4, 2: header height in pixels
-#: wp-includes/class-wp-customize-manager.php:3872
+#: wp-includes/class-wp-customize-manager.php:3887
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
 msgstr "Încarcă-ți videoul în format %1$s și minimizează-i dimensiunea pentru cele mai bune rezultate. Tema ta recomandă o înălțime de %2$s pixeli."
 
-#: wp-includes/class-wp-customize-manager.php:3847
+#: wp-includes/class-wp-customize-manager.php:3862
 msgid "If you add a video, the image will be used as a fallback while the video loads."
 msgstr "Dacă adaugi un video, imaginea va fi folosită ca soluție de rezervă în timp ce videoul se încarcă."
 
 #. translators: 1: .mp4, 2: header size in pixels
-#: wp-includes/class-wp-customize-manager.php:3858
+#: wp-includes/class-wp-customize-manager.php:3873
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 msgstr "Încarcă-ți videoul în format %1$s și minimizează-i dimensiunea pentru cele mai bune rezultate. Tema ta recomandă dimensiuni de %2$s pixeli."
 
-#: wp-includes/class-wp-customize-manager.php:1997
+#: wp-includes/class-wp-customize-manager.php:2004
 msgid "Unauthorized to modify setting due to capability."
 msgstr "Neautorizat pentru a modifica setarea datorită capabilității."
 
-#: wp-includes/class-wp-customize-manager.php:1992
+#: wp-includes/class-wp-customize-manager.php:1999
 msgid "Setting does not exist or is unrecognized."
 msgstr "Setarea nu există sau este nerecunoscută."
 
@@ -1916,15 +1912,15 @@ msgstr "Setarea nu există sau este nerecunoscută."
 msgid "Howdy, %s"
 msgstr "Bună, %s"
 
-#: wp-includes/class-wp-customize-manager.php:1785
+#: wp-includes/class-wp-customize-manager.php:1792
 msgid "This form is not live-previewable."
 msgstr "Formularul nu este previzualizabil live."
 
-#: wp-includes/class-wp-customize-manager.php:1784
+#: wp-includes/class-wp-customize-manager.php:1791
 msgid "This link is not live-previewable."
 msgstr "Legătura nu este previzualizabilă live."
 
-#: wp-includes/class-wp-customize-manager.php:1565
+#: wp-includes/class-wp-customize-manager.php:1571
 msgid "Unauthorized. You may remove the customize_messenger_channel param to preview as frontend."
 msgstr "Neautorizat. Poți înlătura parametrul customize_messenger_channel pentru a previzualiza ca partea din față a sitului."
 
@@ -1995,11 +1991,11 @@ msgstr "Folosește tastele săgeată sus/jos pentru a mări sau micșora volumul
 msgid "Volume Slider"
 msgstr "Volum carusel"
 
-#: wp-includes/script-loader.php:357 wp-includes/theme.php:1386
+#: wp-includes/script-loader.php:357 wp-includes/theme.php:1395
 msgid "Play"
 msgstr "Rulează"
 
-#: wp-includes/script-loader.php:358 wp-includes/theme.php:1385
+#: wp-includes/script-loader.php:358 wp-includes/theme.php:1394
 msgid "Pause"
 msgstr "Pauză"
 
@@ -2111,7 +2107,7 @@ msgid "Sorry, you are not allowed to edit your profile."
 msgstr "Regret, nu ai voie să-ți editezi profilul."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2421
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:574
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:578
 msgid "Sorry, you are not allowed to edit this user."
 msgstr "Regret, nu ai voie să editezi acest utilizator."
 
@@ -2157,8 +2153,8 @@ msgstr "Instalarea a eșuat: %s"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1640
 #: wp-includes/class-wp-xmlrpc-server.php:4777
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:755
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:800
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:758
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:803
 msgid "Sorry, you are not allowed to delete this post."
 msgstr "Regret, nu ai voie să ștergi acest articol."
 
@@ -2235,12 +2231,12 @@ msgid "Are you sure you want to delete %s?"
 msgstr "Ești sigur că vrei să ștergi %s?"
 
 #. translators: %s: user name
-#: wp-includes/pluggable.php:1715
+#: wp-includes/pluggable.php:1731
 msgid "Password changed for user: %s"
 msgstr "Parolă modificată pentru utilizator: %s"
 
 #. translators: %s: site title
-#: wp-includes/pluggable.php:1720
+#: wp-includes/pluggable.php:1736
 msgid "[%s] Password Changed"
 msgstr "[%s] Parolă modificată"
 
@@ -2287,7 +2283,7 @@ msgstr "Regret, nu ai voie să previzualizezi ciorne."
 msgid "Confirm use of weak password"
 msgstr "Confirmă folosirea unei parole slabe"
 
-#: wp-includes/formatting.php:4245
+#: wp-includes/formatting.php:4251
 msgid "https://codex.wordpress.org/Using_Permalinks#Choosing_your_permalink_structure"
 msgstr "https://codex.wordpress.org/Using_Permalinks#Choosing_your_permalink_structure"
 
@@ -2296,7 +2292,7 @@ msgid "Image crop area preview. Requires mouse interaction."
 msgstr "Previzualizare zonă de decupare imagine. Necesită interacțiunea cu mausul."
 
 #. translators: %s: Codex URL
-#: wp-includes/formatting.php:4244
+#: wp-includes/formatting.php:4250
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
 msgstr "Un tag de structură este necesar când se folosesc legături permanente. <a href=\"%s\">Află mai multe</a>"
 
@@ -2312,12 +2308,12 @@ msgstr "Regret, nu ai voie să adăugi o categorie."
 
 #: wp-includes/class-wp-xmlrpc-server.php:2479
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:186
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:378
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:380
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:382
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:384
 msgid "Sorry, you are not allowed to list users."
 msgstr "Regret, nu ai voie să listezi utilizatori."
 
-#: wp-includes/class-wp-customize-manager.php:2020
+#: wp-includes/class-wp-customize-manager.php:2027
 #: wp-includes/class-wp-customize-setting.php:549
 msgid "Invalid value."
 msgstr "Valoare invalidă."
@@ -2327,7 +2323,7 @@ msgstr "Valoare invalidă."
 msgid "You can also place menus in <a href=\"%s\">widget areas</a> with the &#8220;Custom Menu&#8221; widget."
 msgstr "Poți, de asemenea, plasa meniurile în <a href=\"%s\">zone asamblabile</a> cu piesa &#8222;Meniu personalizat&#8221;."
 
-#: wp-includes/class-wp-customize-manager.php:2349
+#: wp-includes/class-wp-customize-manager.php:2356
 msgid "There is %s invalid setting."
 msgid_plural "There are %s invalid settings."
 msgstr[0] "Există %s setare invalidă."
@@ -2359,8 +2355,8 @@ msgid "Link inserted."
 msgstr "Legătură inserată."
 
 #. translators: %s: ImageMagick method name
-#: wp-includes/class-wp-image-editor-imagick.php:701
 #: wp-includes/class-wp-image-editor-imagick.php:706
+#: wp-includes/class-wp-image-editor-imagick.php:711
 msgid "%s is required to strip image meta."
 msgstr "%s este necesar pentru a elimina metadatele imaginii."
 
@@ -2406,7 +2402,7 @@ msgstr "Constanta %1$s <strong>e învechită</strong>. Folosește constanta bool
 
 #. translators: 1: panel id, 2: link to 'customize_loaded_components' filter
 #. reference
-#: wp-includes/class-wp-customize-manager.php:2941
+#: wp-includes/class-wp-customize-manager.php:2956
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "Eliminarea manuală a %1$s va provoca avertismente PHP. Folosește în schimb filtrul %2$s."
 
@@ -2506,21 +2502,21 @@ msgstr "<strong>EROARE</strong>: nume utilizator invalid, adresă email sau paro
 msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "%1$s %2$s Flux %3$s %4$s"
 
-#: wp-includes/class-wp-customize-manager.php:3785
+#: wp-includes/class-wp-customize-manager.php:3800
 msgid "No logo selected"
 msgstr "Niciun logo selectat"
 
-#: wp-includes/class-wp-customize-manager.php:3787
+#: wp-includes/class-wp-customize-manager.php:3802
 msgid "Choose logo"
 msgstr "Alegere logo"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
-#: wp-includes/functions.php:3890
+#: wp-includes/functions.php:3891
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "Metoda constructor apelată pentru %1$s în %2$s este <strong>învechită</strong> de la versiunea %3$s! Folosește în schimb %4$s."
 
-#: wp-includes/functions.php:5257
+#: wp-includes/functions.php:5258
 msgid "Close dialog"
 msgstr "Închide dialog"
 
@@ -2533,12 +2529,12 @@ msgstr "%s este interzis"
 msgid "Partial render must echo the content or return the content string (or array), but not both."
 msgstr "Randarea parțială trebuie să concorde cu conținutul sau să returneze șirul (sau tabloul) de conținut, dar nu ambele."
 
-#: wp-includes/class-wp-customize-manager.php:3781
-#: wp-includes/class-wp-customize-manager.php:3786
+#: wp-includes/class-wp-customize-manager.php:3796
+#: wp-includes/class-wp-customize-manager.php:3801
 msgid "Select logo"
 msgstr "Selectează logo"
 
-#: wp-includes/class-wp-customize-manager.php:3782
+#: wp-includes/class-wp-customize-manager.php:3797
 msgid "Change logo"
 msgstr "Modifică logo"
 
@@ -2573,7 +2569,7 @@ msgstr "<strong>EROARE</strong>: adresa ta de email e prea lungă."
 msgid "<strong>ERROR</strong>: your name is too long."
 msgstr "<strong>EROARE</strong>: numele tău e prea lung."
 
-#: wp-includes/class-wp-customize-manager.php:3773
+#: wp-includes/class-wp-customize-manager.php:3788
 msgid "Logo"
 msgstr "Logo"
 
@@ -2595,20 +2591,20 @@ msgstr "Șablonul lipsește. Temele de sine stătătoare trebuie să aibă un fi
 msgid "Paste URL or type to search"
 msgstr "Lipește URL-ul sau tastează-l pentru căutare"
 
-#: wp-includes/class-wp-customize-manager.php:3740
-#: wp-includes/class-wp-customize-manager.php:3817
+#: wp-includes/class-wp-customize-manager.php:3755
+#: wp-includes/class-wp-customize-manager.php:3832
 msgid "Display Site Title and Tagline"
 msgstr "Afișează titlul sitului și sloganul"
 
-#: wp-includes/class-wp-customize-manager.php:3612
+#: wp-includes/class-wp-customize-manager.php:3627
 msgid "Enter desktop preview mode"
 msgstr "Intră în modul de previzualizare pentru desktop"
 
-#: wp-includes/class-wp-customize-manager.php:3616
+#: wp-includes/class-wp-customize-manager.php:3631
 msgid "Enter tablet preview mode"
 msgstr "Intră în modul de previzualizare pentru tabletă"
 
-#: wp-includes/class-wp-customize-manager.php:3619
+#: wp-includes/class-wp-customize-manager.php:3634
 msgid "Enter mobile preview mode"
 msgstr "Intră în modul de previzualizare pentru mobile"
 
@@ -2616,7 +2612,7 @@ msgstr "Intră în modul de previzualizare pentru mobile"
 msgid "Comment Submission Failure"
 msgstr "Eșuare trimitere comentariu"
 
-#: wp-includes/class-wp-customize-manager.php:1783
+#: wp-includes/class-wp-customize-manager.php:1790
 #: wp-includes/customize/class-wp-customize-selective-refresh.php:184
 msgid "Shift-click to edit this element."
 msgstr "Apasă shift-clic pentru a edita acest element."
@@ -2650,12 +2646,12 @@ msgstr "Citește pagina <a href=\"%s\" target=\"_blank\">raport de erori</a>. Un
 msgid "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 msgstr "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 
-#: wp-includes/functions.php:4133
+#: wp-includes/functions.php:4134
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:4132
+#: wp-includes/functions.php:4133
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "Te rog vezi <a href=\"%s\">Depanare în WordPress</a> pentru mai multe informații."
 
@@ -2969,16 +2965,16 @@ msgid "Permalink saved"
 msgstr "Legătură permanentă salvată"
 
 #. translators: 1: function name, 2: WordPress version number, 3: error message
-#: wp-includes/rest-api.php:503
+#: wp-includes/rest-api.php:507
 msgid "%1$s (since %2$s; %3$s)"
 msgstr "%1$s (din %2$s; %3$s)"
 
 #. translators: 1: function name, 2: WordPress version number
-#: wp-includes/rest-api.php:485 wp-includes/rest-api.php:506
+#: wp-includes/rest-api.php:489 wp-includes/rest-api.php:510
 msgid "%1$s (since %2$s; no alternative available)"
 msgstr "%1$s (din %2$s; nicio alternativă disponibilă)"
 
-#: wp-includes/rest-api.php:722
+#: wp-includes/rest-api.php:726
 msgid "Cookie nonce is invalid"
 msgstr "Nunicul cookie este invalid."
 
@@ -2994,7 +2990,7 @@ msgstr "Nume scurtcod invalid: %1$s. Nu folosi spații sau caractere rezervate: 
 
 #. translators: 1: function name, 2: WordPress version number, 3: new function
 #. name
-#: wp-includes/rest-api.php:482
+#: wp-includes/rest-api.php:486
 msgid "%1$s (since %2$s; use %3$s instead)"
 msgstr "%1$s (din %2$s; folosește în schimb %3$s)"
 
@@ -3280,7 +3276,7 @@ msgid "Press return or enter to open this section"
 msgstr "Apasă return sau enter pentru a deschide această secțiune"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:3284
+#: wp-includes/class-wp-customize-manager.php:3299
 msgid "Live Preview: %s"
 msgstr "Previzualizare live: %s"
 
@@ -3321,7 +3317,7 @@ msgstr "Comută secțiunea: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/formatting.php:3349 wp-includes/script-loader.php:446
+#: wp-includes/formatting.php:3355 wp-includes/script-loader.php:446
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "words"
@@ -3426,16 +3422,16 @@ msgstr "Ascunde imaginea"
 msgid "Hide header image"
 msgstr "Ascunde imaginea antet"
 
-#: wp-includes/class-wp-customize-manager.php:3754
+#: wp-includes/class-wp-customize-manager.php:3769
 msgid "Site Icon"
 msgstr "Icon sit"
 
 #. translators: %s: site icon size in pixels
-#: wp-includes/class-wp-customize-manager.php:3757
+#: wp-includes/class-wp-customize-manager.php:3772
 msgid "The Site Icon is used as a browser and app icon for your site. Icons must be square, and at least %s pixels wide and tall."
 msgstr "Iconul sitului este folosit ca un icon de aplicație sau de pagină în navigator. Iconurile trebuie să fie pătrate de cel puțin %s pixeli."
 
-#: wp-includes/class-wp-customize-manager.php:3705
+#: wp-includes/class-wp-customize-manager.php:3720
 msgid "Site Identity"
 msgstr "Identitate sit"
 
@@ -3460,7 +3456,7 @@ msgstr "Eroare în baza de date WordPress:"
 msgid "Your password reset link appears to be invalid. Please request a new link below."
 msgstr "Legătura pentru resetarea parolei tale pare să fie invalidă. Te rog cere una nouă mai jos."
 
-#: wp-includes/pluggable.php:1790
+#: wp-includes/pluggable.php:1806
 msgid "To set your password, visit the following address:"
 msgstr "Pentru a-ți seta parola, vizitează următoarea adresă:"
 
@@ -3494,7 +3490,7 @@ msgid "Preformatted"
 msgstr "Preformatat"
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
-#: wp-includes/functions.php:3894
+#: wp-includes/functions.php:3895
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "Metoda apelată a constructorului pentru %1$s este <strong>abandonată</strong> de la versiunea %2$s! Folosește în schimb %3$s."
 
@@ -4078,7 +4074,7 @@ msgstr "Tema ta are suport numai pentru un meniu. Selectează meniul pe care vre
 msgid "Could not split shared term."
 msgstr "Nu pot separa termenul partajat."
 
-#: wp-includes/theme.php:2961
+#: wp-includes/theme.php:2970
 msgid "Customizer"
 msgstr "Personalizator"
 
@@ -4232,7 +4228,7 @@ msgstr "<strong>Lipsesc tabelele din baza de date.</strong> E probabil ca MySQL 
 #. translators: 1: comment author, 2: author IP, 3: author domain
 #. translators: 1: Comment author name, 2: comment author's IP, 3: comment
 #. author IP's hostname
-#: wp-includes/pluggable.php:1457 wp-includes/pluggable.php:1617
+#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1633
 msgid "Author: %1$s (IP: %2$s, %3$s)"
 msgstr "Autor: %1$s (IP: %2$s, %3$s)"
 
@@ -4242,8 +4238,8 @@ msgstr "Numele tipului de articol trebuie să aibă între 1 și 20 de caractere
 
 #. translators: 1: Trackback/pingback website name, 2: website IP, 3: website
 #. hostname
-#: wp-includes/pluggable.php:1436 wp-includes/pluggable.php:1447
-#: wp-includes/pluggable.php:1597 wp-includes/pluggable.php:1607
+#: wp-includes/pluggable.php:1452 wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1613 wp-includes/pluggable.php:1623
 msgid "Website: %1$s (IP: %2$s, %3$s)"
 msgstr "Sit web: %1$s (IP: %2$s, %3$s)"
 
@@ -4322,7 +4318,7 @@ msgid "Distraction-free writing mode"
 msgstr "Mod de scriere fără distragerea atenției"
 
 #. translators: 1: Theme support 2: hook name
-#: wp-includes/theme.php:2409
+#: wp-includes/theme.php:2418
 msgid "Theme support for %1$s should be registered before the %2$s hook."
 msgstr "Suportul temei pentru %1$s ar trebui să fie înregistrat înaintea agățătorii %2$s."
 
@@ -4363,7 +4359,7 @@ msgstr "Zonă text îmbogățit. Apasă Alt-Shift-H pentru ajutor."
 msgid "The following values do not describe a valid date: month %1$s, day %2$s."
 msgstr "Următoarele valori nu descriu o dată validă: lună %1$s, zi %2$s."
 
-#: wp-includes/theme.php:2253
+#: wp-includes/theme.php:2262
 msgid "You need to pass an array of types."
 msgstr "Trebuie să furnizezi o matrice de tipuri."
 
@@ -4378,15 +4374,15 @@ msgid "%s must set a database connection for use with escaping."
 msgstr "%s trebuie setată o conexiune cu baza de date pentru utilizare cu escapare."
 
 #. translators: 1: Trackback/pingback/comment author URL
-#: wp-includes/pluggable.php:1437 wp-includes/pluggable.php:1448
-#: wp-includes/pluggable.php:1459 wp-includes/pluggable.php:1599
-#: wp-includes/pluggable.php:1609 wp-includes/pluggable.php:1621
+#: wp-includes/pluggable.php:1453 wp-includes/pluggable.php:1464
+#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1615
+#: wp-includes/pluggable.php:1625 wp-includes/pluggable.php:1637
 msgid "URL: %s"
 msgstr "URL: %s"
 
 #. translators: 1: Comment text
-#: wp-includes/pluggable.php:1438 wp-includes/pluggable.php:1449
-#: wp-includes/pluggable.php:1460 wp-includes/pluggable.php:1623
+#: wp-includes/pluggable.php:1454 wp-includes/pluggable.php:1465
+#: wp-includes/pluggable.php:1476 wp-includes/pluggable.php:1639
 msgid "Comment: %s"
 msgstr "Comentariu: %s"
 
@@ -4412,15 +4408,15 @@ msgctxt "verb"
 msgid "Trash"
 msgstr "Aruncă la gunoi"
 
-#: wp-includes/pluggable.php:1461
+#: wp-includes/pluggable.php:1477
 msgid "You can see all comments on this post here:"
 msgstr "Poți vedea toate comentariile la acest articol aici:"
 
-#: wp-includes/pluggable.php:1450
+#: wp-includes/pluggable.php:1466
 msgid "You can see all pingbacks on this post here:"
 msgstr "Poți vedea toate pingback-urile la acest articol aici:"
 
-#: wp-includes/pluggable.php:1439
+#: wp-includes/pluggable.php:1455
 msgid "You can see all trackbacks on this post here:"
 msgstr "Poți vedea toate trackback-urile la acest articol aici:"
 
@@ -4850,7 +4846,7 @@ msgstr "Deși poți să decupezi imagini cum dorești după ce dai clic pe <stro
 msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
 msgstr "(WordPress nu a reușit să stabilească o conexiune securizată la WordPress.org. Te rog contactează administratorul serverului.)"
 
-#: wp-includes/class-wp-customize-widgets.php:1128
+#: wp-includes/class-wp-customize-widgets.php:1127
 msgid "Shift-click to edit this widget."
 msgstr "Shift-clic pentru a edita această piesă."
 
@@ -5293,17 +5289,17 @@ msgid "Search"
 msgstr "Caută"
 
 #. translators: used to join items in a list with more than 2 items
-#: wp-includes/formatting.php:4476
+#: wp-includes/formatting.php:4482
 msgid "%s, %s"
 msgstr "%s, %s"
 
 #. translators: used to join last two items in a list with more than 2 times
-#: wp-includes/formatting.php:4478
+#: wp-includes/formatting.php:4484
 msgid "%s, and %s"
 msgstr "%s, și %s"
 
 #. translators: used to join items in a list with only 2 items
-#: wp-includes/formatting.php:4480
+#: wp-includes/formatting.php:4486
 msgid "%s and %s"
 msgstr "%s și %s"
 
@@ -5866,7 +5862,7 @@ msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
 msgstr "si,in,de,e,ca,la,fi,pentru,ce,cum,cat,pe,sau,asta,asa,care,cu,este"
 
-#: wp-includes/functions.php:1237
+#: wp-includes/functions.php:1225
 msgid "ERROR: This is not a valid feed template."
 msgstr "EROARE: Acesta nu este un șablon de flux valid."
 
@@ -5933,7 +5929,7 @@ msgid "Mute Toggle"
 msgstr "Comutator mod mut"
 
 #. translators: Time difference between two dates, in weeks. 1: Number of weeks
-#: wp-includes/formatting.php:3239
+#: wp-includes/formatting.php:3245
 msgid "%s week"
 msgid_plural "%s weeks"
 msgstr[0] "%s săptămână"
@@ -5942,7 +5938,7 @@ msgstr[2] "%s de săptămâni"
 
 #. translators: Time difference between two dates, in months. 1: Number of
 #. months
-#: wp-includes/formatting.php:3245
+#: wp-includes/formatting.php:3251
 msgid "%s month"
 msgid_plural "%s months"
 msgstr[0] "%s lună"
@@ -5950,7 +5946,7 @@ msgstr[1] "%s luni"
 msgstr[2] "%s de luni"
 
 #. translators: Time difference between two dates, in years. 1: Number of years
-#: wp-includes/formatting.php:3251
+#: wp-includes/formatting.php:3257
 msgid "%s year"
 msgid_plural "%s years"
 msgstr[0] "%s an"
@@ -6029,7 +6025,7 @@ msgstr "Sesiunea ta a expirat. Te poți autentifica din nou din această pagină
 msgid "%1$s %2$s, %3$s @ %4$s:%5$s"
 msgstr "%2$s.%1$s.%3$s la %4$s:%5$s"
 
-#: wp-includes/functions.php:5270
+#: wp-includes/functions.php:5271
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "Pagina de autentificare se va deschide într-o fereastră nouă. După autentificare o poți închide și să revii la această pagină."
 
@@ -6054,7 +6050,7 @@ msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "Căutare &hellip;"
 
-#: wp-includes/functions.php:5268 wp-includes/script-loader.php:470
+#: wp-includes/functions.php:5269 wp-includes/script-loader.php:470
 msgid "Session expired"
 msgstr "Sesiune expirată"
 
@@ -6082,7 +6078,7 @@ msgstr "Adresă sit (URL)"
 
 #: wp-includes/class-wp-xmlrpc-server.php:2426
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:343
-#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:602
+#: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:606
 #: wp-includes/user.php:1417 wp-includes/user.php:1738
 #: wp-includes/user.php:1744
 msgid "Invalid user ID."
@@ -6538,11 +6534,11 @@ msgstr "Sari la bara de unelte"
 msgid "Hex Value"
 msgstr "Valoare hexazecimală"
 
-#: wp-includes/class-wp-customize-manager.php:3824
+#: wp-includes/class-wp-customize-manager.php:3839
 msgid "Header Text Color"
 msgstr "Culoare text antet"
 
-#: wp-includes/class-wp-customize-manager.php:3801
+#: wp-includes/class-wp-customize-manager.php:3816
 msgid "Colors"
 msgstr "Culori"
 
@@ -6581,7 +6577,7 @@ msgstr "Regret, nu poți evidenția un articol privat."
 msgid "Sorry, you are not allowed to publish this page."
 msgstr "Regret, nu ai voie să publici această pagină."
 
-#: wp-includes/class-wp-customize-manager.php:3878
+#: wp-includes/class-wp-customize-manager.php:3893
 #: wp-includes/customize/class-wp-customize-header-image-control.php:31
 msgid "Header Image"
 msgstr "Imagine antet"
@@ -6622,16 +6618,16 @@ msgstr "Te rog introdu un titlu pentru sit."
 msgid "Username must be at least 4 characters."
 msgstr "Numele de utilizator trebuie să fie de cel puțin 4 caractere."
 
-#: wp-includes/class-wp-customize-manager.php:4093
+#: wp-includes/class-wp-customize-manager.php:4108
 msgid "A static page"
 msgstr "O pagină statică"
 
-#: wp-includes/class-wp-customize-manager.php:3960
+#: wp-includes/class-wp-customize-manager.php:3975
 #: wp-includes/customize/class-wp-customize-background-image-control.php:30
 msgid "Background Image"
 msgstr "Imagine fundal"
 
-#: wp-includes/class-wp-customize-manager.php:3839
+#: wp-includes/class-wp-customize-manager.php:3854
 msgid "Background Color"
 msgstr "Culoare fundal"
 
@@ -6647,11 +6643,11 @@ msgstr "Înlătură imaginea"
 msgid "Sorry, you are not allowed to edit this comment."
 msgstr "Regret, nu ai voie să editezi acest comentariu."
 
-#: wp-includes/class-wp-customize-manager.php:4103
+#: wp-includes/class-wp-customize-manager.php:4118
 msgid "Front page"
 msgstr "Pagina din față"
 
-#: wp-includes/class-wp-customize-manager.php:4115
+#: wp-includes/class-wp-customize-manager.php:4130
 msgid "Posts page"
 msgstr "Pagină articole"
 
@@ -6659,7 +6655,7 @@ msgstr "Pagină articole"
 msgid "Allowed Files"
 msgstr "Fișiere permise"
 
-#: wp-includes/class-wp-customize-manager.php:3783
+#: wp-includes/class-wp-customize-manager.php:3798
 #: wp-includes/class-wp-customize-widgets.php:730
 #: wp-includes/class-wp-editor.php:1054
 #: wp-includes/customize/class-wp-customize-image-control.php:37
@@ -6788,28 +6784,28 @@ msgstr "Tema \"%s\" nu este o temă părinte validă."
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; Selectează &mdash;"
 
-#: wp-includes/class-wp-customize-manager.php:3727
+#: wp-includes/class-wp-customize-manager.php:3742
 msgid "Tagline"
 msgstr "Slogan"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:3281
+#: wp-includes/class-wp-customize-manager.php:3296
 msgid "Customize: %s"
 msgstr "Personalizează: %s"
 
-#: wp-includes/class-wp-customize-manager.php:4075
+#: wp-includes/class-wp-customize-manager.php:4090
 msgid "Static Front Page"
 msgstr "Pagină din față statică"
 
-#: wp-includes/class-wp-customize-manager.php:4092
+#: wp-includes/class-wp-customize-manager.php:4107
 msgid "Your latest posts"
 msgstr "Ultimele tale articole"
 
-#: wp-includes/class-wp-customize-manager.php:4088
+#: wp-includes/class-wp-customize-manager.php:4103
 msgid "Front page displays"
 msgstr "Afișări pe pagina din față"
 
-#: wp-includes/class-wp-customize-manager.php:4077
+#: wp-includes/class-wp-customize-manager.php:4092
 msgid "Your theme supports a static front page."
 msgstr "Tema ta acceptă o pagină din față statică."
 
@@ -6840,8 +6836,8 @@ msgstr "Tip de legătură implicită pentru imagine"
 #: wp-includes/class-wp-xmlrpc-server.php:5850
 #: wp-includes/class-wp-xmlrpc-server.php:6021
 #: wp-includes/class-wp-xmlrpc-server.php:6075
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:396
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:633
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:399
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:636
 msgid "Sorry, you are not allowed to edit this post."
 msgstr "Regret, nu ai voie să editezi acest articol."
 
@@ -6857,7 +6853,7 @@ msgstr ","
 
 #: wp-includes/class-wp-xmlrpc-server.php:1351
 #: wp-includes/class-wp-xmlrpc-server.php:4941
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1024
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1029
 msgid "Invalid author ID."
 msgstr "ID autor invalid."
 
@@ -6872,7 +6868,7 @@ msgstr "Nume ambiguu de termen folosit într-o taxonomie ierarhică. Te rog folo
 
 #: wp-includes/class-wp-xmlrpc-server.php:1646
 #: wp-includes/class-wp-xmlrpc-server.php:4783
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:831
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:834
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:322
 msgid "The post cannot be deleted."
 msgstr "Articolul nu poate fi șters."
@@ -6883,8 +6879,8 @@ msgstr "Regret, nu ai voie să ștergi această categorie."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1346
 #: wp-includes/class-wp-xmlrpc-server.php:4930
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:493
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:501
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:496
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:504
 msgid "Sorry, you are not allowed to create posts as this user."
 msgstr "Regret, cu acest utilizator, nu ai voie să creezi articole."
 
@@ -6907,7 +6903,7 @@ msgid "Sorry, you are not allowed to add a term to one of the given taxonomies."
 msgstr "Regret, nu ai voie să adaugi un termen uneia dintre taxonomiile date."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1327
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1113
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1118
 msgid "Sorry, you are not allowed to create private posts in this post type."
 msgstr "Regret, nu ai voie să creezi articole private în acest tip de articol."
 
@@ -6962,7 +6958,7 @@ msgid "&#8217;"
 msgstr "&#8217;"
 
 #. translators: opening curly double quote
-#: wp-includes/formatting.php:88 wp-includes/formatting.php:4785
+#: wp-includes/formatting.php:88 wp-includes/formatting.php:4791
 msgctxt "opening curly double quote"
 msgid "&#8220;"
 msgstr "&#8222;"
@@ -6980,7 +6976,7 @@ msgstr "Poți crea un fișier %s printr-o interfață web, dar asta nu funcțion
 msgid "Create a Configuration File"
 msgstr "Creează un fișier de configurare"
 
-#: wp-includes/class-wp-customize-manager.php:4128
+#: wp-includes/class-wp-customize-manager.php:4143
 msgid "https://codex.wordpress.org/CSS"
 msgstr "https://codex.wordpress.org/CSS"
 
@@ -7001,7 +6997,7 @@ msgid "<a href=\"%1$s\">%2$s</a> is your new site. <a href=\"%3$s\">Log in</a> a
 msgstr "<a href=\"%1$s\">%2$s</a> este noul tău sit. <a href=\"%3$s\">Autentifică-te</a> ca &#8222;%4$s&#8221; folosind parola ta existentă."
 
 #. translators: %s: database repair URL
-#: wp-includes/functions.php:1420
+#: wp-includes/functions.php:1408
 msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
 msgstr "Una sau mai multe tabele din baza de date nu sunt disponibile. Baza de date ar trebui să fie <a href=\"%s\">reparată</a>."
 
@@ -7100,16 +7096,16 @@ msgstr "Documentație"
 msgid "Support Forums"
 msgstr "Forumuri pentru suport"
 
-#: wp-includes/formatting.php:3338 wp-includes/general-template.php:3344
+#: wp-includes/formatting.php:3344 wp-includes/general-template.php:3344
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/functions.php:3767 wp-includes/ms-load.php:462
+#: wp-includes/functions.php:3768 wp-includes/ms-load.php:462
 #: wp-includes/wp-db.php:1583
 msgid "Error establishing a database connection"
 msgstr "Eroare la stabilirea unei conexiuni cu baza de date"
 
-#: wp-includes/functions.php:3763
+#: wp-includes/functions.php:3764
 msgid "Database Error"
 msgstr "Eroare bază de date"
 
@@ -7167,7 +7163,7 @@ msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Albastru"
 
-#: wp-includes/formatting.php:4226
+#: wp-includes/formatting.php:4232
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "Fusul orar introdus nu este valid. Te rog selectează un fus orar valid."
 
@@ -7189,7 +7185,7 @@ msgstr "Vezi etichetă"
 msgid "View Category"
 msgstr "Vezi categorie"
 
-#: wp-includes/pluggable.php:1043 wp-includes/pluggable.php:1086
+#: wp-includes/pluggable.php:1059 wp-includes/pluggable.php:1102
 msgid "You should specify a nonce action to be verified by using the first parameter."
 msgstr "Ar trebui să specifici o acțiune nunic ca să fie verificată prin folosirea primului parametru."
 
@@ -7281,17 +7277,17 @@ msgid "The user is already active."
 msgstr "Utilizatorul este deja activat."
 
 #. translators: %s: version number
-#: wp-includes/functions.php:4129
+#: wp-includes/functions.php:4130
 msgid "(This message was added in version %s.)"
 msgstr "(Acest mesaj a fost adăugat în versiunea %s.)"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message
-#: wp-includes/functions.php:4136
+#: wp-includes/functions.php:4137
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s a fost denumit <strong>incorect</strong>. %2$s %3$s"
 
-#: wp-includes/pluggable.php:1467
+#: wp-includes/pluggable.php:1483
 msgid "Permalink: %s"
 msgstr "Legătură permanentă: %s"
 
@@ -7797,7 +7793,7 @@ msgstr "Situl nu a putut fi creat."
 msgid "New %1$s Site: %2$s"
 msgstr "Sit nou %1$s: %2$s"
 
-#: wp-includes/pluggable.php:1758
+#: wp-includes/pluggable.php:1774
 msgid "New user registration on your site %s:"
 msgstr "Utilizator nou înregistrat pe %s:"
 
@@ -7853,15 +7849,15 @@ msgstr "Situl pe care l-ai solicitat nu este instalat corespunzător. Te rog con
 msgid "The given object ID is not that of a menu item."
 msgstr "ID-ul obiectului dat nu este acela al unui element de meniu."
 
-#: wp-includes/formatting.php:4052
+#: wp-includes/formatting.php:4058
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "Adresa email introdusă nu pare a fi o adresă email validă. Te rog introdu o adresă email validă."
 
-#: wp-includes/formatting.php:4171
+#: wp-includes/formatting.php:4177
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "Adresa sitului introdusă de tine nu pare a fi un URL valid. Te rog introdu un URL valid."
 
-#: wp-includes/formatting.php:4158
+#: wp-includes/formatting.php:4164
 msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "Adresa WordPress introdusă de tine nu pare a fi un URL valid. Te rog introdu un URL valid."
 
@@ -8035,26 +8031,26 @@ msgid "Get <em>another</em> %s site in seconds"
 msgstr "Fă-ți un <em>alt</em> sit %s în câteva secunde"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1604
+#: wp-includes/pluggable.php:1620
 msgid "A new pingback on the post \"%s\" is waiting for your approval"
 msgstr "Un nou pingback la articolul \"%s\" așteaptă aprobarea ta"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1594
+#: wp-includes/pluggable.php:1610
 msgid "A new trackback on the post \"%s\" is waiting for your approval"
 msgstr "Un nou trackback la articolul \"%s\" așteaptă aprobarea ta"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1434
+#: wp-includes/pluggable.php:1450
 msgid "New trackback on your post \"%s\""
 msgstr "Trackback nou la articolul tău \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1445
+#: wp-includes/pluggable.php:1461
 msgid "New pingback on your post \"%s\""
 msgstr "Pingback nou la articolul tău \"%s\""
 
-#: wp-includes/pluggable.php:1455
+#: wp-includes/pluggable.php:1471
 msgid "New comment on your post \"%s\""
 msgstr "Comentariu nou la articolul tău \"%s\""
 
@@ -8064,7 +8060,7 @@ msgid "The site %s is yours."
 msgstr "Situl %s este al tău."
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1614
+#: wp-includes/pluggable.php:1630
 msgid "A new comment on the post \"%s\" is waiting for your approval"
 msgstr "Un nou comentariu la articolul \"%s\" așteaptă aprobarea ta"
 
@@ -8147,7 +8143,7 @@ msgstr "Fus orar"
 #: wp-includes/post.php:3546
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:331
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:693
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:367
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:370
 #: wp-includes/revision.php:292
 msgid "Invalid post ID."
 msgstr "ID articol invalid."
@@ -8285,7 +8281,7 @@ msgid "The source URL does not exist."
 msgstr "URL-ul sursă nu există."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1332
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1119
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1124
 msgid "Sorry, you are not allowed to publish posts in this post type."
 msgstr "Regret, nu ai voie să publici articole în acest tip de articol."
 
@@ -8306,7 +8302,7 @@ msgstr "Trebuie să fii înregistrat pentru a comenta."
 msgid "A valid email address is required."
 msgstr "O adresă de email validă este obligatorie."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:637
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:640
 msgid "Sorry, you are not allowed to update posts as this user."
 msgstr "Regret, ca acest utilizator nu ai voie să actualizezi articole."
 
@@ -8397,7 +8393,7 @@ msgstr "Comentarii la: %s"
 
 #. translators: Time difference between two dates, in minutes (min=minute). 1:
 #. Number of minutes
-#: wp-includes/formatting.php:3221
+#: wp-includes/formatting.php:3227
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s minut"
@@ -8405,7 +8401,7 @@ msgstr[1] "%s minute"
 msgstr[2] "%s de minute"
 
 #. translators: Time difference between two dates, in hours. 1: Number of hours
-#: wp-includes/formatting.php:3227
+#: wp-includes/formatting.php:3233
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s oră"
@@ -8413,7 +8409,7 @@ msgstr[1] "%s ore"
 msgstr[2] "%s de ore"
 
 #. translators: Time difference between two dates, in days. 1: Number of days
-#: wp-includes/formatting.php:3233
+#: wp-includes/formatting.php:3239
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] "%s zi"
@@ -8425,19 +8421,19 @@ msgstr[2] "%s de zile"
 msgid ", "
 msgstr ", "
 
-#: wp-includes/functions.php:2604
+#: wp-includes/functions.php:2605
 msgid "WordPress Failure Notice"
 msgstr "Notificare eșec WordPress"
 
-#: wp-includes/functions.php:2599 wp-includes/ms-functions.php:1970
+#: wp-includes/functions.php:2600 wp-includes/ms-functions.php:1970
 msgid "Please try again."
 msgstr "Te rog reîncearcă."
 
-#: wp-includes/functions.php:2724
+#: wp-includes/functions.php:2725
 msgid "&laquo; Back"
 msgstr "&laquo; Înapoi"
 
-#: wp-includes/functions.php:2736 wp-load.php:92
+#: wp-includes/functions.php:2737 wp-load.php:92
 msgid "WordPress &rsaquo; Error"
 msgstr "Eroare &rsaquo; WordPress"
 
@@ -8781,18 +8777,18 @@ msgid "PM"
 msgstr "PM"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1489 wp-includes/pluggable.php:1651
 msgid "Delete it: %s"
 msgstr "Șterge: %s"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1628
+#: wp-includes/pluggable.php:1644
 msgid "Approve it: %s"
 msgstr "Aprobă: %s"
 
 #. translators: Comment moderation notification email subject. 1: Site name, 2:
 #. Post title
-#: wp-includes/pluggable.php:1647
+#: wp-includes/pluggable.php:1663
 msgid "[%1$s] Please moderate: \"%2$s\""
 msgstr "[%1$s] Te rog moderează: \"%2$s\""
 
@@ -8968,22 +8964,22 @@ msgstr[2] "În așteptare <span class=\"count\">(%s)</span>"
 msgid "Revision"
 msgstr "Revizie"
 
-#: wp-includes/functions.php:4671
+#: wp-includes/functions.php:4672
 msgid "Manual Offsets"
 msgstr "Completări manuale"
 
-#: wp-includes/functions.php:4663 wp-includes/functions.php:4667
+#: wp-includes/functions.php:4664 wp-includes/functions.php:4668
 msgid "UTC"
 msgstr "UTC"
 
 #. translators: 1: PHP function name, 2: version number
-#: wp-includes/functions.php:4023
+#: wp-includes/functions.php:4024
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s s-a apelat cu un argument care s-a <strong>învechit</strong> odată cu versiunea %2$s și care nu oferă alternative."
 
 #. translators: 1: PHP function name, 2: version number, 3: optional message
 #. regarding the change
-#: wp-includes/functions.php:4020
+#: wp-includes/functions.php:4021
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s s-a apelat cu un argument care s-a <strong>învechit</strong> odată cu versiunea %2$s! %3$s"
 
@@ -9021,8 +9017,8 @@ msgstr "%1$s %2$d"
 #. translators: 1: PHP function name, 2: version number
 #. translators: 1: PHP file name, 2: version number
 #. translators: 1: WordPress hook name, 2: version number
-#: wp-includes/functions.php:3831 wp-includes/functions.php:3959
-#: wp-includes/functions.php:4082
+#: wp-includes/functions.php:3832 wp-includes/functions.php:3960
+#: wp-includes/functions.php:4083
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s este <strong>învechită</strong> din versiunea %2$s fără alternative disponibile în loc."
 
@@ -9031,12 +9027,12 @@ msgstr "%1$s este <strong>învechită</strong> din versiunea %2$s fără alterna
 #. translators: 1: PHP file name, 2: version number, 3: alternative file name
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
-#: wp-includes/functions.php:3828 wp-includes/functions.php:3956
-#: wp-includes/functions.php:4079
+#: wp-includes/functions.php:3829 wp-includes/functions.php:3957
+#: wp-includes/functions.php:4080
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s este <strong>învechită</strong> din versiunea %2$s! Folosește %3$s în loc."
 
-#: wp-includes/functions.php:2183
+#: wp-includes/functions.php:2173
 msgid "Could not write file %s"
 msgstr "Nu s-a putut scrie fișierul %s"
 
@@ -9084,7 +9080,7 @@ msgid "Site Admin"
 msgstr "Administrare sit"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1639
+#: wp-includes/pluggable.php:1491 wp-includes/pluggable.php:1655
 msgid "Spam it: %s"
 msgstr "Marchează ca spam: %s"
 
@@ -9297,7 +9293,7 @@ msgid "Registration complete. Please check your email."
 msgstr "Înregistrare completă. Te rog verifică-ți emailul."
 
 #. translators: %s: site name
-#: wp-includes/functions.php:2583
+#: wp-includes/functions.php:2584
 msgid "You are attempting to log out of %s"
 msgstr "Încerci să te dezautentifici de pe %s"
 
@@ -9405,11 +9401,11 @@ msgstr "Comentarii protejate: te rog introdu parola pentru a vizualiza comentari
 msgid "%s is a protected WP option and may not be modified"
 msgstr "%s este o opțiune WP protejată și nu poate fi modificată"
 
-#: wp-includes/functions.php:2137
+#: wp-includes/functions.php:2127
 msgid "Empty filename"
 msgstr "Nume fișier gol"
 
-#: wp-includes/functions.php:4618
+#: wp-includes/functions.php:4619
 msgid "Select a city"
 msgstr "Selectează un oraș"
 
@@ -9475,51 +9471,51 @@ msgid "That user does not exist."
 msgstr "Acel utilizator nu există."
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1479
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] Comentariu: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1441
+#: wp-includes/pluggable.php:1457
 msgid "[%1$s] Trackback: \"%2$s\""
 msgstr "[%1$s] Trackback: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1452
+#: wp-includes/pluggable.php:1468
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] Pingback: \"%2$s\""
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1471 wp-includes/pluggable.php:1632
+#: wp-includes/pluggable.php:1487 wp-includes/pluggable.php:1648
 msgid "Trash it: %s"
 msgstr "Aruncă la gunoi: %s"
 
-#: wp-includes/pluggable.php:1600
+#: wp-includes/pluggable.php:1616
 msgid "Trackback excerpt: "
 msgstr "Rezumat trackback:"
 
-#: wp-includes/pluggable.php:1610
+#: wp-includes/pluggable.php:1626
 msgid "Pingback excerpt: "
 msgstr "Rezumat pingback:"
 
 #. translators: Comment moderation. 1: Number of comments awaiting approval
-#: wp-includes/pluggable.php:1642
+#: wp-includes/pluggable.php:1658
 msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
 msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
 msgstr[0] "Acum %s comentariu așteaptă aprobare. Te rog vizitează panoul de moderare:"
 msgstr[1] "Acum %s comentarii așteaptă aprobare. Te rog vizitează panoul de moderare:"
 msgstr[2] "Acum %s de comentarii așteaptă aprobare. Te rog vizitează panoul de moderare:"
 
-#: wp-includes/pluggable.php:1759 wp-includes/pluggable.php:1789
+#: wp-includes/pluggable.php:1775 wp-includes/pluggable.php:1805
 #: wp-login.php:329
 msgid "Username: %s"
 msgstr "Nume utilizator: %s"
 
-#: wp-includes/pluggable.php:1762
+#: wp-includes/pluggable.php:1778
 msgid "[%s] New User Registration"
 msgstr "[%s] Înregistrare utilizator nou"
 
-#: wp-includes/pluggable.php:1795
+#: wp-includes/pluggable.php:1811
 msgid "[%s] Your username and password info"
 msgstr "[%s] Informații despre numele tău de utilizator și parolă"
 
@@ -9608,7 +9604,7 @@ msgstr "<strong>EROARE</strong>: Câmpul numelui de utilizator este gol."
 msgid "<strong>ERROR</strong>: The password field is empty."
 msgstr "<strong>EROARE</strong>: Câmpul parolei este gol."
 
-#: wp-includes/functions.php:5269 wp-includes/user.php:280
+#: wp-includes/functions.php:5270 wp-includes/user.php:280
 msgid "Please log in again."
 msgstr "Te rog autentifică-te din nou."
 
@@ -9723,7 +9719,7 @@ msgstr "Inserează tagul de terminare pagină"
 
 #: wp-includes/class-wp-editor.php:1035 wp-includes/script-loader.php:463
 #: wp-includes/script-loader.php:574 wp-includes/script-loader.php:583
-#: wp-includes/script-loader.php:752 wp-includes/theme.php:2960
+#: wp-includes/script-loader.php:752 wp-includes/theme.php:2969
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Modificările pe care le-ai făcut se vor pierde dacă părăsești această pagină."
 
@@ -9736,7 +9732,7 @@ msgid "Paste table row before"
 msgstr "Plasează rând tabel înainte"
 
 #. translators: %s: directory path
-#: wp-includes/functions.php:1909 wp-includes/functions.php:2175
+#: wp-includes/functions.php:1897 wp-includes/functions.php:2165
 msgid "Unable to create directory %s. Is its parent directory writable by the server?"
 msgstr "Nu am putut crea directorul %s. Directorul său părinte poate fi scris de către server?"
 
@@ -9756,13 +9752,13 @@ msgstr "Ține-mă minte"
 msgid "Cannot create a revision of a revision"
 msgstr "Nu pot crea o revizie a reviziei"
 
-#: wp-includes/class-wp-customize-manager.php:3990
-#: wp-includes/class-wp-customize-manager.php:4031
+#: wp-includes/class-wp-customize-manager.php:4005
+#: wp-includes/class-wp-customize-manager.php:4046
 msgid "Fill Screen"
 msgstr "Completează ecran"
 
 #. translators: %s: logout URL
-#: wp-includes/functions.php:2590
+#: wp-includes/functions.php:2591
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "Sigur vrei să te <a href=\"%s\">dezautentifici</a>?"
 
@@ -10046,7 +10042,7 @@ msgstr "Situri proprii"
 msgid "Usage of user levels by plugins and themes is deprecated. Use roles and capabilities instead."
 msgstr "Folosirea nivelelor de acces pentru utilizatori în module și teme este învechită. Folosește roluri și permisiuni în loc."
 
-#: wp-includes/class-wp-customize-manager.php:3716
+#: wp-includes/class-wp-customize-manager.php:3731
 #: wp-includes/class-wp-xmlrpc-server.php:479
 msgid "Site Title"
 msgstr "Titlu sit"
@@ -10056,7 +10052,7 @@ msgid "There are no options for this widget."
 msgstr "Nu există opțiuni pentru această piesă."
 
 #: wp-includes/admin-bar.php:783 wp-includes/class-wp-customize-widgets.php:421
-#: wp-includes/functions.php:3704
+#: wp-includes/functions.php:3705
 msgid "Widgets"
 msgstr "Piese"
 
@@ -10100,7 +10096,7 @@ msgstr "Format oră"
 msgid "Plugin:"
 msgstr "Modul:"
 
-#: wp-includes/class-wp-customize-manager.php:3784
+#: wp-includes/class-wp-customize-manager.php:3799
 #: wp-includes/customize/class-wp-customize-color-control.php:54
 #: wp-includes/customize/class-wp-customize-image-control.php:38
 #: wp-includes/customize/class-wp-customize-media-control.php:62
@@ -10347,7 +10343,7 @@ msgstr "Module"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/functions.php:2141
+#: wp-includes/functions.php:2131
 msgid "Invalid file type"
 msgstr "Tip de fișier invalid"
 
@@ -10494,8 +10490,8 @@ msgid "File &#8220;%s&#8221; is not an image."
 msgstr "Fișierul &#8222;%s&#8221; nu este o imagine."
 
 #. translators: 1: Comment author URL
-#: wp-includes/pluggable.php:1458 wp-includes/pluggable.php:1619
-#: wp-includes/pluggable.php:1760
+#: wp-includes/pluggable.php:1474 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1776
 msgid "Email: %s"
 msgstr "Email: %s"
 
@@ -10518,7 +10514,7 @@ msgstr "Rezumat"
 msgid "Caption"
 msgstr "Text asociat"
 
-#: wp-includes/deprecated.php:3122 wp-includes/functions.php:2594
+#: wp-includes/deprecated.php:3122 wp-includes/functions.php:2595
 msgid "Are you sure you want to do this?"
 msgstr "Sigur vrei să faci asta?"
 

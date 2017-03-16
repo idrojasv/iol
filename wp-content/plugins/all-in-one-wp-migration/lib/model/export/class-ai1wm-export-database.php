@@ -114,6 +114,9 @@ class Ai1wm_Export_Database {
 		// Exclude active plugins and status options
 		$client->set_table_query_clauses( ai1wm_table_prefix() . 'options', sprintf( " WHERE option_name NOT IN ('%s', '%s') ", AI1WM_ACTIVE_PLUGINS, AI1WM_STATUS ) );
 
+		// Set Visual Composer
+		$client->set_visual_composer( ! is_wp_error( validate_plugin( 'js_composer/js_composer.php' ) ) );
+
 		// Set current table index
 		if ( isset( $params['current_table_index'] ) ) {
 			$current_table_index = (int) $params['current_table_index'];
